@@ -1,0 +1,789 @@
+/*!!!!!
+generic class!!!!!!!!!!!!!
+*/
+@font-face {
+    font-family: "AGFORE";
+    src: url("../fonts/AGFOREIGNERBLACKC.OTF");
+url("../fonts/AGFOREIGNERBLACKC.OTF");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SansPro";
+    src: url("../fonts/SOURCESANSPRO-REGULAR.TTF");
+url("../fonts/SOURCESANSPRO-REGULAR.TTF");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.ui-widget {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+button:focus {
+    outline: none;
+}
+
+.curpointer {
+    cursor: pointer;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.text-yellow {
+    color: #E0E14F;
+}
+
+.f46 {
+    font-size: 46px;
+}
+
+.f16 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent !important;
+}
+
+.f18 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*new style */
+#service .block_service {
+    width: 220px;
+}
+
+#service .header_service {
+    background-color: #006a80;
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 45px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    margin: 0 auto;
+    padding: 15px;
+    line-height: 30px;
+    transition: background-color 2s;
+}
+
+#service .header_service:hover {
+    background-color: #009DE0;
+}
+
+#service .img_service {
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    padding: 30px;
+    margin: 10px 0 20px 0;
+}
+
+#service .img_service img {
+    width: 80px;
+    height: 80px;
+}
+
+#service .cost_service {
+    background-color: #E0E14F;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    height: 60px;
+    letter-spacing: 1px;
+    line-height: 60px;
+    position: relative;
+    text-transform: lowercase;
+    margin: 0 auto;
+    width: 200px;
+    z-index: 3;
+}
+
+.cost_service:before {
+    border-bottom: 10px solid #aaab3b;
+    border-left: 10px solid transparent;
+    left: 0;
+}
+
+.cost_service:after {
+    border-bottom: 10px solid #aaab3b;
+    border-right: 10px solid transparent;
+    right: 0;
+}
+
+.cost_service:before, .cost_service:after {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: -10px;
+    width: 0;
+}
+
+#service .info_service {
+    background: #F5F5F5;
+    margin: 15px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    color: #006a80;
+}
+#service .button_service{
+margin: 0 auto;
+    width: 190px;
+}
+#service .button_service a{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #E0E14F;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 6px #aaab3b;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-radius: 0;
+    padding: 15px 40px;
+}
+#service .button_service a:hover{
+    top: 2px;
+    box-shadow: 0 3px #aaab3b;
+}
+/* end new style */
+
+.offReg {
+    font-size: 20px;
+    line-height: 24px;
+    color: #E0E14F;
+}
+
+.waitOffReg {
+    font-size: 16px !important;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 20px;
+    font-weight: normal !important;
+    text-transform: none !important;
+    margin-left: 0px;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .waitOffReg {
+
+        margin-left: -120px;
+    }
+
+}
+
+.text-white {
+    color: white;
+}
+
+.text-blue {
+    color: #00A3DA;
+}
+
+#tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: #63737A;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#tabs .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    color: #20D29D;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 2px solid #20D29D;
+    padding: .5em 0px;
+    margin: 0 1em;
+
+}
+
+#tabs .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: white;
+    border: none;
+    color: #20D29D;
+}
+
+#tabs .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: none;
+}
+
+.ui-widget.ui-widget-content {
+    border: none !important;
+}
+
+#tabs .ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus,
+.ui-button:hover,
+.ui-button:focus {
+    border: none;
+    background: white;
+    font-weight: normal;
+    color: #20D29D;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 20px 20px;
+}
+
+.form-control {
+    background-color: white;
+    color: #495057;
+    border: 1px solid #20D29D;
+    border-radius: 3px;
+}
+
+.modalStyle .formReg .form-control {
+    background-color: white;
+    color: #009DE0;
+    border: 1px solid #20D29D;
+    border-radius: 3px;
+}
+
+.modalStyle .formReg .form-control.has-error {
+    border: 1px solid #F00;
+}
+
+.modalStyle .formReg ::-webkit-input-placeholder {
+    color: #63737A;
+}
+
+.modalStyle .formReg ::-moz-placeholder {
+    color: #63737A;
+}
+
+.modalStyle .formReg:-moz-placeholder {
+    color: #63737A;
+}
+
+.modalStyle .formReg :-ms-input-placeholder {
+    color: #63737A;
+}
+
+.modalStyle .btn-reg {
+    padding: 15px 25px;
+    color: #00A3DA;
+    line-height: 20px;
+    font-size: 18px;
+    background: #A2E859;
+    border-radius: 3px;
+}
+
+.modalStyle .modal-header {
+    padding: 5px 16px;
+    border: none;
+}
+
+.modalStyle .close {
+    font-size: 36px;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+}
+
+.modalStyle .modal-header {
+    padding: 5px 16px;
+    border: none;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+.popover {
+    font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.popover-body {
+    padding: 15px;
+}
+
+.popover .arrow {
+    display: none;
+}
+
+/*
+                                            FOR mobile
+*/
+
+.title_blue {
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    line-height: 25px;
+    font-size: 24px;
+    color: #009DE0;
+    font-family: AGFORE;
+    text-decoration: #009DE0;
+}
+
+.title_white {
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    line-height: 25px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: AGFORE;
+}
+
+.title_blue::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 90px;
+    background-color: #009DE0;
+    transition: width .5s ease-in-out;
+    bottom: -25px;
+}
+
+.title_blue.programma::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #009DE0;
+    transition: width .5s ease-in-out;
+    bottom: -10px;
+    left: 0;
+}
+
+@media (min-width: 992px) {
+    .title_blue.programma::after {
+        display: block;
+        position: absolute;
+        content: "";
+        height: 2px;
+        background-color: #009DE0;
+        transition: width .5s ease-in-out;
+        bottom: -25px;
+        right: 0;
+        width: 90px;
+    }
+}
+
+.title_white::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 90px;
+    background-color: #FFFFFF;
+    transition: width .5s ease-in-out;
+    top: 50px;
+}
+
+.addPaddForBanner {
+    padding-top: 580px;
+}
+
+.regBanner {
+    position: absolute;
+    bottom: -140px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .regBanner {
+
+        bottom: -70px;
+
+    }
+
+}
+
+.tabProg {
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+    border-radius: 3px;
+}
+
+.logoDigital img {
+    display: none;
+}
+
+.fotoConf {
+    padding-top: 80px;
+    width: 80%;
+}
+
+.fonConf {
+    background-position: 138% 69%;
+    background-size: 57%;
+}
+
+#tabs .tabContentTitle {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.f14 {
+    font-size: 12px;
+    line-height: 16px !important;
+}
+
+#tabs .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+    font-size: 18px;
+}
+
+/*#tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button{*/
+/*font-size: 14px;*/
+/*}*/
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.fonCondition {
+    background-image: url(/img/fonWhile.png);
+    background-size: cover;
+
+}
+
+/*ddsfsdf*/
+
+.fonTop {
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    position: relative;
+    min-height: 600px;
+}
+
+.fonTop:before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: #000;
+    position: absolute;
+    opacity: .3;
+}
+
+.navbarTop {
+    padding-top: 10px;
+}
+
+.navbarTop .logo img {
+    height: 60px;
+}
+
+.navbarTop a.btnHeader {
+    font-size: 12px;
+    color: white;
+
+}
+
+.navbarTop a.btnHeader:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.textBigBanner {
+    position: absolute;
+    top: 120px;
+    line-height: 35px;
+    font-size: 26px;
+    width: auto;
+    right: 0;
+    left: 24px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: AGFORE;
+
+}
+
+.logoDigital {
+    bottom: 10px;
+    position: absolute;
+    left: 420px;
+
+}
+
+.logoDigital img {
+    width: 100%;
+}
+
+.dataBanner {
+    color: white;
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-size: 30px;
+    position: absolute;
+    line-height: 41px;
+    left: 0;
+    bottom: -50px;
+}
+
+.btn-reg {
+    padding: 15px 25px;
+    color: #00A3DA;
+    line-height: 20px;
+    font-size: 18px;
+    background: #E0E14F;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    text-transform: none;
+}
+
+.helpBanner {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.lineBanner {
+    width: 1px;
+    height: 80px;
+    border: 2px solid #FFFFFF;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.positionHelp {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+}
+
+.colorStatictic {
+    padding: 45px 0px;
+    background: #5dbecb;
+    background: -moz-linear-gradient(left, #5dbecb 0%, #36b8cc 100%);
+    background: -webkit-linear-gradient(left, #5dbecb 0%, #36b8cc 100%);
+    background: linear-gradient(to right, #5dbecb 0%, #36b8cc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5dbecb', endColorstr='#36b8cc', GradientType=1);
+}
+
+.border_Conf {
+    border: 1px solid #83D7DB;
+    padding: 30px 0px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 0px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.fatLetter {
+    font-size: 50px;
+    line-height: 67px;
+    color: #FFFFFF;
+    font-family: AGFORE;
+}
+
+.navbarTop .dropdown-toggle::after {
+    border: none;
+}
+
+@media (min-width: 534px) {
+
+    .fonTop {
+        background-position: 30%;
+        height: 800px;
+    }
+
+    #tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+        font-size: 16px;
+    }
+
+    .marginLeftToReg {
+        margin-left: -140px;
+        font-size: 18px !important;
+    }
+
+    .textBigBanner {
+        top: 120px;
+        line-height: 27px;
+        font-size: 22px;
+        right: -37px;
+        left: auto;
+        width: 55%;
+    }
+
+    .regBanner {
+        bottom: -130px;
+        left: 20px;
+    }
+
+    .navbarTop a.btnHeader {
+        font-size: 14px;
+    }
+
+    .addPaddForBanner {
+
+        padding-top: 700px;
+    }
+
+    .fatLetter {
+        font-size: 62px;
+    }
+
+    #tabs .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+        font-size: 18px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbarTop a.btnHeader {
+        font-size: 16px;
+        padding: 0px 5px;
+    }
+
+    #tabs .tabContentTitle {
+        color: #63737A;
+        text-align: center;
+        font-weight: 600;
+        font-size: 18px;
+
+    }
+
+    .marginLeftToReg {
+        margin-left: -130px;
+    }
+
+    #tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+        font-size: 18px;
+    }
+
+    .textBigBanner {
+        top: 130px;
+        right: 25px;
+        line-height: 38px;
+        font-size: 36px;
+        width: 426px;
+        left: auto;
+    }
+
+    .ui-tabs .ui-tabs-panel {
+        padding: 20px 40px;
+    }
+
+    .border_Conf {
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+
+    .regBanner {
+        left: 60px;
+    }
+
+    .helpBanner {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .fonTop {
+        background-position: 35%;
+        height: 800px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .border_Conf {
+        padding: 20px 0px;
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+
+    .marginLeftToReg {
+        margin-left: -90px;
+    }
+
+    .tabProg {
+        padding: 0px 0px 0px 0px;
+        margin-left: 0px;
+    }
+
+    .fonTop {
+
+        background-position: 33%;
+
+    }
+
+    .f14 {
+        font-size: 14px;
+        line-height: 20px !important;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .marginLeftToReg {
+        margin-left: -120px;
+    }
+
+    .tabProg {
+        background-color: white;
+        padding: 10px 15px 10px 15px;
+        /*margin-left: 100px;*/
+        /*margin-right: 100px;*/
+    }
+
+    .border_Conf {
+        padding: 30px 0px;
+        margin: 0px 20px;
+        width: 152px;
+    }
+
+    .textBigBanner {
+        top: 150px;
+        right: -150px;
+        line-height: 51px;
+        font-size: 48px;
+        left: auto;
+        width: 70%;
+    }
+
+    .regBanner {
+
+        left: 120px;
+    }
+
+    .fonTop {
+        position: relative;
+        height: 700px;
+        background-size: cover;
+        background-position: 0 0;
+    }
+
+    .navbarTop a.btnHeader {
+        padding: 0px 10px;
+        font-size: 19px;
+
+    }
+
+    .marginLeft {
+        margin-left: 100px;
+    }
+
+}
