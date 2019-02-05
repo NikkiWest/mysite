@@ -62,7 +62,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 /*new style */
 #service .block_service {
-    width: 220px;
+    /*width: 220px;*/
 }
 
 #service .header_service {
@@ -99,7 +99,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 #service .cost_service {
-    background-color: #E0E14F;
+    background-color: #dab90f;
     color: #FFF;
     text-align: center;
     display: block;
@@ -149,7 +149,7 @@ margin: 0 auto;
     border: none;
     text-transform: uppercase;
     font-weight: 700;
-    background: #E0E14F;
+    background: #dab90f;
     position: relative;
     color: #fff;
     box-shadow: 0 6px #aaab3b;
@@ -404,7 +404,7 @@ a {
 
 .regBanner {
     position: absolute;
-    bottom: -140px;
+    bottom: -180px;
     left: 0px;
 }
 
@@ -756,12 +756,14 @@ a {
     }
 
     .textBigBanner {
-        top: 150px;
-        right: -150px;
+
+        top: 101px;
+        left: auto;
         line-height: 51px;
         font-size: 48px;
-        left: auto;
-        width: 70%;
+        right: -70px;
+        width: 57%;
+
     }
 
     .regBanner {

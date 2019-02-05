@@ -38,7 +38,7 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
     </div>
 
-    <div class="container addPaddForBanner">
+    <div class="container addPaddForBanner" style="position: relative">
         <div class="textBigBanner  ">
             Эффективные <br> интернет-решения <br>
             для вашего бизнеса
@@ -46,7 +46,7 @@ $user_id = Yii::$app->user->id ?? null;
                 <div class="waitOffReg">Мы поможем вам воплотить ваши любые идеи. <br>
                     Различные проекты, от сайта-визитки до собственной CRM. <br>
                     Достижение поставленных целей -
-                    одно из наших главных качеств, с которыми создаются наши проектами.
+                    одно из наших главных качеств,<br> с которыми создаются наши проектами.
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@ $user_id = Yii::$app->user->id ?? null;
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
-                            <img src="/img/icons/create_site.png" alt="Создание сайтов">
+                            <img src="/img/icons/create_site.svg" alt="Создание сайтов">
                         </div>
                         Разработка сайтов
                     </a>
@@ -84,7 +84,7 @@ $user_id = Yii::$app->user->id ?? null;
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
-                            <img src="/img/icons/create_web.png" alt="Создание web-приложений">
+                            <img src="/img/icons/create_web.svg" alt="Создание web-приложений">
                         </div>
                         Разработка web-приложений
                     </a>
@@ -106,7 +106,7 @@ $user_id = Yii::$app->user->id ?? null;
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
-                            <img src="/img/icons/support_site.png" alt=" Доработка сайтов">
+                            <img src="/img/icons/work_site.svg" alt=" Доработка сайтов">
                         </div>
                         Доработка сайтов
                     </a>
@@ -127,16 +127,16 @@ $user_id = Yii::$app->user->id ?? null;
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
-                            <img src="/img/icons/help_site.png" alt="Обслуживание сайтов">
+                            <img src="/img/icons/help_site.svg" alt="Обслуживание сайтов">
                         </div>
                         Обслуживание сайтов
                     </a>
                     <div class="cost_service">
                         от 3000 р
                     </div>
-                    <div class="info_service">Контроль работоспособности</div>
+                    <div class="info_service">Контроль работоспособности сайта в целом</div>
                     <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                    <div class="info_service" style="padding-bottom: 5px">Восстановление при сбое</div>
+                    <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое </div>
 <!--                    <div class="info_service">доступно</div>-->
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
@@ -152,7 +152,15 @@ $user_id = Yii::$app->user->id ?? null;
 
 <div class="container pt-5 pb-5" id="programs">
 
-    <div class="title_blue text-lg-left programma"> Почему стоит выбрать нас</div>
+    <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
+    <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+        <div class="col-lg-3"></div>
+    </div>
 
 </div>
 
@@ -235,7 +243,7 @@ $user_id = Yii::$app->user->id ?? null;
                     конфеденциальности</a>
                 и
                 <a href="/img/pdf/personal.pdf" target="_blank"
-                   style="color: white!important;text-decoration: underline!important;" target="_blank">персональных
+                   style="color: white!important;text-decoration: underline!important;" >персональных
                     данных</a>
 
             </div>
@@ -325,27 +333,7 @@ $user_id = Yii::$app->user->id ?? null;
 </div>
 
 
-<!-- Modal -->
-<div class="modal fade" data-show="false" id="modalOk">
-    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
-        <div class="modal-content panel panel-red">
-            <div class="modal-header panel-heading">
-                <h4 class="modal-title text-center" id="title">Успешная регистрация в конференции</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                Спасибо за оставленную заявку на участие в конференции! <br>
-                На Вашу почту отправлено письмо с данными для входа в личный кабинет.
-                <div class="text-center">
-                    <a href="/" target="_blank" class="btn btn-success mt-3 mb-3"> &#8195; &#8195;ОК &#8195;
-                        &#8195;</a>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</div>
 <!--Модалка в меню в гамбургере-->
 <div class="modal fade" id="modalMainMenu">
     <div class="modal-dialog" style="width: 98%; max-width: 800px">
