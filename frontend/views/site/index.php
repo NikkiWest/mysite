@@ -189,7 +189,7 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
 
         <div id="img_preim" class="col-lg-6 col-md-12 hidden-sm hidden-xs">
-            <img class="img-responsive" alt="Mac" src="/img/preim/bg_preim.png">
+            <img class="" alt="Mac" src="/img/preim/bg_preim.png">
         </div>
     </div>
 

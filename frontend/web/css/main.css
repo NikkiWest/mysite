@@ -185,6 +185,7 @@ margin: 0 auto;
 
 #img_preim img {
     vertical-align: bottom;
+    width: 100%;
     height: auto;
 }
 
