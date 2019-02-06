@@ -113,7 +113,7 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="cost_service">
                         от 500 р
                     </div>
-                    <div class="info_service">Исправление ошибок </div>
+                    <div class="info_service">Исправление ошибок</div>
                     <div class="info_service">Изменения в дизайне</div>
                     <div class="info_service">Новый функционал</div>
                     <div class="info_service">Внутрення оптимизация</div>
@@ -136,8 +136,8 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
                     <div class="info_service">Контроль работоспособности сайта в целом</div>
                     <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                    <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое </div>
-<!--                    <div class="info_service">доступно</div>-->
+                    <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое</div>
+                    <!--                    <div class="info_service">доступно</div>-->
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
                     </div>
@@ -149,58 +149,69 @@ $user_id = Yii::$app->user->id ?? null;
 
     </div>
 </div>
+<div class="position-relative" id="programs">
+    <div class="container pt-5">
 
-<div class="container pt-5  position-relative" id="programs">
-
-    <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
-    <div class="row mt-4">
-        <div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
-                    <div class="row mt-5 align-items-center">
-                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center">
-                            <img alt="Кроссбраузерность" src="/img/preim/one_preim.svg" class="w-100"></div>
-                        <div class="col-md-7 col-sm-7 col-xs-12">
-                            <div class="titlePreim">Кроссбраузерность</div>
-                            <div class="mt-3">Все наши сайты включают адаптацию на всех устройствах.</div>
+        <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
+        <div class="row mt-4">
+            <div class=" col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
+                        <div class="row mt-5 align-items-center">
+                            <div class=" col-lg-6 col-md-4 col-sm-4 col-xs-12 text-right col-sm-center col-xs-center">
+                                <img alt="Кроссбраузерность" src="/img/preim/one_preim.svg" class="w-100"></div>
+                            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12">
+                                <div class="titlePreim">Кроссбраузерность</div>
+                                <div class="mt-3">Все наши сайты включают адаптацию на всех устройствах.</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class=" col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
-                    <div class="row mt-5 align-items-center">
-                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img alt="Активная поддержка"
-                                                                                                             src="/img/preim/two_preim.svg" class="w-100"></div>
-                        <div class="col-md-7 col-sm-7 col-xs-12">
-                            <div class="titlePreim">Активная поддержка</div>
-                            <div class="mt-3">Помощь в составлении ТЗ, оформлении будущего сайта, рекомендации по доработкам</div>
+                    <div class=" col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
+                        <div class="row mt-5 align-items-center">
+                            <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img
+                                        alt="Активная поддержка"
+                                        src="/img/preim/two_preim.svg" class="w-100"></div>
+                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                <div class="titlePreim">Активная поддержка</div>
+                                <div class="mt-3">Помощь в составлении ТЗ, оформлении будущего сайта, рекомендации по
+                                    доработкам
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center mb-5">
-                    <div class="row mt-5 align-items-center">
-                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img alt="расширение функциональности" class="w-100" src="/img/preim/three_preim.svg"></div>
-                        <div class="col-md-7 col-sm-7 col-xs-12">
-                            <div class="titlePreim">Увеличение функциональности</div>
-                            <div class="mt-3">Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать</div>
+                    <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center mb-5">
+                        <div class="row mt-5 align-items-center">
+                            <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img
+                                        alt="расширение функциональности" class="w-100"
+                                        src="/img/preim/three_preim.svg"></div>
+                            <div class="col-md-7 col-sm-7 col-xs-12">
+                                <div class="titlePreim">Увеличение функциональности</div>
+                                <div class="mt-3">Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или
+                                    доработать
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="img_preim" class="col-lg-7 col-md-12 ">
+                <img class="" alt="Mac" src="/img/preim/bg_preim.png">
+            </div>
         </div>
 
-        <div id="img_preim" class="col-lg-6 col-md-12 hidden-sm hidden-xs">
-            <img class="" alt="Mac" src="/img/preim/bg_preim.png">
-        </div>
     </div>
-
 </div>
 
-<div class="colorStatictic ">
+<?php
+
+/*
+ *
+ * <div class="colorStatictic ">
     <div class="d-none d-md-block">
         <div class="d-flex justify-content-center align-items-center ">
-            <div class="border_Conf"><span class="fatLetter">1</span> <br> день</div>
-            <div class="border_Conf"><span class="fatLetter">200</span> <br> участников</div>
-            <div class="border_Conf"><span class="fatLetter">15</span><br> спикеров</div>
+            <div class="border_Conf"><span class="fatLetter">16</span> <br> успешных проектов</div>
+            <div class="border_Conf"><span class="fatLetter">2</span> <br> года в IT индустрии</div>
+            <div class="border_Conf"><span class="fatLetter">20</span><br> </div>
             <div class="border_Conf"><span class="fatLetter">5</span> <br>кейсов</div>
         </div>
     </div>
@@ -215,23 +226,14 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
     </div>
 </div>
+ */
+?>
 
 
-
-
-
-<div class="segment-white mb-4  " id="speakers">
+<div class="segment-white mb-4  " id="portfolio">
     <div class="container pt-5">
-        <div class="title_blue  mb-5"> Спикеры</div>
+        <div class="title_blue  mb-5">Портфолио созданных сайтов</div>
         <div class="row">
-
-        </div>
-    </div>
-</div>
-
-<div class="fonCondition mt-5 " id="condition">
-    <div class="container pt-5">
-        <div class="row ">
 
         </div>
     </div>
@@ -239,7 +241,56 @@ $user_id = Yii::$app->user->id ?? null;
 
 
 <div class="container pt-5 mb-4" id="pathers">
-    <div class="title_blue  mb-5"> Партнеры</div>
+    <div class="title_blue  mb-5"> Наши клиенты</div>
+    <div class="row">
+        <div class="row text-center mb-3">
+            <div class="owl-carousel owl-theme  logo_img">
+                <?php
+                /*
+                 *
+                 * <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/2x2.png" alt="Партнер 1">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/homemag.png" alt="Партнер 2">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/medznanie.svg" alt="Партнер 3">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/micasa.png" alt="Партнер 4">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/viet.png" alt="Партнер 5">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/promining.png" alt="Партнер 6">
+                </a>
+
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/kalite.png" alt="Партнер 7">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/proffesional.jpg" alt="Партнер 7">
+                </a>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/conf.svg" alt="Партнер 7">
+                </a>
+
+                 */
+                ?>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="fonContact  " id="contacts">
@@ -274,7 +325,7 @@ $user_id = Yii::$app->user->id ?? null;
                     конфеденциальности</a>
                 и
                 <a href="/img/pdf/personal.pdf" target="_blank"
-                   style="color: white!important;text-decoration: underline!important;" >персональных
+                   style="color: white!important;text-decoration: underline!important;">персональных
                     данных</a>
 
             </div>
@@ -362,7 +413,6 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
     </div>
 </div>
-
 
 
 <!--Модалка в меню в гамбургере-->
@@ -467,35 +517,26 @@ $user_id = Yii::$app->user->id ?? null;
 </div>
 
 
-<?php
-echo $this->render('index_form_pay', ['Rekvizit' => $Rekvizit, 'Invoice' => $Invoice, 'Users' => $Users]);
-?>
-
 
 <?php
-$flag_oplata_1 = $Users->flag_oplata_1 ?? null;
+$script = <<< JS
+        // $(".owl-carousel.logo_img").owlCarousel({
+        //     loop:true,
+        //     margin:20,
+        //     autoplay:true,
+        //     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+        //         0:{
+        //             items:1
+        //         },
+        //         600:{
+        //             items:2
+        //         },
+        //         1000:{
+        //             items:6
+        //         }
+        //     }
+        // })
 
-if ($act == 'openPay') {
-    if ($flag_oplata_1 == null) {
-        $script = <<< JS
-$("#modalPay").modal("show");
 JS;
-        $this->registerJs($script, yii\web\View::POS_END);
-
-    } else {
-        $script = <<< JS
-$("#modalPayOk").modal("show");
-JS;
-        $this->registerJs($script, yii\web\View::POS_END);
-
-    }
-}
-
-if ($act == 'openPayOk') {
-    $script = <<< JS
-$("#modalPayOk").modal("show");
-JS;
-    $this->registerJs($script, yii\web\View::POS_END);
-
-}
+$this->registerJs($script, yii\web\View::POS_END);
 ?>

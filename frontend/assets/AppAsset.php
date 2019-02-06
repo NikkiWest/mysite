@@ -19,7 +19,10 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'lib/jquery-ui/jquery-ui.js',
+        '/lib/owl-carousel/js/owl.carousel.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js',
         'js/uni.js?v'.YII_V,
+
     ];
     public $depends = [
         //'yii\web\YiiAsset',

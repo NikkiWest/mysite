@@ -66,7 +66,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 #service .header_service {
-    background-color: #006a80;
+    background-color: #037d90;
     color: #fff;
     display: block;
     font-size: 18px;
@@ -139,7 +139,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     margin: 15px;
     border: 1px solid lightgray;
     padding: 10px;
-    color: #006a80;
+    color: #037d90;
 }
 #service .button_service{
 margin: 0 auto;
@@ -203,6 +203,18 @@ margin: 0 auto;
     }
 }
 
+.carousel-control-next, .carousel-control-prev{
+    width: 8%;
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: #00a0e3;
+    color: #fff;
+}
+
+.logo_img img{
+    width: 100%!important;
+    display: inline!important;
+}
 
 /* end new style */
 
