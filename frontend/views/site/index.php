@@ -154,7 +154,7 @@ $user_id = Yii::$app->user->id ?? null;
 
     <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
     <div class="row mt-4">
-        <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class=" col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="row">
                 <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
                     <div class="row mt-5 align-items-center">
@@ -188,7 +188,7 @@ $user_id = Yii::$app->user->id ?? null;
             </div>
         </div>
 
-        <div id="img_preim" class="col-md-6 hidden-sm hidden-xs">
+        <div id="img_preim" class="col-lg-6 col-md-12 hidden-sm hidden-xs">
             <img class="img-responsive" alt="Mac" src="/img/preim/bg_preim.png">
         </div>
     </div>
