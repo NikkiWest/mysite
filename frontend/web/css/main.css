@@ -163,6 +163,26 @@ margin: 0 auto;
     top: 2px;
     box-shadow: 0 3px #aaab3b;
 }
+
+.titlePreim{
+    background-color: #037d90;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.col-md-offset-2 {
+    margin-left: 16.66666667%;
+}
+
+#img_preim{
+    position: absolute;
+    display: inline-block;
+    vertical-align: bottom;
+    bottom: 0;
+    right: 0;
+}
+
 /* end new style */
 
 .offReg {

@@ -150,21 +150,52 @@ $user_id = Yii::$app->user->id ?? null;
     </div>
 </div>
 
-<div class="container pt-5 pb-5" id="programs">
+<div class="container pt-5  position-relative" id="programs">
 
     <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
-    <div class="row">
-        <div class="col-lg-3">
-
+    <div class="row mt-4">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+            <div class="row">
+                <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center">
+                            <img alt="Кроссбраузерность" src="/img/preim/one_preim.svg" class="w-100"></div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <div class="titlePreim">Кроссбраузерность</div>
+                            <div class="mt-3">Все наши сайты включают адаптацию на всех устройствах.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center">
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img alt="Активная поддержка"
+                                                                                                             src="/img/preim/two_preim.svg" class="w-100"></div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <div class="titlePreim">Активная поддержка</div>
+                            <div class="mt-3">Помощь в составлении ТЗ, оформлении будущего сайта, рекомендации по доработкам</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-2 col-md-10 col-sm-12 col-xs-12 col-sm-center col-xs-center mb-5">
+                    <div class="row mt-5 align-items-center">
+                        <div class="col-md-5 col-sm-5 col-xs-12 text-right col-sm-center col-xs-center"><img alt="расширение функциональности" class="w-100" src="/img/preim/three_preim.svg"></div>
+                        <div class="col-md-7 col-sm-7 col-xs-12">
+                            <div class="titlePreim">Увеличение функциональности</div>
+                            <div class="mt-3">Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3"></div>
-        <div class="col-lg-3"></div>
+
+        <div id="img_preim" class="col-md-6 hidden-sm hidden-xs">
+            <img class="img-responsive" alt="Mac" src="/img/preim/bg_preim.png">
+        </div>
     </div>
 
 </div>
 
-<div class="colorStatictic mt-5">
+<div class="colorStatictic ">
     <div class="d-none d-md-block">
         <div class="d-flex justify-content-center align-items-center ">
             <div class="border_Conf"><span class="fatLetter">1</span> <br> день</div>
