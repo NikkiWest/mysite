@@ -58,7 +58,7 @@ $user_id = Yii::$app->user->id ?? null;
     <div class="container pt-5">
         <div class="title_blue">Что мы можем предложить</div>
         <div class="row mt-5 ">
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -69,10 +69,13 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="cost_service">
                         от 3000 р
                     </div>
-                    <div class="info_service"><a href="/service/">Сайт - визитка</a></div>
-                    <div class="info_service"><a href="/service/">Готовое решение</a></div>
-                    <div class="info_service"><a href="/service/">Корпоративный сайт</a></div>
-                    <div class="info_service"><a href="/service/">Интернет-магазин</a></div>
+                    <div class="block_info">
+                        <div class="info_service"><a href="/service/">Сайт - визитка</a></div>
+                        <div class="info_service"><a href="/service/">Готовое решение</a></div>
+                        <div class="info_service"><a href="/service/">Корпоративный сайт</a></div>
+                        <div class="info_service"><a href="/service/">Интернет-магазин</a></div>
+                    </div>
+
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
                     </div>
@@ -80,7 +83,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -91,10 +94,13 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="cost_service">
                         от 10000 р
                     </div>
-                    <div class="info_service">Индивидуальная CRM</div>
-                    <div class="info_service">Web версия ПО</div>
-                    <div class="info_service">Интернет - портал</div>
-                    <div class="info_service">SPA - приложение</div>
+                    <div class="block_info">
+                        <div class="info_service">Индивидуальная CRM</div>
+                        <div class="info_service">Web версия ПО</div>
+                        <div class="info_service">Интернет - портал</div>
+                        <div class="info_service">SPA - приложение</div>
+                    </div>
+
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
                     </div>
@@ -102,7 +108,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -113,17 +119,20 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="cost_service">
                         от 500 р
                     </div>
-                    <div class="info_service">Исправление ошибок</div>
-                    <div class="info_service">Изменения в дизайне</div>
-                    <div class="info_service">Новый функционал</div>
-                    <div class="info_service">Внутрення оптимизация</div>
+                    <div class="block_info">
+                        <div class="info_service">Исправление ошибок</div>
+                        <div class="info_service">Изменения в дизайне</div>
+                        <div class="info_service">Новый функционал</div>
+                        <div class="info_service">Внутрення оптимизация</div>
+                    </div>
+
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
                     </div>
 
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -134,9 +143,12 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="cost_service">
                         от 3000 р
                     </div>
-                    <div class="info_service">Контроль работоспособности сайта в целом</div>
-                    <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                    <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое</div>
+                    <div class="block_info">
+                        <div class="info_service">Контроль работоспособности сайта</div>
+                        <div class="info_service">Оперативное устранение ошибок и сбоев</div>
+                        <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое</div>
+                    </div>
+
                     <!--                    <div class="info_service">доступно</div>-->
                     <div class="button_service">
                         <a class=" btn " href="/" target="_blank">подробнее</a>
