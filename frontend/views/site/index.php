@@ -246,7 +246,7 @@ $user_id = Yii::$app->user->id ?? null;
     <div class="container pt-5">
         <div class="title_blue  mb-5">Портфолио созданных сайтов</div>
         <div class="row">
-
+         <?=\frontend\widgets\PortfolioWidget::widget();?>
         </div>
     </div>
 </div>
