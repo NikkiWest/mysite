@@ -133,11 +133,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     top: -10px;
     width: 0;
 }
-#service .block_info{
+
+#service .block_info {
     width: 220px;
     margin: 15px auto;
     /*background: #F5F5F5;*/
 }
+
 #service .info_service {
 
     margin: 10px;
@@ -145,11 +147,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     padding: 10px;
     color: #037d90;
 }
-#service .button_service{
-margin: 0 auto;
+
+#service .button_service {
+    margin: 0 auto;
     width: 190px;
 }
-#service .button_service a{
+
+#service .button_service a {
     border: none;
     text-transform: uppercase;
     font-weight: 700;
@@ -163,12 +167,13 @@ margin: 0 auto;
     border-radius: 0;
     padding: 15px 40px;
 }
-#service .button_service a:hover{
+
+#service .button_service a:hover {
     top: 2px;
     box-shadow: 0 3px #aaab3b;
 }
 
-.titlePreim{
+.titlePreim {
     background-color: #037d90;
     padding: 10px;
     text-align: center;
@@ -198,28 +203,196 @@ margin: 0 auto;
     #img_preim {
         display: inline-block;
     }
+
     .col-md-offset-2 {
         margin-left: 16.66666667%;
     }
+
     #img_preim img {
         vertical-align: bottom;
         width: 100%;
     }
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next, .carousel-control-prev {
     width: 8%;
 }
-.owl-theme .owl-nav [class*='owl-']:hover{
+
+.owl-theme .owl-nav [class*='owl-']:hover {
     background: #00a0e3;
     color: #fff;
 }
 
-.logo_img img{
-    width: 100%!important;
-    display: inline!important;
+.owl-carousel img {
+    width: 100% !important;
+    display: inline !important;
 }
 
+.name_portfolio {
+    background-color: #0c5460;
+}
+
+/*oskar*/
+
+.grid {
+    overflow: hidden;
+    margin: 0;
+    padding: 3em 0 0 0;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    width: 33.333%;
+    height: 300px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+figure.effect-oscar {
+    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+}
+
+figure.effect-oscar img {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.effect-oscar figcaption {
+    padding: 3em;
+    background-color: rgba(58, 52, 42, 0.7);
+    -webkit-transition: background-color 0.35s;
+    transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid #fff;
+    content: '';
+}
+
+figure.effect-oscar h2 {
+    margin: 20% 0 10px 0;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+    background-color: rgba(58, 52, 42, 0);
+}
+
+figure.effect-oscar:hover img {
+    opacity: 0.4;
+}
+
+/* end oskar*/
+.selectType {
+    border: 2px solid #037d90;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.selectType.active{
+    font-weight: bold;
+}
 /* end new style */
 
 .offReg {

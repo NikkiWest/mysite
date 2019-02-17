@@ -1,6 +1,21 @@
 var MainCtrl = {
     actionIndex : function () {
 
+        $(document).on("click", ".selectType", function (e) {
+            var t = $(this).data('t');
+            if(t == '0'){
+                $(".selectType").removeClass('active');
+                $(".selectType[data-t=0]").addClass('active');
+                $(".lstSite").show(300);
+            }else{
+                $(".lstSite").hide(500);
+                $(".selectType").removeClass('active');
+                $(".lstSite[data-t = "+t+"]").show(300);
+                $(".selectType[data-t="+t+"]").addClass('active');
+            }
+
+        });
+
         $("#tabs").tabs({
             active: 0
         });
@@ -88,59 +103,6 @@ var MainCtrl = {
             return false;
         });
 
-        $(document).on("keyup", "#promo-code", function (e) {
-            e.preventDefault();
-            var data = {};
-            data.code = $(this).val();
-            $.ajax({
-                data: data,
-                url: "/site/get-cost",
-                success: function (data) {
-                    if (response_msg(data) === false) return;
-                    var str = "Билет бесплатно";
-                    if (data.cost > 0) {
-                        str = "К оплате "+data.cost+" р.";
-                        $("#divPayAll").show();
-                    } else {
-                        location.href = "/?act=openPayOk";
-                        $("#divPayAll").hide();
-                    }
-                    $("#divCost").html(str);
-
-                }
-            });
-            return false;
-        });
-
-        $(document).on("click", ".btnSelectTypeOplata", function (e) {
-            e.preventDefault();
-            var t = $(this).data("t");
-            $(".btnSelectTypeOplata").removeClass("active");
-            $(this).addClass("active");
-
-            $(".divPaySection").addClass("d-none");
-            $("#div-"+t).removeClass("d-none");
-        });
-
-        $(document).on("submit", "#formPayCard", function (e) {
-            var code = $("#promo-code").val();
-            $("#formPayCard input[name=code]").val(code);
-
-            e.preventDefault();
-            var data = {};
-            data.code = code;
-            $.ajax({
-                data: data,
-                url: "/cabinet/pay",
-                success: function (data) {
-                    if (response_msg(data) === false) return;
-                    $("#formPayCardGoPay input[name=sum]").val(data.sum);
-                    $("#formPayCardGoPay input[name=name]").val(data.name);
-                    $("#formPayCardGoPay").submit();
-                }
-            });
-            return false;
-        });
     }
 }
 

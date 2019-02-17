@@ -41,8 +41,24 @@ class Portfolio extends Model
 
     public function lst()
     {
-        $sql = "select * from portfolio 
+        $sql = "select portfolio.*,type.name as type_name
+ from portfolio 
                 join type  on portfolio.type_id = type.id";
+        $all = \yii::$app->db->createCommand($sql)->queryAll();
+        $ar = [];
+        foreach ($all as $item) {
+            $item['img'] = '/img/pathers/' . $item['id'] . '.png';
+            $ar[$item['id']] = $item;
+        }
+        return $ar;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getType()
+    {
+        $sql = "select * from type";
         $all = \yii::$app->db->createCommand($sql)->queryAll();
         return $all;
     }

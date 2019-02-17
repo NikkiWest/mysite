@@ -4,6 +4,7 @@ namespace frontend\controllers;
 use common\Core;
 use common\models\Code;
 use common\models\Invoice;
+use common\models\Portfolio;
 use common\models\Rekvizit;
 use common\models\Users;
 use frontend\models\FormInvoice;
@@ -21,10 +22,17 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-
         $this->layout = 'null';
         $this->view->registerJsFile('/js/main.js?v'.YII_V, ['depends'=>[\frontend\assets\AppAsset::className()]]);
-        return $this->render('index');
+        $Portfolio = new Portfolio();
+        $lst = $Portfolio->lst();
+        $type = $Portfolio->getType();
+        return $this->render('index',
+            [
+                'lst' =>$lst,
+                'type' => $type
+            ]
+        );
     }
 
 

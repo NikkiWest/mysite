@@ -22,8 +22,12 @@ class PortfolioWidget extends \yii\base\Widget
     public function run()
     {
         $Portfolio = new Portfolio();
-        $Portfolio->lst();
-        return $this->render('portfolioWidget');
+       $lst = $Portfolio->lst();
+        $this->view->registerCssFile('/lib/owl-carousel/css/owl.carousel.css?v'.YII_V);
+        $this->view->registerCssFile('/lib/owl-carousel/css/owl.theme.default.css?v'.YII_V);
+        return $this->render('portfolioWidget',
+            ['lst' => $lst]
+        );
 
     }
 }

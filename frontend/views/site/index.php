@@ -245,8 +245,35 @@ $user_id = Yii::$app->user->id ?? null;
 <div class="segment-white mb-4  " id="portfolio">
     <div class="container pt-5">
         <div class="title_blue  mb-5">Портфолио созданных сайтов</div>
-        <div class="row">
-         <?=\frontend\widgets\PortfolioWidget::widget();?>
+        <div class="d-flex justify-content-center">
+            <div class="col-auto selectType mr-3" data-t="0">
+                Все
+            </div>
+        <?php
+        foreach ($type as $item) {
+            ?>
+                <div class="col-auto selectType mr-3" data-t="<?=$item['id'];?>">
+                    <?=$item['name'];?>
+                </div>
+        <?php
+        }
+        ?>
+        </div>
+        <div class="grid">
+            <?php
+            foreach ($lst as $item) {
+                ?>
+                    <figure class="effect-oscar lstSite" data-t="<?=$item['type_id'];?>">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/8.jpg" alt="img08"/>
+                        <figcaption>
+                            <h2><?=$item['name'];?></h2>
+                            <p><?=$item['txt'];?></p>
+                            <a href="#">Подробнее</a>
+                        </figcaption>
+                    </figure>
+            <?php
+            }
+            ?>
         </div>
     </div>
 </div>
@@ -305,7 +332,22 @@ $user_id = Yii::$app->user->id ?? null;
     </div>
 </div>
 
-<div class="fonContact  " id="contacts">
+<div class="somneniya fon-for-order">
+    <div class="title_white   mb-5"> Остались сомнения?</div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="smart_offer">
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+
+        </div>
+    </div>
+
+</div>
+
+<div class="fonContact " id="contacts">
     <div class="container  pt-5 text-white">
         <div class="title_white   mb-5"> Контакты</div>
         <div class="row">
@@ -469,86 +511,3 @@ $user_id = Yii::$app->user->id ?? null;
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade modalStyle" id="modalCabinet">
-    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
-        <div class="modal-content panel panel-red">
-            <div class="modal-header panel-heading">
-                <h4 class="modal-title text-center" id="title">Вход в личный кабинет </h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-
-            </div>
-            <div class="modal-body">
-                <form id="formLogin" class="formReg">
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formLogin-email" name="email" value=""
-                                   placeholder="Введите логин" required autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="password" class="form-control" id="formLogin-pw" name="pw" value=""
-                                   placeholder="Введите пароль" autocomplete="off" required>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col-sm-12 text-center">
-                            <div class="btn btn-reg "
-                                 onclick="javascript:$('#formLogin').submit(); return false;">Войти
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade " data-show="false" id="modalPayOk">
-    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
-        <div class="modal-content panel panel-red">
-            <div class="modal-header panel-heading">
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                <div class="text-center textforModalPayOk mb-3 "> Вы успешно зарегистрировались на коференции</div>
-                <div class="text-center textforModalPayOk">Можете скачать свой билет участника</div>
-                <div class="text-center mb-4 mt-4">
-                    <a href="/cabinet/bilet-d-load" target="_blank" class="btn btn-reg">Скачать билет</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<?php
-$script = <<< JS
-        // $(".owl-carousel.logo_img").owlCarousel({
-        //     loop:true,
-        //     margin:20,
-        //     autoplay:true,
-        //     responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-        //         0:{
-        //             items:1
-        //         },
-        //         600:{
-        //             items:2
-        //         },
-        //         1000:{
-        //             items:6
-        //         }
-        //     }
-        // })
-
-JS;
-$this->registerJs($script, yii\web\View::POS_END);
-?>
