@@ -23,7 +23,6 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $this->layout = 'null';
-        $this->view->registerJsFile('/js/main.js?v'.YII_V, ['depends'=>[\frontend\assets\AppAsset::className()]]);
         $Portfolio = new Portfolio();
         $lst = $Portfolio->lst();
         $type = $Portfolio->getType();

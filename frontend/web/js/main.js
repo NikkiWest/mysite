@@ -39,68 +39,24 @@ var MainCtrl = {
 
             $('body,html').animate({scrollTop: top}, 1500); // ??
         });
-
-
-        $(document).on("submit", "#formRegistration, #formRegistration-modal", function (e) {
-            e.preventDefault();
-            var data = $(this).serialize();
-            var form = $(this);
-            $.ajax({
-                data: data,
-                url: "/site/registration",
-                success: function (data) {
-                    if (response_msg(data) == false) return;
-                    form.trigger('reset');
-                    $("#modalRegistration").modal('hide');
-                    if (typeof yaCounter50206495 !== "undefined") {
-                        yaCounter50206495.reachGoal('reg_conf');
+        $(window).on('load',function(){
+            $(".owl-carousel.logo_img").owlCarousel({
+                loop:true,
+                margin:20,
+                autoplay:true,
+                responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+                    0:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
                     }
-                    location.href="/?act=openPay";
-
                 }
-            });
-            return false;
-        });
+            })
 
-        $(document).on("submit", "#formLogin", function (e) {
-            e.preventDefault();
-            var data = $(this).serialize();
-            $.ajax({
-                data: data,
-                url: "/auth/login",
-                success: function (data) {
-                    if (response_msg(data) == false) return;
-                    location.href = "/";
-                }
-            });
-            return false;
-        });
-
-
-        $(document).on("click", ".btnOpenPay", function (e) {
-            e.preventDefault();
-            $("#modalPay").modal("show");
-        });
-
-
-        $(document).on("submit", "#formPay", function (e) {
-            var code = $("#promo-code").val();
-            $("#formPay input[name=code]").val(code);
-
-            e.preventDefault();
-            var data = $(this).serialize();
-            $.ajax({
-                data: data,
-                url: "/cabinet/invoice-save",
-                success: function (data) {
-                    if (response_msg(data) === false) return;
-
-                    var url = "/cabinet/invoice-d-load?id="+data.invoice_id;
-                    location.href = url;
-
-                }
-            });
-            return false;
         });
 
     }

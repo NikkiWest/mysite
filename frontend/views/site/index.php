@@ -281,13 +281,9 @@ $user_id = Yii::$app->user->id ?? null;
 
 <div class="container pt-5 mb-4" id="pathers">
     <div class="title_blue  mb-5"> Наши клиенты</div>
-    <div class="row">
         <div class="row text-center mb-3">
             <div class="owl-carousel owl-theme  logo_img">
-                <?php
-                /*
-                 *
-                 * <a
+                <a
                         class="col-lg-3 col-sm-6 col-md-6 mt-3">
                     <img class="w-100" src="/img/pathers/2x2.png" alt="Партнер 1">
                 </a>
@@ -297,7 +293,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </a>
                 <a
                         class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                    <img class="w-100" src="/img/pathers/medznanie.svg" alt="Партнер 3">
+                    <img class="w-100" src="/img/pathers/medznanie.png" alt="Партнер 3">
                 </a>
                 <a
                         class="col-lg-3 col-sm-6 col-md-6 mt-3">
@@ -317,33 +313,38 @@ $user_id = Yii::$app->user->id ?? null;
                     <img class="w-100" src="/img/pathers/kalite.png" alt="Партнер 7">
                 </a>
                 <a
-                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                    <img class="w-100" src="/img/pathers/proffesional.jpg" alt="Партнер 7">
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3" >
+                    <img class="w-100" src="/img/pathers/proffesional.png" alt="Партнер 7">
                 </a>
                 <a
                         class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                    <img class="w-100" src="/img/pathers/conf.svg" alt="Партнер 7">
+                    <img class="w-100" src="/img/pathers/conf.png" alt="Партнер 7">
                 </a>
 
-                 */
-                ?>
+                <a
+                        class="col-lg-3 col-sm-6 col-md-6 mt-3">
+                    <img class="w-100" src="/img/pathers/Mir-vkusa.png" alt="Партнер 7">
+                </a>
+
             </div>
         </div>
-    </div>
 </div>
 
 <div class="somneniya fon-for-order">
-    <div class="title_white   mb-5"> Остались сомнения?</div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="smart_offer">
+    <div class="container">
+        <div class="title_white   mb-5"> Остались сомнения?</div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="smart_offer">
+
+                </div>
+            </div>
+            <div class="col-lg-6">
 
             </div>
         </div>
-        <div class="col-lg-6">
-
-        </div>
     </div>
+
 
 </div>
 

@@ -3,6 +3,43 @@
  */
 if (!App) var App = {};
 
+$(document).on("submit", "#formAskQuestion", function (e) {
+    e.preventDefault();
+    var data = $(this).serialize();
+    $.ajax({
+        data: data,
+        url: "/util/save",
+        success: function (data) {
+            if (response_msg(data) === false) return;
+            Util.resetForm('#formAskQuestion');
+            $("#modalAskQuestion").modal('hide');
+        }
+    });
+    return false;
+});
+
+$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+$(document).on("change", "select[name=name]", function (e) {
+    e.preventDefault();
+    $city_id = $("select[name=name]").val();
+    var data = {};
+    data.id= $city_id;
+    $.ajax({
+        data: data,
+        url: '/util/get-city',
+        success: function (data) {
+            if (response_msg(data) === false) return;
+            $('#telCity')[0].innerHTML=data.get.phone;
+            $('#hourCity')[0].innerHTML=data.get.work_time;
+        }
+    });
+    return false;
+});
+
+
 $(document).ready(function () {
     // настройка Даты
     if ($('.dt').length) {
@@ -48,6 +85,27 @@ $(document).ready(function () {
     }
 
 
+    if ($('.txtTinyMCE').length) {
+        tinymce.init({
+            selector:'textarea.txtTinyMCE',
+            plugins: [
+                "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
+                "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+                "table contextmenu directionality emoticons template textcolor paste textcolor colorpicker textpattern",
+                "filemanager"
+            ],
+            external_plugins: { "filemanager" : "/lib/tinymce/plugins/filemanager/filemanager/plugin.min.js"},
+            external_filemanager_path:"/lib/tinymce/plugins/filemanager/filemanager/",
+//  external_filemanager_path:"/admin/storage/web/other/",
+            filemanager_title:"Responsive Filemanager" ,
+            image_advtab: true,
+            relative_urls: false,
+
+            toolbar1: "newdocument | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect",
+            toolbar2: "undo redo hr removeformat code | searchreplace | table | subscript superscript | bullist numlist | outdent indent blockquote | link unlink anchor image | forecolor backcolor",
+            themes: "modern"
+        });
+    }
 
     $(document).on("keyup", ".digit", function (event) {
         var val = $(this).val();
@@ -311,6 +369,35 @@ $(document).on("focus", "input.has-error, select.has-error, textarea.has-error",
 });
 
 
+/*
+Фуннкция обратная serialize
+ */
+$.unserialize = function(serializedString){
+    var str = decodeURIComponent(serializedString);
+    var pairs = str.split('&');
+    var obj = {}, p, idx, val, match, key, val;
+    for (var i=0, n=pairs.length; i < n; i++) {
+        p = pairs[i].split('=');
+        idx = p[0];
+        if (idx.indexOf("[]") == (idx.length - 2)) {
+            var ind = idx.substring(0, idx.length-2)
+            if (obj[ind] === undefined) {
+                obj[ind] = [];
+            }
+            obj[ind].push(p[1]);
+        }else if (match = idx.match(/([^[]+)[([^]]+)]$/)) {
+            key = match[1];
+            val = match[2];
+            if (!obj[key]) {
+                obj[key] = {}
+            }
+            obj[key][val] = parseValue(p[1])
+        }else {
+            obj[idx] = parseValue(p[1])
+        }
+    }
+    return obj;
+};
 
 
 /**
