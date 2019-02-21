@@ -331,22 +331,69 @@ $user_id = Yii::$app->user->id ?? null;
 </div>
 
 <div class="somneniya fon-for-order">
-    <div class="container">
-        <div class="title_white   mb-5"> Остались сомнения?</div>
+    <div class="container pt-5 pb-5">
+        <div class="title_blue mb-5"> Остались сомнения?</div>
         <div class="row">
             <div class="col-lg-6">
-                <div class="smart_offer">
+                <div class="smart_offer position-relative">
+                    <div class="img_skidka">
+                        <img src="/img/skidka.png" class="w-100" alt=""></div>
+                    <form action="" class="formReg" id="formRegistration-modal">
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="text" class="form-control" id="formRegistration-modal-name_i" name="name_i"
+                                       placeholder="Имя" autocomplete="new-password">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="email" class="form-control" id="formRegistration-modal-email" name="email"
+                                       value=""
+                                       placeholder="E-mail" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="text" class="form-control" id="formRegistration-modal-phone" name="phone"
+                                       value=""
+                                       placeholder="Телефон" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <textarea type="text" class="form-control" id="formRegistration-modal-code"
+                                          name="comment"
+                                          placeholder="Комментарий(по желанию)" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group pb-3">
+                            <div class="col-sm-12 text-center">
+                                <div class="btn btn-reg "
+                                     onclick="javascript:$('#formRegistration-modal').submit(); return false;">Хочу скидку!
+                                </div>
+                            </div>
+                            <div class="col-sm-12 mt-4 text-center f10" style="color: #6f6f6e">Нажимая кнопку
+                                «Хочу скидку!», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
+                                                                                          target="_blank">персональных
+                                    данных</a></div>
+                        </div>
+                    </form>
 
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 d-flex align-items-center justify-content-center">
+
+                <div class="mt-4 text-somneniya">
+                    Отправьте заявку уже сегодня и вам в качестве бонуса
+                    будет скидка 10% на услуги.
+                </div>
 
             </div>
         </div>
     </div>
-
-
 </div>
+
+
 
 <div class="fonContact " id="contacts">
     <div class="container  pt-5 text-white">
