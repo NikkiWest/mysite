@@ -66,7 +66,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 #service .header_service {
-    background-color: #037d90;
+    background-color: #1a4071;
     color: #fff;
     display: block;
     font-size: 18px;
@@ -83,7 +83,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 #service .header_service:hover {
-    background-color: #009DE0;
+    background-color: #037d90;
 }
 
 #service .img_service {
@@ -99,7 +99,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 #service .cost_service {
-    background-color: #dab90f;
+    background-color: #db261f;
     color: #FFF;
     text-align: center;
     display: block;
@@ -115,13 +115,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 .cost_service:before {
-    border-bottom: 10px solid #aaab3b;
+    border-bottom: 10px solid #A1261F;
     border-left: 10px solid transparent;
     left: 0;
 }
 
 .cost_service:after {
-    border-bottom: 10px solid #aaab3b;
+    border-bottom: 10px solid #A1261F;
     border-right: 10px solid transparent;
     right: 0;
 }
@@ -157,10 +157,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     border: none;
     text-transform: uppercase;
     font-weight: 700;
-    background: #dab90f;
+    background: #db261f;
     position: relative;
     color: #fff;
-    box-shadow: 0 6px #aaab3b;
+    box-shadow: 0 6px #A1261F;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
@@ -170,11 +170,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 #service .button_service a:hover {
     top: 2px;
-    box-shadow: 0 3px #aaab3b;
+    box-shadow: 0 3px #A1261F;
 }
 
 .titlePreim {
-    background-color: #037d90;
+    background-color: #18508b;
     padding: 10px;
     text-align: center;
     color: white;
@@ -384,15 +384,17 @@ figure.effect-oscar:hover img {
 
 /* end oskar*/
 .selectType {
-    border: 2px solid #037d90;
+    border: 2px solid #18508b;
     padding: 5px 10px;
     font-size: 14px;
     border-radius: 3px;
     cursor: pointer;
 }
-.selectType.active{
+
+.selectType.active {
     font-weight: bold;
 }
+
 /* end new style */
 
 .offReg {
@@ -411,6 +413,14 @@ figure.effect-oscar:hover img {
     color: white;
 }
 
+.btn-footer{
+    font-size: 16px;
+    color: #fff;
+    padding: 0;
+}
+.btn-footer:hover{
+    color: #fff;
+}
 @media (min-width: 1200px) {
     .waitOffReg {
 
@@ -566,9 +576,9 @@ a {
     position: relative;
     line-height: 25px;
     font-size: 24px;
-    color: #009DE0;
+    color: #1a4071;
     font-family: AGFORE;
-    text-decoration: #009DE0;
+    text-decoration: #1a4071;
 }
 
 .title_white {
@@ -587,30 +597,20 @@ a {
     content: "";
     height: 2px;
     width: 90px;
-    background-color: #009DE0;
+    background-color: #1a4071;
     transition: width .5s ease-in-out;
     bottom: -25px;
 }
 
 .title_blue.programma::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 2px;
-    background-color: #009DE0;
-    transition: width .5s ease-in-out;
+
     bottom: -10px;
     left: 0;
 }
 
 @media (min-width: 992px) {
     .title_blue.programma::after {
-        display: block;
-        position: absolute;
-        content: "";
-        height: 2px;
-        background-color: #009DE0;
-        transition: width .5s ease-in-out;
+
         bottom: -25px;
         right: 0;
         width: 90px;
@@ -639,8 +639,8 @@ a {
 }
 
 .logo_img img {
-    width: auto!important;
-    display: inline!important;
+    width: auto !important;
+    display: inline !important;
 }
 
 @media (min-width: 768px) {
@@ -705,7 +705,8 @@ a {
 /*ddsfsdf*/
 
 .fonTop {
-    background-image: url(/img/bg.jpg);
+    background-image: url(/img/bg1.jpg);
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
     min-height: 600px;
@@ -778,10 +779,10 @@ a {
 
 .btn-reg {
     padding: 15px 25px;
-    color: #00A3DA;
+    color: #fff;
     line-height: 20px;
     font-size: 18px;
-    background: #E0E14F;
+    background: red;
     border-radius: 3px;
     font-family: 'Source Sans Pro', sans-serif !important;
     text-transform: none;
@@ -838,24 +839,29 @@ a {
     border: none;
 }
 
-.fon-for-order{
+.fon-for-order {
     background-image: url("/img/fon-somneniya.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
 }
 
-.img_skidka{
+.img_skidka {
     position: absolute;
-    right: -216px;
-    top: -55px;
+    right: -211px;
+    top: -63px;
 }
 
-.text-somneniya{
-    color: #00A3DA;
-    text-transform: uppercase;
-    font-size: 22px;
+.text-somneniya {
+    color: #fff;
+    font-size: 20px;
     font-weight: bold;
-    font-family: AGFORE;
+    text-align: center;
+}
+
+.fonContact {
+    background-image: url("/img/fon-contact.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 @media (min-width: 534px) {
@@ -878,8 +884,7 @@ a {
         top: 120px;
         line-height: 27px;
         font-size: 22px;
-        right: -37px;
-        left: auto;
+        left: -37px;
         width: 55%;
     }
 
@@ -931,11 +936,10 @@ a {
 
     .textBigBanner {
         top: 130px;
-        right: 25px;
+        left: 25px;
         line-height: 38px;
         font-size: 36px;
         width: 426px;
-        left: auto;
     }
 
     .ui-tabs .ui-tabs-panel {
@@ -1013,10 +1017,9 @@ a {
     .textBigBanner {
 
         top: 101px;
-        left: auto;
         line-height: 51px;
         font-size: 48px;
-        right: -35px;
+        left: -35px;
         width: 57%;
 
     }
