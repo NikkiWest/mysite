@@ -4,5 +4,6 @@ return [
     'enablePrettyUrl'=>true,
     'showScriptName'=>false,
     'rules'=>[
+        '/portfolio/view/<slug>' => 'portfolio/view'
     ]
 ];

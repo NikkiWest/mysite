@@ -746,8 +746,7 @@ a {
     line-height: 35px;
     font-size: 26px;
     width: auto;
-    right: 0;
-    left: 24px;
+    left: 0;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
@@ -881,10 +880,8 @@ a {
     }
 
     .textBigBanner {
-        top: 120px;
         line-height: 27px;
         font-size: 22px;
-        left: -37px;
         width: 55%;
     }
 
@@ -936,7 +933,6 @@ a {
 
     .textBigBanner {
         top: 130px;
-        left: 25px;
         line-height: 38px;
         font-size: 36px;
         width: 426px;
@@ -1019,7 +1015,6 @@ a {
         top: 101px;
         line-height: 51px;
         font-size: 48px;
-        left: -35px;
         width: 57%;
 
     }

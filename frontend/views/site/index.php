@@ -38,18 +38,21 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
     </div>
 
-    <div class="container addPaddForBanner" style="position: relative">
-        <div class="textBigBanner  ">
-            Эффективные <br> интернет-решения <br>
-            для вашего бизнеса
-            <div class="regBanner">
-                <div class="waitOffReg">Мы поможем вам воплотить ваши любые идеи. <br>
-                    Различные проекты, от сайта-визитки до собственной CRM. <br>
-                    Достижение поставленных целей -
-                    одно из наших главных качеств,<br> с которыми создаются наши проектами.
+    <div class="container" >
+        <div class="d-flex align-items-center position-relative ">
+            <div class="textBigBanner ">
+                Эффективные <br> интернет-решения <br>
+                для вашего бизнеса
+                <div class="regBanner">
+                    <div class="waitOffReg">Мы поможем вам воплотить ваши любые идеи. <br>
+                        Различные проекты, от сайта-визитки до собственной CRM. <br>
+                        Достижение поставленных целей -
+                        одно из наших главных качеств,<br> с которыми создаются наши проектами.
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 
@@ -268,7 +271,7 @@ $user_id = Yii::$app->user->id ?? null;
                     <figcaption>
                         <h2><?= $item['name']; ?></h2>
                         <p><?= $item['txt']; ?></p>
-                        <a href="#">Подробнее</a>
+                        <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
                     </figcaption>
                 </figure>
                 <?php

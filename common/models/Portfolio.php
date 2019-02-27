@@ -71,4 +71,22 @@ class Portfolio extends Model
         $this->attributes = $one;
         return $one;
     }
+
+    public function getIdForSlug($slug){
+        $slug = "$slug";
+        $sql = "
+        select id 
+        from portfolio
+        where seo_url = :slug";
+        $id = \yii::$app->db->createCommand($sql, ['slug' => $slug])->queryScalar();
+        return $id;
+    }
+
+    public function getPortfolioOne($id){
+        $sql = "select * 
+        from portfolio
+        where id = :id";
+        $one = \yii::$app->db->createCommand($sql, ['id' => $id])->queryOne();
+        return $one;
+    }
 }
