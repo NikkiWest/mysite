@@ -1,0 +1,13 @@
+.banner {
+    background-image: url("/img/portfolio/banner.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+
+.banner .title__banner {
+    color: #ff5321;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+}

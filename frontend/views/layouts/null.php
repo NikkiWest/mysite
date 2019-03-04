@@ -28,7 +28,10 @@ AppAsset::register($this);
 
 
 <?php $this->beginBody() ?>
-<?= $content ?>
+
+    <?= $content ?>
+
+
 <div id="alertMessage"></div>
 
 <?php

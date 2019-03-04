@@ -61,7 +61,7 @@ $user_id = Yii::$app->user->id ?? null;
     <div class="container pt-5">
         <div class="title_blue">Что мы можем предложить</div>
         <div class="row mt-5 ">
-            <div class="col-lg-3 mt-4">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -86,7 +86,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
             </div>
 
-            <div class="col-lg-3 mt-4">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -111,7 +111,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
             </div>
 
-            <div class="col-lg-3 mt-4">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -135,7 +135,7 @@ $user_id = Yii::$app->user->id ?? null;
 
                 </div>
             </div>
-            <div class="col-lg-3 mt-4">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
                     <a href="/" target="_blank" class="header_service">
                         <div class="img_service">
@@ -149,7 +149,7 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="block_info">
                         <div class="info_service">Контроль работоспособности сайта</div>
                         <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                        <div class="info_service" style="padding-bottom: 5px">Восстановление сайта при его сбое</div>
+                        <div class="info_service" style="padding-bottom: 5px">Восстановление при сбоях</div>
                     </div>
 
                     <!--                    <div class="info_service">доступно</div>-->
@@ -164,7 +164,9 @@ $user_id = Yii::$app->user->id ?? null;
 
     </div>
 </div>
-<div class="position-relative" id="programs">
+<?php
+/*
+ * <div class="position-relative" id="programs">
     <div class="container pt-5">
 
         <div class="title_blue text-lg-left programma"> В каждый наш сайт входит</div>
@@ -216,6 +218,62 @@ $user_id = Yii::$app->user->id ?? null;
 
     </div>
 </div>
+ */
+?>
+
+<div class="block block4 advantages pt-5 pb-5 " id="programs">
+    <div class="container ">
+        <div class="title_white border_title mb-5 ">Что вы гарантированно получаете, работая с нами?</div>
+        <div class=" advantages-table ui-accordion ui-widget ui-helper-reset" role="tablist" id="accordion">
+            <div class="item item-1">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons  ui-corner-top
+ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0">
+                    <div class="caption_text">
+                        Гарантия завершения проекта
+                    </div>
+                </div>
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+                    Мы не работаем по принципу "Давайте сделаем, а потом подумаем как и зачем". Мы проводим
+                    предварительный анализ, продумываем структуру и создаем прототипы в самом начале работы над
+                    проектом.
+                </div>
+            </div>
+            <div class="item item-2" data-id="2">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
+                    <div class="caption_text">
+                        Детальное техническое задание к проекту
+                    </div>
+                </div>
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+                    Сразу обещаем: для этого вам тоже придется потрудиться. Вместе с вами мы определим специфику вашей
+                    компании, ее покупателей, заполним
+                    детальное техническое задание, выясним цели и задачи – это нужно для анализа.
+                </div>
+            </div>
+            <div class="item item-3" data-id="3">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
+                    <div class="caption_text">
+                       Кроссбраузерность  вашего сайта
+                    </div>
+                </div>
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"">
+                    На ваш сайт будет заходить люди с разных устройств. Чтобы они все видели ваш сайт адаптированным под свои устройства.
+                </div>
+            </div>
+            <div class="item item-4">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1">
+                    <div class="caption_text">
+                       Возможность расширения функциональности
+                    </div>
+                </div>
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
+                    Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <?php
 
@@ -248,20 +306,38 @@ $user_id = Yii::$app->user->id ?? null;
 <div class="segment-white mb-4  " id="portfolio">
     <div class="container pt-5">
         <div class="title_blue  mb-5">Портфолио созданных сайтов</div>
-        <div class="d-flex justify-content-center">
-            <div class="col-auto selectType mr-3" data-t="0">
-                Все
-            </div>
-            <?php
-            foreach ($type as $item) {
-                ?>
-                <div class="col-auto selectType mr-3" data-t="<?= $item['id']; ?>">
-                    <?= $item['name']; ?>
+        <div class="d-none d-md-block">
+            <div class="d-flex justify-content-center">
+                <div class="col-auto selectType mr-3" data-t="0">
+                    Все
                 </div>
                 <?php
-            }
-            ?>
+                foreach ($type as $item) {
+                    ?>
+                    <div class="col-auto selectType mr-3" data-t="<?= $item['id']; ?>">
+                        <?= $item['name']; ?>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
         </div>
+        <div class="d-block d-md-none ">
+       <div class="d-flex flex-column justify-content-center align-items-center">
+           <div class="mb-3 selectType mr-3" data-t="0">
+               Все
+           </div>
+           <?php
+           foreach ($type as $item) {
+               ?>
+               <div class="mb-3 selectType mr-3" data-t="<?= $item['id']; ?>">
+                   <?= $item['name']; ?>
+               </div>
+               <?php
+           }
+           ?>
+       </div>
+   </div>
         <div class="grid">
             <?php
             foreach ($lst as $item) {

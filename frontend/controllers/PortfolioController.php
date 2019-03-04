@@ -15,13 +15,19 @@ use yii\web\Controller;
 class PortfolioController extends Controller
 {
 
+    public function init()
+    {
+        $this->view->registerCssFile('/css/portfolio.css?v' . YII_V, ['depends' => \frontend\assets\AppAsset::className()]);
+        $this->view->registerJsFile('/js/portfolio.js?v' . YII_V, ['depends' => [\frontend\assets\AppAsset::class]]);
+        parent::init();
+    }
 
     public function actionView($slug)
     {
         $this->layout = 'main';
         $Portfolio = new Portfolio();
         $id = $Portfolio->getIdForSlug($slug);
-        $lst = '';
+        $lst = [];
         if($id !== null){
          $lst = $Portfolio->getPortfolioOne($id);
         }

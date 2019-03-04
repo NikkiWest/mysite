@@ -28,7 +28,7 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="navbar-main pb-4 pt-4" style="background-color: #9acfea">
+<div class="navbar-main navbarTop pb-4 pt-4" style="background-color: #9acfea">
     <div class="container ">
         <div class="row justify-content-between align-items-center">
             <div class="col-auto">
@@ -39,11 +39,11 @@ AppAsset::register($this);
                     <i class="fas fa-bars" style="font-size: 40px;color: white"></i>
                 </div>
                 <div class="d-none d-sm-block" id="menu">
-                    <a class="btn-link " href="/#service">Услуги</a>
-                    <a class="btn-link " href="/#portfolio">Портфолио</a>
-                    <a class="btn-link " href="/#feedback">Отзывы</a>
-                    <a class="btn-link " href="/#myself">О нас</a>
-                    <a class="btn-link " href="/#contacts">Контакты</a>
+                    <a class="btn-link btnHeader" href="/#service">Услуги</a>
+                    <a class="btn-link btnHeader" href="/#portfolio">Портфолио</a>
+                    <a class="btn-link btnHeader" href="/#feedback">Отзывы</a>
+                    <a class="btn-link btnHeader" href="/#myself">О нас</a>
+                    <a class="btn-link btnHeader" href="/#contacts">Контакты</a>
                 </div>
             </div>
             <div class="col-auto">

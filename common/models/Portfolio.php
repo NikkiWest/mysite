@@ -83,9 +83,10 @@ class Portfolio extends Model
     }
 
     public function getPortfolioOne($id){
-        $sql = "select * 
+        $sql = "select portfolio.* , type.name as type_name
         from portfolio
-        where id = :id";
+        join type on portfolio.type_id = type.id
+        where portfolio.id = :id";
         $one = \yii::$app->db->createCommand($sql, ['id' => $id])->queryOne();
         return $one;
     }

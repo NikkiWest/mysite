@@ -66,6 +66,34 @@ $(document).ready(function () {
         // });
     }
 
+    function accordeons() {
+        $('.accordeon .caption').on('click mouseover', function () {
+            $(this).parent().parent().find('.item').addClass('closed');
+            $(this).parent().removeClass('closed');
+        });
+    }
+    function advantages() {
+
+        $('.advantages-table').accordion({
+            header: '.caption',
+            animate: 0,
+            heightStyle: "content",
+            collapsible: true,
+            active: 0,
+            create: function (event, ui) {
+                $(this).on('click mouseover', '.caption', function () {
+                    var index = $(this).index('.advantages-table .caption');
+                    $('.advantages-table').accordion("option", "active", index);
+
+                });
+            }
+        });
+
+
+    }
+    accordeons();
+    advantages();
+
 
 
     if ($('.popoverDiv').length) {
