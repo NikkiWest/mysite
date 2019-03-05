@@ -1,8 +1,11 @@
 .banner {
     background-image: url("/img/portfolio/banner.jpg");
     background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
     height: 400px;
     position: relative;
+    backdrop-filter: blur(10);
 }
 
 .banner .title__banner {
@@ -10,4 +13,37 @@
     font-size: 28px;
     text-transform: uppercase;
     font-weight: 600;
+}
+
+.info_block {
+    padding: 20px;
+    /*background-color: #ff5321;*/
+    border-radius: 3px;
+}
+
+.info_block a {
+    color: #ff5321;
+}
+
+.info_block .title_block {
+    font-size: 18px;
+    color: #ff5321;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.block_site_good {
+    border-radius: 3px;
+    border: 3px dotted #ff5321;
+    display: inline-block;
+  padding: 10px 20px;
+}
+
+.title__site_good {
+    font-size: 24px;
+    color: #1a4071;
+    font-family: AGFORE;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 0;
 }

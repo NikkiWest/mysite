@@ -17,6 +17,10 @@ $(document).on("submit", "#formAskQuestion", function (e) {
     });
     return false;
 });
+$(document).on("click", "#btn-ask_qustion", function (e) {
+    e.preventDefault();
+    $("#modalAskQuestion").modal("show");
+});
 
 $(document).on("click", '[data-toggle="lightbox"]', function(event) {
     event.preventDefault();

@@ -29,6 +29,8 @@ var MainCtrl = {
             $("#modalRegForm").modal("show");
         });
 
+
+
         $(document).on("click", "#menu a.btnHeader, #modalMainMenu a.btnHeader", function (e) {
             event.preventDefault();//отменяет действие браузера по дефолту
             var id = $(this).attr('href'); //attr получить значение атрибута указанного в href

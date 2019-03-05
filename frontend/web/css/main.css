@@ -17,6 +17,24 @@ url("../fonts/SOURCESANSPRO-REGULAR.TTF");
     font-weight: normal;
 }
 
+.breadcrumb > li + li::before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/";
+}
+
+.breadcrumb {
+    background-color: white;
+}
+
+.breadcrumb a {
+    color: #6f6f6e;
+}
+
+.breadcrumb li.active {
+    color: #439ede;
+}
+
 .btnHeader, .btn-footer {
     position: relative;
 }
@@ -41,11 +59,29 @@ url("../fonts/SOURCESANSPRO-REGULAR.TTF");
     width: 100%;
 }
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+.btn-blue {
+    padding: 15px 25px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 18px;
+    background: #1a4071;
+    border-radius: 3px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    text-transform: none;
 }
 
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+.navbar-main{
+    background-image: url(/img/fon-somneniya.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .ui-widget {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -84,6 +120,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     line-height: 24px;
 }
 
+.btn-orange{
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #ff5321;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 6px #A1261F;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-radius: 0;
+    padding: 15px 40px;
+}
+.btn-orange:hover{
+    top: 2px;
+    box-shadow: 0 3px #A1261F;
+}
 /*new style */
 #service .block_service {
     /*width: 220px;*/
@@ -516,7 +570,7 @@ figure.effect-oscar:hover img {
 .form-control {
     background-color: white;
     color: #495057;
-    border: 1px solid #20D29D;
+    border: 1px solid #ff5321;
     border-radius: 3px;
 }
 
@@ -1029,6 +1083,7 @@ a {
     text-align: center;
     position: relative;
     top: 0;
+    width: 100%;
 }
 
 .advantages .advantages-table .item .text-left {
