@@ -73,7 +73,7 @@ $user_id = Yii::$app->user->id ?? null;
                         от 3000 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service"><a href="/service/developer/business-car">Сайт - визитка</a></div>
+                        <div class="info_service"><a href="/service/developer/business-card">Сайт - визитка</a></div>
                         <div class="info_service"><a href="/service/developer/ready-decision">Готовое решение</a></div>
                         <div class="info_service"><a href="/service/developer/corp-site">Корпоративный сайт</a></div>
                         <div class="info_service"><a href="/service/developer/shop-site">Интернет-магазин</a></div>

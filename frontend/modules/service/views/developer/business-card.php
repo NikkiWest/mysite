@@ -101,7 +101,7 @@
             </tr>
             <tr>
                 <td class="name">
-                    Ежедневные резервное копирование
+                    Ежедневное резервное копирование
                 </td>
                 <td class="text-center">
                     —
@@ -160,11 +160,11 @@
                 <td class="name">
                     &nbsp;
                 </td>
-                <td class="text-center">
+                <td class="text-center pb-3">
                     <a class="btn btn-orange" data-t="1" data-product = "vizitka"
                        data-toggle="modal" href="#contactModal">Оставить заявку</a>
                 </td>
-                <td class="text-center">
+                <td class="text-center pb-3">
                     <a class="btn btn-orange"  data-product = "vizitka" data-toggle="modal" href="#contactModal" data-t="2">Оставить заявку</a>
                 </td>
             </tr>
@@ -172,4 +172,5 @@
         </table>
     </div>
 </div>
+
 
