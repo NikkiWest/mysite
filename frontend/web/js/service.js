@@ -1,0 +1,7 @@
+var ServiceCtrl = {
+    actionIndex: function () {
+
+    },
+
+
+}

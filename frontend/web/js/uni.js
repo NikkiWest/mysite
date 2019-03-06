@@ -70,6 +70,8 @@ $(document).ready(function () {
         // });
     }
 
+
+
     function accordeons() {
         $('.accordeon .caption').on('click mouseover', function () {
             $(this).parent().parent().find('.item').addClass('closed');
@@ -98,6 +100,18 @@ $(document).ready(function () {
     accordeons();
     advantages();
 
+    if ($(".dop_menu ul li").hasClass('active') == true){
+        $(".dop_menu ul").show(500);
+    }
+
+    $(document).on("click", ".dop_menu a", function (e) {
+        $(".dop_menu ul").hide(500);
+
+       if( $(".dop_menu ul").css("display") == 'none'){
+               $(".dop_menu ul").show(500);
+
+        }
+    });
 
 
     if ($('.popoverDiv').length) {

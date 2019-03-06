@@ -17,11 +17,12 @@ use common\models\LoginForm;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class SiteController extends BaseController
 {
 
     public function actionIndex()
     {
+        $this->full_page = true;
         $this->layout = 'null';
         $Portfolio = new Portfolio();
         $lst = $Portfolio->lst();

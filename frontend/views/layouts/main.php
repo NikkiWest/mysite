@@ -28,15 +28,15 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="navbar-main navbarTop pb-4 pt-4 ">
+<div class="navbar-main navbarTop  ">
     <div class="container ">
         <div class="d-flex justify-content-between align-items-center">
-            <div class=" col-md-3 col-sm-4 col-8 ">
+            <div class=" col-md-3 col-sm-4 col-7 pt-1 pb-2">
                 <a href="/"><img src="/img/logo.png" alt="Логотип" class="w-100"></a>
             </div>
             <div class="">
                 <div class="d-block d-lg-none curpointer" data-toggle="modal" data-target="#modalMainMenu">
-                    <i class="fas fa-bars" style="font-size: 40px;color: white"></i>
+                    <i class="fas fa-bars icon_menu"></i>
                 </div>
                 <div class="d-none d-lg-block" id="menu">
                     <a class="btn-link btnHeader" href="/#service">Услуги</a>
@@ -52,44 +52,96 @@ AppAsset::register($this);
         </div>
     </div>
 </div>
-</div>
 
 <div class="container">
-    <div class="container">
-        <?php
-        $breadcrumbs = $this->params['breadcrumbs'] ?? [];
-        if (count($breadcrumbs) > 0) {
-            echo '<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
-            echo '<li class="breadcrumb-item" itemprop="itemListElement"  itemscope itemtype="http://schema.org/ListItem">
+    <?php
+    $breadcrumbs = $this->params['breadcrumbs'] ?? [];
+    if (count($breadcrumbs) > 0) {
+        echo '<ul class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">';
+        echo '<li class="breadcrumb-item" itemprop="itemListElement"  itemscope itemtype="http://schema.org/ListItem">
                     <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
                     <meta itemprop="position" content="1" />
             </li>';
-            $i = 1;
-            foreach ($breadcrumbs as $item) {
-                $i++;
-                $url = $item['url'] ?? null;
-                if ($url !== null) {
-                    echo '<li class="breadcrumb-item"  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+        $i = 1;
+        foreach ($breadcrumbs as $item) {
+            $i++;
+            $url = $item['url'] ?? null;
+            if ($url !== null) {
+                echo '<li class="breadcrumb-item"  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                             <a href="' . $item['url'] . '" itemprop="item"><span itemprop="name">' . $item['label'] . '</span></a>
                             <meta itemprop="position" content="' . $i . '" />
                         </li>';
-                } else {
-                    echo '<li class="active"> ' . $item . ' </li>';
-                }
+            } else {
+                echo '<li class="active"> ' . $item . ' </li>';
             }
-            echo '</ul>';
         }
-        ?>
-    </div>
-</div>
-<?= $content ?>
-<?php
-if (!YII_DEBUG) {
+        echo '</ul>';
+    }
     ?>
+</div>
+<div class="mainContainer" style="padding-bottom: 0px; min-height: calc(100vh - 200px);">
+<?php
+if ($this->context->full_page !== true) echo '<div class="container">';
 
+?>
+<?php
+
+if ($this->context->menu_left !== null) {
+    echo '<div class="row position-relative">
+<div class="leftMenuSm d-block d-lg-none curpointer" data-toggle="modal" data-target="#modalLeftMenu"> <i class="fas fa-bars icon_menu"></i></div>
+<div class="leftMenuSm-sep d-block d-lg-none"></div>
+            <div class="col-lg-3 mt-5 d-none d-lg-block">' .
+        \yii\widgets\Menu::widget([
+            'options' => ['class' => 'leftMenuLg'],
+            'items' => $this->context->menu_left,
+        ])
+        . '</div>
+                <div class="col-lg-9">';
+}
+?>
+
+<?= $content ?>
+
+<?php
+if ($this->context->menu_left !== null) {
+    echo '</div></div>';
+}
+?>
+<?php
+if ($this->context->full_page !== true) echo '</div>';
+?>
+
+
+
+<?php
+if ($this->context->menu_left !== null) {
+    ?>
+    <div class="modal fade" id="modalLeftMenu">
+        <div class="modal-dialog" style="width: 98%; max-width: 800px">
+            <div class="modal-content panel panel-red">
+                <div class="modal-header panel-heading">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="menuDialog">
+
+                        <?php
+                        foreach ($this->context->menu_left as $item) {
+                            echo '<div class="item mt-3 link "><a href="' . $item['url'][0] . '">' . $item['label'] . '</a></div>';
+                        }
+                        ?>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <?php
 }
 ?>
+</div>
 <div class="fonContact mt-5 " id="contacts">
     <div class="container  pt-5 text-white">
         <div class="row">
@@ -151,7 +203,8 @@ if (!YII_DEBUG) {
         <div class="modal-content panel panel-red">
             <div class="modal-header panel-heading">
                 <h4 class="modal-title" id="title">Что-то интересует? Спросите!</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
 
             </div>
             <div class="modal-body">
@@ -178,16 +231,18 @@ if (!YII_DEBUG) {
 
                     <div class="form-group">
                         <div class="col-sm-12">
-                            <textarea  type="text" class="form-control" id="txt" name="txt"
+                            <textarea type="text" class="form-control" id="txt" name="txt"
                                       placeholder="Вопрос"></textarea>
                         </div>
                     </div>
 
-                    <input type="hidden" id="id" name="id" />
+                    <input type="hidden" id="id" name="id"/>
                 </form>
             </div>
             <div class="text-center mb-4">
-                <button type="button" class="btn btn-blue" onclick="javascript:$('#form').submit(); return false;">Задать вопрос</button>
+                <button type="button" class="btn btn-blue" onclick="javascript:$('#form').submit(); return false;">
+                    Задать вопрос
+                </button>
             </div>
         </div>
     </div>

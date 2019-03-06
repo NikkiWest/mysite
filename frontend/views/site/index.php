@@ -23,12 +23,12 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
                 <div class="col-auto col-lg-9 col-md-8 col-sm-8 text-right">
                     <div class="d-block d-sm-none curpointer" data-toggle="modal" data-target="#modalMainMenu">
-                        <i class="fas fa-bars" style="font-size: 40px;color: white"></i>
+                        <i class="fas fa-bars icon_menu" ></i>
                     </div>
                     <div class="d-none d-sm-block" id="menu">
                         <a class="btn-link btnHeader" href="#service">Услуги</a>
                         <a class="btn-link btnHeader" href="#portfolio">Портфолио</a>
-                        <a class="btn-link btnHeader" href="#feedback">Отзывы</a>
+                        <a class="btn-link btnHeader" href="#klients">Клиенты</a>
                         <a class="btn-link btnHeader" href="#myself">О нас</a>
                         <a class="btn-link btnHeader" href="#contacts">Контакты</a>
 
@@ -38,7 +38,7 @@ $user_id = Yii::$app->user->id ?? null;
         </div>
     </div>
 
-    <div class="container" >
+    <div class="container">
         <div class="d-flex align-items-center position-relative ">
             <div class="textBigBanner ">
                 Эффективные <br> интернет-решения <br>
@@ -63,7 +63,7 @@ $user_id = Yii::$app->user->id ?? null;
         <div class="row mt-5 ">
             <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
-                    <a href="/" target="_blank" class="header_service">
+                    <a href="/service/developer/index" target="_blank" class="header_service">
                         <div class="img_service">
                             <img src="/img/icons/create_site.svg" alt="Создание сайтов">
                         </div>
@@ -73,14 +73,14 @@ $user_id = Yii::$app->user->id ?? null;
                         от 3000 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service"><a href="/service/">Сайт - визитка</a></div>
-                        <div class="info_service"><a href="/service/">Готовое решение</a></div>
-                        <div class="info_service"><a href="/service/">Корпоративный сайт</a></div>
-                        <div class="info_service"><a href="/service/">Интернет-магазин</a></div>
+                        <div class="info_service"><a href="/service/developer/business-car">Сайт - визитка</a></div>
+                        <div class="info_service"><a href="/service/developer/ready-decision">Готовое решение</a></div>
+                        <div class="info_service"><a href="/service/developer/corp-site">Корпоративный сайт</a></div>
+                        <div class="info_service"><a href="/service/developer/shop-site">Интернет-магазин</a></div>
                     </div>
 
                     <div class="button_service">
-                        <a class=" btn " href="/" target="_blank">подробнее</a>
+                        <a class=" btn " href="/service/developer/index" target="_blank">подробнее</a>
                     </div>
 
                 </div>
@@ -88,7 +88,7 @@ $user_id = Yii::$app->user->id ?? null;
 
             <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
-                    <a href="/" target="_blank" class="header_service">
+                    <a href="/service/developer-web" target="_blank" class="header_service">
                         <div class="img_service">
                             <img src="/img/icons/create_web.svg" alt="Создание web-приложений">
                         </div>
@@ -105,7 +105,7 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
 
                     <div class="button_service">
-                        <a class=" btn " href="/" target="_blank">подробнее</a>
+                        <a class=" btn " href="/service/developer-web" target="_blank">подробнее</a>
                     </div>
 
                 </div>
@@ -113,7 +113,7 @@ $user_id = Yii::$app->user->id ?? null;
 
             <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
-                    <a href="/" target="_blank" class="header_service">
+                    <a href="/service/rework" target="_blank" class="header_service">
                         <div class="img_service">
                             <img src="/img/icons/work_site.svg" alt=" Доработка сайтов">
                         </div>
@@ -130,14 +130,14 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
 
                     <div class="button_service">
-                        <a class=" btn " href="/" target="_blank">подробнее</a>
+                        <a class=" btn " href="/service/rework" target="_blank">подробнее</a>
                     </div>
 
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
-                    <a href="/" target="_blank" class="header_service">
+                    <a href="/service/maintenance" target="_blank" class="header_service">
                         <div class="img_service">
                             <img src="/img/icons/help_site.svg" alt="Обслуживание сайтов">
                         </div>
@@ -153,8 +153,8 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
 
                     <!--                    <div class="info_service">доступно</div>-->
-                    <div class="button_service">
-                        <a class=" btn " href="/" target="_blank">подробнее</a>
+                    <div class="button_service mt-4">
+                        <a class=" btn " href="/service/maintenance" target="_blank">подробнее</a>
                     </div>
 
                 </div>
@@ -227,51 +227,61 @@ $user_id = Yii::$app->user->id ?? null;
         <div class=" advantages-table ui-accordion ui-widget ui-helper-reset" role="tablist" id="accordion">
             <div class="item item-1">
                 <div class="caption ui-accordion-header ui-state-default ui-accordion-icons  ui-corner-top
-ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0">
+ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true"
+                     aria-expanded="true" tabindex="0">
                     <div class="caption_text">
                         Гарантия завершения проекта
                     </div>
                 </div>
-                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2"
+                     aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
                     Мы не работаем по принципу "Давайте сделаем, а потом подумаем как и зачем". Мы проводим
                     предварительный анализ, продумываем структуру и создаем прототипы в самом начале работы над
                     проектом.
                 </div>
             </div>
             <div class="item item-2" data-id="2">
-                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
+                     id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
                     <div class="caption_text">
                         Детальное техническое задание к проекту
                     </div>
                 </div>
-                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4"
+                     aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
                     Сразу обещаем: для этого вам тоже придется потрудиться. Вместе с вами мы определим специфику вашей
                     компании, ее покупателей, заполним
                     детальное техническое задание, выясним цели и задачи – это нужно для анализа.
                 </div>
             </div>
             <div class="item item-3" data-id="3">
-                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
+                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
+                     id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
                     <div class="caption_text">
-                       Кроссбраузерность  вашего сайта
+                        Кроссбраузерность вашего сайта
                     </div>
                 </div>
-                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"">
-                    На ваш сайт будет заходить люди с разных устройств. Чтобы они все видели ваш сайт адаптированным под свои устройства.
+                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6"
+                     aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"
+                ">
+                На ваш сайт будет заходить люди с разных устройств. Чтобы они все видели ваш сайт адаптированным под
+                свои устройства.
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
+                 id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1">
+                <div class="caption_text">
+                    Возможность расширения функциональности
                 </div>
             </div>
-            <div class="item item-4">
-                <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1">
-                    <div class="caption_text">
-                       Возможность расширения функциональности
-                    </div>
-                </div>
-                <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
-                    Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать
-                </div>
+            <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8"
+                 aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
+                Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать
             </div>
         </div>
     </div>
+</div>
 </div>
 
 
@@ -323,27 +333,29 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             </div>
         </div>
         <div class="d-block d-md-none ">
-       <div class="d-flex flex-column justify-content-center align-items-center">
-           <div class="mb-3 selectType mr-3" data-t="0">
-               Все
-           </div>
-           <?php
-           foreach ($type as $item) {
-               ?>
-               <div class="mb-3 selectType mr-3" data-t="<?= $item['id']; ?>">
-                   <?= $item['name']; ?>
-               </div>
-               <?php
-           }
-           ?>
-       </div>
-   </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <div class="mb-3 selectType mr-3" data-t="0">
+                    Все
+                </div>
+                <?php
+                foreach ($type as $item) {
+                    ?>
+                    <div class="mb-3 selectType mr-3" data-t="<?= $item['id']; ?>">
+                        <?= $item['name']; ?>
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
         <div class="grid">
             <?php
             foreach ($lst as $item) {
+//                \common\Core::dump($item);
+                $img = "/img/work/small/". $item['id']. ".jpg";
                 ?>
                 <figure class="effect-oscar lstSite" data-t="<?= $item['type_id']; ?>">
-                    <img src="https://tympanus.net/Development/HoverEffectIdeas/img/8.jpg" alt="img08"/>
+                    <img src="<?=$img;?>" alt="img08"/>
                     <figcaption>
                         <h2><?= $item['name']; ?></h2>
                         <p><?= $item['txt']; ?></p>
@@ -358,7 +370,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 </div>
 
 
-<div class="container pt-5 mb-4" id="pathers">
+<div class="container pt-5 mb-4" id="klients">
     <div class="title_blue  mb-5"> Наши клиенты</div>
     <div class="row text-center mb-3">
         <div class="owl-carousel owl-theme  logo_img">
@@ -469,10 +481,10 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
     </div>
 </div>
 
-<div class="company mt-5 mb-5">
+<div class="company  mb-5" id="myself">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-12 mt-5">
                 <div class="title_blue   mb-5"> О нас</div>
                 <div>SmartWeb - это молодая компания на IT-рынке, но мы стараемся соответствовать всем требованиям
                     клиента и заниматься
@@ -482,7 +494,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 Если вам необходимо создать сайт в кототкие сроки или усовершенствовать прошлый , то мы
                 с радостью вам поможем!
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6 col-sm-12 mt-5">
                 <div class="title_blue   mb-5"> Новости</div>
                 <div class="row news">
                     <div class="col-sm-4">
@@ -511,175 +523,158 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                         <div class="mb-2"><a href="/" class="btn btn-footer">Создание CRM</a></div>
                     </div>
                     <div class="col-sm-6">
-                                <div class="mb-2"><a href="/" class="btn btn-footer">О нас</a></div>
-                                <div class="mb-2"><a href="/" class="btn btn-footer">Портфолио</a></div>
-                                <div class="mb-2"><a href="/" class="btn btn-footer">Услуги</a></div>
-                                <div class="mb-2"><a href="/" class="btn btn-footer">Новости</a></div>
-                                <div class="mb-2"><a href="/" class="btn btn-footer">Наши клиенты</a></div>
-                        </div>
-                    </div>
-            </div>
-                    <div class="col-lg-5 f16">
-                        <div class="font-weight-bold mb-2 ">Адрес:</div>
-                        <div class="mb-4">г. Новосибирск, Октябрьский район</div>
-                        <div class="font-weight-bold mb-2 ">Контакты:</div>
-                        <div class="d-flex mb-2 ">
-                            <div><i class="fas fa-mobile-alt mr-3"></i></div>
-                            <div class="d-flex d-flex flex-column">
-                                <div>+7 (913) 787-99-68</div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center mb-3">
-                            <div><i class="fas fa-envelope mr-3"></i></div>
-                            <div><b>info@smartweb.pw</b></div>
-                        </div>
+                        <div class="mb-2"><a href="/" class="btn btn-footer">О нас</a></div>
+                        <div class="mb-2"><a href="/" class="btn btn-footer">Портфолио</a></div>
+                        <div class="mb-2"><a href="/" class="btn btn-footer">Услуги</a></div>
+                        <div class="mb-2"><a href="/" class="btn btn-footer">Новости</a></div>
+                        <div class="mb-2"><a href="/" class="btn btn-footer">Наши клиенты</a></div>
                     </div>
                 </div>
-                <div class="row pad2">
-                    <div class="col-lg-5 col-sm-4  col-12 mb-2 mt-2 order-lg-2 f14 ">© 2019 ИП "Лодза Р.Е"</div>
-                    <div class="col-lg-7 col-sm-8  col-12 order-lg-1 f14  textPositionPrivacy  mb-2 mt-2 "><a
-                                href="/img/pdf/privacy.pdf"
-                                style="color: white!important; text-decoration: underline!important;" target="_blank">Политика
-                            конфеденциальности</a>
-                        и
-                        <a href="/img/pdf/personal.pdf" target="_blank"
-                           style="color: white!important;text-decoration: underline!important;">персональных
-                            данных</a>
-
+            </div>
+            <div class="col-lg-5 f16">
+                <div class="font-weight-bold mb-2 ">Адрес:</div>
+                <div class="mb-4">г. Новосибирск, Октябрьский район</div>
+                <div class="font-weight-bold mb-2 ">Контакты:</div>
+                <div class="d-flex mb-2 ">
+                    <div><i class="fas fa-mobile-alt mr-3"></i></div>
+                    <div class="d-flex d-flex flex-column">
+                        <div>+7 (913) 787-99-68</div>
                     </div>
                 </div>
-
-
+                <div class="d-flex align-items-center mb-3">
+                    <div><i class="fas fa-envelope mr-3"></i></div>
+                    <div><b>info@smartweb.pw</b></div>
+                </div>
             </div>
-
         </div>
+        <div class="row pad2">
+            <div class="col-lg-5 col-sm-4  col-12 mb-2 mt-2 order-lg-2 f14 ">© 2019 ИП "Лодза Р.Е"</div>
+            <div class="col-lg-7 col-sm-8  col-12 order-lg-1 f14  textPositionPrivacy  mb-2 mt-2 "><a
+                        href="/img/pdf/privacy.pdf"
+                        style="color: white!important; text-decoration: underline!important;" target="_blank">Политика
+                    конфеденциальности</a>
+                и
+                <a href="/img/pdf/personal.pdf" target="_blank"
+                   style="color: white!important;text-decoration: underline!important;">персональных
+                    данных</a>
 
-        <!-- Modal -->
-        <div id="modalRegistration" class="modal fade modalStyle">
-            <div class="modal-dialog" style="width: 95%; max-width: 500px;">
-                <div class="modal-content panel panel-red">
-                    <div class="modal-header panel-heading">
-                        <h4 class="modal-title text-center" id="title">Регистрация </h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="" class="formReg" id="formRegistration-modal">
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-name_i"
-                                           name="name_i"
-                                           placeholder="Имя" autocomplete="new-password">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-name_f"
-                                           name="name_f"
-                                           value=""
-                                           placeholder="Фамилия" autocomplete="new-password">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-firm_name"
-                                           name="firm_name" value=""
-                                           placeholder="Компания" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-post_name"
-                                           name="post_name" value=""
-                                           placeholder="Должность" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="email" class="form-control" id="formRegistration-modal-email"
-                                           name="email"
-                                           value=""
-                                           placeholder="E-mail" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-phone"
-                                           name="phone"
-                                           value=""
-                                           placeholder="Телефон" autocomplete="off">
-                                </div>
-                            </div>
-                            <div class="row form-group ">
-                                <div class="col-sm-12 ">
-                                    <input type="text" class="form-control" id="formRegistration-modal-code" name="code"
-                                           value=""
-                                           placeholder="Промокод" autocomplete="off">
-                                </div>
-                            </div>
-                    </div>
-                    <div class="row form-group pb-3">
-                        <div class="col-sm-12 text-center">
-                            <div class="btn btn-reg "
-                                 onclick="javascript:$('#formRegistration-modal').submit(); return false;">
-                                Зарегистироваться
-                            </div>
-                        </div>
-                        <div class="col-sm-12 mt-4 text-center f10" style="color: #6f6f6e">Нажимая кнопку
-                            «Зарегистироваться», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
-                                                                                      target="_blank">персональных
-                                данных</a></div>
-                    </div>
-
-                    </form>
-                </div>
             </div>
         </div>
 
 
-        <!--Модалка в меню в гамбургере-->
-        <div class="modal fade" id="modalMainMenu">
-            <div class="modal-dialog" style="width: 98%; max-width: 800px">
-                <div class="modal-content panel panel-red">
-                    <div class="modal-header panel-heading">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
+    </div>
 
-                    <div class="modal-body">
-                        <div class="menuDialog">
-                            <div class="item link "><a class="btn-link btnHeader" href="#conference">О Конференции</a>
-                            </div>
-                            <div class="item mt-3 link"><a class="btn-link btnHeader" href="#programs">Программа</a>
-                            </div>
-                            <div class="item mt-3 link"><a class="btn-link btnHeader" href="#speakers">Спикеры</a></div>
-                            <div class="item mt-3 link"><a class="btn-link btnHeader" href="#condition">Стоимость</a>
-                            </div>
-                            <div class="item mt-3 link"><a class="btn-link btnHeader" href="#contacts">Место
-                                    проведения</a>
-                            </div>
-                            <div class="m-3 text-center">
-                                <?php
-                                if ($user_id > 0) {
-                                    ?>
-                                    <a class="btn btn-reg" href="/auth/logout">Выйти</a>
-                                    <?php
-                                } else {
-                                    ?>
-                                    <div class="btn btn-reg" data-toggle="modal" data-target="#modalCabinet">Личный
-                                        кабинет
-                                    </div>
-                                    <?php
+</div>
 
-                                }
-                                ?>
-                            </div>
+<!-- Modal -->
+<div id="modalRegistration" class="modal fade modalStyle">
+    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
+        <div class="modal-content panel panel-red">
+            <div class="modal-header panel-heading">
+                <h4 class="modal-title text-center" id="title">Регистрация </h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="formReg" id="formRegistration-modal">
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-name_i"
+                                   name="name_i"
+                                   placeholder="Имя" autocomplete="new-password">
                         </div>
-
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-name_f"
+                                   name="name_f"
+                                   value=""
+                                   placeholder="Фамилия" autocomplete="new-password">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-firm_name"
+                                   name="firm_name" value=""
+                                   placeholder="Компания" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-post_name"
+                                   name="post_name" value=""
+                                   placeholder="Должность" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="email" class="form-control" id="formRegistration-modal-email"
+                                   name="email"
+                                   value=""
+                                   placeholder="E-mail" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-phone"
+                                   name="phone"
+                                   value=""
+                                   placeholder="Телефон" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formRegistration-modal-code" name="code"
+                                   value=""
+                                   placeholder="Промокод" autocomplete="off">
+                        </div>
+                    </div>
+            </div>
+            <div class="row form-group pb-3">
+                <div class="col-sm-12 text-center">
+                    <div class="btn btn-reg "
+                         onclick="javascript:$('#formRegistration-modal').submit(); return false;">
+                        Зарегистироваться
                     </div>
                 </div>
+                <div class="col-sm-12 mt-4 text-center f10" style="color: #6f6f6e">Нажимая кнопку
+                    «Зарегистироваться», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
+                                                                              target="_blank">персональных
+                        данных</a></div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--Модалка в меню в гамбургере-->
+<div class="modal fade" id="modalMainMenu">
+    <div class="modal-dialog" style="width: 98%; max-width: 800px">
+        <div class="modal-content panel panel-red">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <div class="menuDialog">
+                    <div class="item link "><a class="btn-link btnHeader" href="#service">Услуги</a>
+                    </div>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#portfolio">Портфолио</a>
+                    </div>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#feedback">Отзывы</a></div>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#myself">О нас</a>
+                    </div>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#contacts">Контакты</a>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
+</div>
 

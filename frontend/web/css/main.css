@@ -76,12 +76,13 @@ body {
     line-height: normal;
 }
 
-.navbar-main{
+.navbar-main {
     background-image: url(/img/fon-somneniya.jpg);
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
 }
+
 .ui-widget {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -120,24 +121,27 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     line-height: 24px;
 }
 
-.btn-orange{
+.btn-orange {
     border: none;
     text-transform: uppercase;
     font-weight: 700;
     background: #ff5321;
     position: relative;
     color: #fff;
+    font-size: 12px;
     box-shadow: 0 6px #A1261F;
     -webkit-transition: none;
     -moz-transition: none;
     transition: none;
     border-radius: 0;
-    padding: 15px 40px;
+    padding: 7px 20px;
 }
-.btn-orange:hover{
+
+.btn-orange:hover {
     top: 2px;
     box-shadow: 0 3px #A1261F;
 }
+
 /*new style */
 #service .block_service {
     /*width: 220px;*/
@@ -312,6 +316,30 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: #0c5460;
 }
 
+.leftMenuLg{
+    list-style: none;
+    color: #1a4071;
+    font-weight: 600;
+    font-size: 18px;
+}
+.leftMenuLg li{
+    margin: 15px 0;
+}
+.leftMenuLg li.active >a{
+    color: #ff5321;
+    border-left: 3px solid #1a4071;
+    margin-left: -10px;
+    padding-left: 10px;
+}
+.leftMenuLg li a{
+    color: #1a4071;
+}
+
+.icon_menu{
+ font-size: 22px;
+    color: white
+}
+
 /*oskar*/
 
 .grid {
@@ -398,8 +426,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 figure.effect-oscar {
-    background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-    background: linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+    background: -webkit-linear-gradient(45deg, #ff5321 0%, #1a4071 40%, #ff5321 100%);
+    background: linear-gradient(45deg, #ff5321 0%, #1a4071 40%, #ff5321 100%);
 }
 
 figure.effect-oscar img {
@@ -407,6 +435,7 @@ figure.effect-oscar img {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
+
 
 figure.effect-oscar figcaption {
     padding: 3em;
@@ -805,6 +834,7 @@ a {
 
 .navbarTop {
     padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .navbarTop .logo img {
@@ -934,6 +964,7 @@ a {
     position: absolute;
     right: -211px;
     top: -63px;
+    display: none;
 }
 
 .text-somneniya {
@@ -1145,7 +1176,7 @@ a {
     background-image: url('/img/preim/three_preim.svg')
 }
 
-.border_title:after{
+.border_title:after {
     top: 115px;
 }
 
@@ -1192,7 +1223,8 @@ a {
     #tabs .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
         font-size: 18px;
     }
-    .border_title:after{
+
+    .border_title:after {
         top: 77px;
     }
 
@@ -1202,6 +1234,9 @@ a {
     .navbarTop a.btnHeader {
         font-size: 16px;
         margin: 0px 5px;
+    }
+    .icon_menu{
+        font-size: 32px;
     }
 
     #tabs .tabContentTitle {
@@ -1259,6 +1294,7 @@ a {
         left: 0;
         top: 300px
     }
+
     /* Common style */
     .grid figure {
         width: 33.333%;
@@ -1268,6 +1304,10 @@ a {
         margin-bottom: 200px;
     }
 
+    .btn-orange {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
 
 }
 
@@ -1277,6 +1317,15 @@ a {
         margin-left: 0px;
         margin-right: 20px;
     }
+    .btn-orange {
+        font-size: 16px;
+        padding: 15px 40px;
+    }
+    .icon_menu{
+        font-size: 40px;
+    }
+
+
     .advantages .advantages-table .item .caption {
         height: 220px;
     }
@@ -1300,10 +1349,12 @@ a {
         font-size: 14px;
         line-height: 20px !important;
     }
+
     .advantages .advantages-table {
         margin-bottom: 220px;
     }
-    .border_title:after{
+
+    .border_title:after {
         top: 50px;
     }
 }
@@ -1355,6 +1406,10 @@ a {
 
     .marginLeft {
         margin-left: 100px;
+    }
+
+    .img_skidka {
+        display: block;
     }
 
 }

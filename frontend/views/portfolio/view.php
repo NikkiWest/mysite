@@ -65,7 +65,7 @@ $img = "/img/work/full/{$lst['id']}.jpg";
                     <img class="w-100" src="<?= $img; ?>" alt="Награда 4">
                 </a>
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 d-flex flex-column justify-content-between">
                 <div class="info_block">
                     <div class="row mb-3">
                         <div class="col-sm-6 title_block">адрес сайта</div>
@@ -76,24 +76,30 @@ $img = "/img/work/full/{$lst['id']}.jpg";
                         <div class="col-sm-6 title_block">Категория</div>
                         <div class="col-sm-6 type_site"><?= $lst['type_name']; ?></div>
                     </div>
-                    <div class="row flex-column mb-3">
-                        <div class="col-sm-6 title_block mb-3">Задачи</div>
-                        <div class="col-sm-6 task_site"><?= $lst['task']; ?></div>
+                    <div class="d-flex flex-column mb-3">
+                        <div class=" title_block mb-3">Задачи</div>
+                        <div class="c task_site"><?= $lst['task']; ?></div>
                     </div>
-                    <div class="row flex-column">
-                        <div class="col-sm-6 title_block mb-3">Описание</div>
-                        <div class="col-sm-6 desc_site"><?= $lst['txt']; ?></div>
+                    <div class="d-flex flex-column">
+                        <div class="title_block mb-3">Описание</div>
+                        <div class="desc_site"><?= $lst['txt']; ?></div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="block_site_good mt-3">
+                        <div>
+                            <div class="title__site_good">Хотите такой же сайт или еще лучше?</div>
+                            <div class="btn btn-orange mt-3 mb-3" id="btnOrder">Заказать</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center">
-            <div class="block_site_good mt-3">
-                <div>
-                    <div class="title__site_good">Хотите такой же сайт или еще лучше?</div>
-                    <div class="btn btn-orange mb-3" id="btnOrder">Заказать</div>
-                </div>
-            </div>
+
+        <div class="mt-5 mb-5">
+            <div class="title_blue  mb-5"> Галерея выполненных работ</div>
+            <div class="">  <?=\frontend\widgets\PortfolioWidget::widget();?></div>
+
         </div>
     </div>
 

@@ -1,0 +1,48 @@
+.dop_menu ul {
+    display: none;
+    margin-left: 30px;
+    list-style-type: disc;
+}
+
+.dop_menu ul li a:hover {
+    color: #ff5321;
+}
+
+.dop_menu ul li.active > a {
+    color: #ff5321;
+    border: none;
+}
+
+.title {
+    font-size: 24px;
+    font-family: AGFORE;
+    font-weight: 700;
+    color: #1a4071;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tbl-responsive {
+    width: 100%;
+    border: 2px solid #1a4071;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.tbl-responsive td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: #2f4871;
+    padding: 5px 10px;
+}
+
+.tbl-responsive th{
+    border-bottom: 2px solid #2f4871!important;
+    color: #ff5321;
+}
+
+@media (min-width: 768px) {
+    .tbl-responsive td {
+        padding: 10px 20px;
+    }
+}
