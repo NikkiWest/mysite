@@ -423,7 +423,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .grid figure p {
     letter-spacing: 1px;
-    font-size: 68.5%;
+    font-size: 12px;
+    text-transform: initial;
+    line-height: 16px;
 }
 
 figure.effect-oscar {

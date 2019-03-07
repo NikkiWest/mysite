@@ -149,11 +149,11 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="block_info">
                         <div class="info_service">Контроль работоспособности сайта</div>
                         <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                        <div class="info_service" style="padding-bottom: 5px">Восстановление при сбоях</div>
+                        <div class="info_service">Восстановление при сбоях</div>
                     </div>
 
                     <!--                    <div class="info_service">доступно</div>-->
-                    <div class="button_service mt-4">
+                    <div class="button_service" style="margin-top: 20px">
                         <a class=" btn " href="/service/maintenance" target="_blank">подробнее</a>
                     </div>
 
