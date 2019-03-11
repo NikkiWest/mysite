@@ -41,8 +41,14 @@
     color: #ff5321;
 }
 
-@media (min-width: 768px) {
+.business_card i{
+    font-size: 20px;
+    color: #2f4871;
+}
+
+
+@media (min-width: 992px) {
     .tbl-responsive td {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 }

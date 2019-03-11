@@ -8,9 +8,12 @@
 ?>
 
 <div class="business_card mt-5">
-    <div class="title mb-5 ">Сайт-визитка</div>
-    <div class="desc">Сайт визитка - это чудесная идея, если у вас нету сайта. Закажите сайт визитку у нас и станете
-        самыми крутыми во всем Новосибирске!
+    <div class="title mb-5 ">Landing Page</div>
+    <div class="desc">Если вам необходимо привлекать людей на какую-то небольшую страничку в интернете , то мы сделаем
+        ее для вас.
+        Впрочем, чаще всего основной задачей одностраничника являются вовсе не продажа, а сбор контактных данных
+        потенциальных клиентов(генерация лидов). Лендинг пейдж содержит основную информацию об предлагаемых услугах или
+        продуктах, и используется для усиления эффективности рекламы.
     </div>
     <div class="title mt-5 mb-5 ">Что входит в стоимость?</div>
     <div class="table-responsive mb-4">
@@ -80,17 +83,6 @@
             </tr>
             <tr>
                 <td class="name">
-                    Панель Администрирования
-                </td>
-                <td class="text-center">
-                    —
-                </td>
-                <td class="text-center">
-                    ✓
-                </td>
-            </tr>
-            <tr>
-                <td class="name">
                     Индивидуальный дизайн
                 </td>
                 <td class="text-center">
@@ -102,35 +94,13 @@
             </tr>
             <tr>
                 <td class="name">
-                    Ежедневное резервное копирование
-                </td>
-                <td class="text-center">
-                    —
-                </td>
-                <td class="text-center">
-                    ✓
-                </td>
-            </tr>
-            <tr>
-                <td class="name">
-                    Гарантийный срок
-                </td>
-                <td class="text-center">
-                    1 месяц
-                </td>
-                <td class="text-center">
-                    1 год
-                </td>
-            </tr>
-            <tr>
-                <td class="name">
                     Срок разработки
                 </td>
                 <td class="text-center">
-                    от 2 недель
+                    от 10 дней
                 </td>
                 <td class="text-center">
-                    от 1 месяца
+                    от 3 недель
                 </td>
             </tr>
             <tr>
@@ -151,22 +121,22 @@
                     <strong>Стоимость</strong>
                 </td>
                 <td class="text-center">
-                    <strong>от 3 000 руб.</strong>
+                    <strong>от 5 000 руб.</strong>
                 </td>
                 <td class="text-center">
-                    <strong>от 6 000 руб.</strong>
+                    <strong>от 10 000 руб.</strong>
                 </td>
             </tr>
             <tr>
                 <td class="name">
-                    &nbsp;
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange" data-t="1" data-product = "vizitka"
-                       data-toggle="modal" href="#contactModal">Оставить заявку</a>
+                    <a class="btn btn-orange btnOpenOrder" data-t="1" data-product="2"
+                      >Оставить заявку</a>
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange"  data-product = "vizitka" data-toggle="modal" href="#contactModal" data-t="2">Оставить заявку</a>
+                    <a class="btn btn-orange btnOpenOrder" data-product="2"
+                       data-t="2">Оставить заявку</a>
                 </td>
             </tr>
             </tbody>

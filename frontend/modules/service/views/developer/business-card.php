@@ -161,11 +161,10 @@
                     &nbsp;
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange" data-t="1" data-product = "vizitka"
-                       data-toggle="modal" href="#contactModal">Оставить заявку</a>
+                    <div class="btn btn-orange btnOpenOrder" data-t="1" data-service = "1">Оставить заявку</div>
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange"  data-product = "vizitka" data-toggle="modal" href="#contactModal" data-t="2">Оставить заявку</a>
+                    <div class="btn btn-orange btnOpenOrder"  data-service = "1"  data-t="2">Оставить заявку</div>
                 </td>
             </tr>
             </tbody>

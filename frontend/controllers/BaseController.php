@@ -21,5 +21,6 @@ class BaseController extends Controller
      * @var Меню слева
      */
     public $menu_left;
+    public $modal_order;
 
 }

@@ -88,8 +88,7 @@ if ($this->context->full_page !== true) echo '<div class="container">';
 
 if ($this->context->menu_left !== null) {
     echo '<div class="row position-relative">
-<div class="leftMenuSm d-block d-lg-none curpointer" data-toggle="modal" data-target="#modalLeftMenu"> <i class="fas fa-bars icon_menu"></i></div>
-<div class="leftMenuSm-sep d-block d-lg-none"></div>
+<div class="leftMenuSm d-block d-lg-none curpointer mt-5" data-toggle="modal" data-target="#modalLeftMenu"> <i class="fas fa-bars icon_menu" style="color: #1a4071; "></i></div>
             <div class="col-lg-3 mt-5 d-none d-lg-block">' .
         \yii\widgets\Menu::widget([
             'options' => ['class' => 'leftMenuLg'],
@@ -129,7 +128,17 @@ if ($this->context->menu_left !== null) {
 
                         <?php
                         foreach ($this->context->menu_left as $item) {
-                            echo '<div class="item mt-3 link "><a href="' . $item['url'][0] . '">' . $item['label'] . '</a></div>';
+
+                            if(isset($item['items'])){
+                                foreach ( $item['items'] as $sub_menu) {
+                                    $active_sub = ($sub_menu['active'] == true) ? 'active' : '';
+                                    echo '<div class="item menu_mobile mt-3 link '.$active_sub.'"><a href="' . $sub_menu['url'] . '">' . $sub_menu['label'] . '</a></div>';
+                                }
+                            }else{
+                                $active = ($item['active'] == true) ? 'active' : '';
+                                echo '<div class="item menu_mobile mt-3 link '.$active.'"><a href="' . $item['url'] . '">' . $item['label'] . '</a></div>';
+                            }
+
                         }
                         ?>
                     </div>
@@ -141,6 +150,14 @@ if ($this->context->menu_left !== null) {
     <?php
 }
 ?>
+
+    <?php
+    if($this->context->modal_order != null){
+       echo $this->context->modal_order;
+        ?>
+    <?php
+    }
+    ?>
 </div>
 <div class="fonContact mt-5 " id="contacts">
     <div class="container  pt-5 text-white">

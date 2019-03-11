@@ -326,14 +326,35 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .leftMenuLg li{
     margin: 15px 0;
 }
+
+
 .leftMenuLg li.active >a{
     color: #ff5321;
     border-left: 3px solid #1a4071;
     margin-left: -10px;
     padding-left: 10px;
 }
+
 .leftMenuLg li a{
     color: #1a4071;
+}
+.leftMenuLg  a:active{
+    color: #ff5321!important;
+}
+
+.menu_mobile a{
+    font-size: 18px;
+    font-weight: 500;
+    color:#1a4071;
+}
+
+.menu_mobile a:hover{
+    color: #ff5321!important;
+}
+
+.menu_mobile.active a{
+    font-weight: bold;
+    color: #ff5321!important;
 }
 
 .icon_menu{

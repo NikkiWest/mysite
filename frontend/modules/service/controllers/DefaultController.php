@@ -2,6 +2,8 @@
 
 namespace frontend\modules\service\controllers;
 
+use common\Core;
+use common\models\Order;
 use frontend\controllers\BaseController;
 use yii\web\Controller;
 
@@ -18,5 +20,15 @@ class DefaultController extends BaseController
     public function actionIndex()
     {
         return $this->render('index');
+    }
+    public function actionSaveOrder()
+    {
+        $Order = new Order();
+        $Order->attributes = $_POST ?? null;
+        $Order->save();
+        Core::error($Order);
+        $ar = [];
+        if(Core::hasError() === false) $ar['success_txt'] = 'Заявка успешно оставлена';
+        Core::encode_echo($ar);
     }
 }
