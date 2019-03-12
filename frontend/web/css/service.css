@@ -36,16 +36,97 @@
     padding: 5px 10px;
 }
 
-.tbl-responsive th{
-    border-bottom: 2px solid #2f4871!important;
+.tbl-responsive th {
+    border-bottom: 2px solid #2f4871 !important;
     color: #ff5321;
 }
 
-.business_card i{
+.business_card i {
     font-size: 20px;
     color: #2f4871;
 }
 
+.desc {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ff5321;
+    color: white;
+    position: relative;
+    border-radius: 3px;
+}
+
+.desc:before, .desc:after {
+    bottom: 15px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.5);
+    content: "";
+    display: block;
+    height: 20px;
+    left: 10px;
+    position: absolute;
+    width: 50%;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+
+.desc:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.block_tarif {
+    border-radius: 3px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16), 0 6px 20px rgba(0, 0, 0, 0.23);
+}
+
+.header__block_tarif {
+    background-color: #2f4871;
+    padding: 15px;
+    color: #fff;
+}
+
+.title__block_tarif {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: AGFORE;
+}
+
+.cost__block_tariff {
+    text-align: center;
+    font-size: 22px;
+}
+.content__block_tariff{
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.content__block_tariff .items {
+    margin: 0 10px;
+}
+
+.items li {
+    color: #ff5321;
+    font-size: 26px;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+
+.items li span {
+    color: #2f4871;
+    font-size: 16px;
+}
 
 @media (min-width: 992px) {
     .tbl-responsive td {
