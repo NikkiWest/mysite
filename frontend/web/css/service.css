@@ -13,6 +13,10 @@
     border: none;
 }
 
+.text-orange{
+    color: #ff5321;
+}
+
 .title {
     font-size: 24px;
     font-family: AGFORE;
@@ -108,7 +112,7 @@
     font-size: 22px;
 }
 .content__block_tariff{
-    padding: 20px 30px;
+    padding: 20px 20px;
     font-size: 14px;
 }
 
@@ -128,8 +132,58 @@
     font-size: 16px;
 }
 
+/*REWORK*/
+.block_rework{
+    width: 100%;
+    background-color: #2f4871;
+    padding: 15px;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.16), 0 6px 10px rgba(0, 0, 0, 0.23);
+    position: relative;
+    height: 180px;
+}
+.img__block_rework{
+    position: absolute;
+    color: #ff5321;
+    background: white;
+    padding: 21px 24px;
+    /* margin: 20px; */
+    border-radius: 50%;
+    left: -30px;
+    top: -15px;
+}
+
+.title__block_rework{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title__block_rework:hover{
+    color: #ff5321;
+}
+
+/* END REWORK*/
+
+/*devepoper-web*/
+.title_task__dev_web{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+/* END devepoper-web*/
+
 @media (min-width: 992px) {
     .tbl-responsive td {
         padding: 10px 15px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .title__block_rework{
+        font-size: 24px;
     }
 }

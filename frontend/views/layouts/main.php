@@ -88,7 +88,7 @@ if ($this->context->full_page !== true) echo '<div class="container">';
 
 if ($this->context->menu_left !== null) {
     echo '<div class="row position-relative">
-<div class="leftMenuSm d-block d-lg-none curpointer mt-5" data-toggle="modal" data-target="#modalLeftMenu"> <i class="fas fa-bars icon_menu" style="color: #1a4071; "></i></div>
+<div class="leftMenuSm d-block d-lg-none curpointer mt-5 ml-3" data-toggle="modal" data-target="#modalLeftMenu"> <i class="fas fa-bars icon_menu" style="color: #1a4071; "></i></div>
             <div class="col-lg-3 mt-5 d-none d-lg-block">' .
         \yii\widgets\Menu::widget([
             'options' => ['class' => 'leftMenuLg'],
