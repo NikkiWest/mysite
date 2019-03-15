@@ -27,7 +27,14 @@
     z-index: 3;
     font-weight: 600;
 }
-
+.title {
+    font-size: 24px;
+    font-family: AGFORE;
+    font-weight: 700;
+    color: #1a4071;
+    text-transform: uppercase;
+    text-align: center;
+}
 .info_block {
     padding: 0px 20px 20px 20px;
     /*background-color: #ff5321;*/
@@ -59,4 +66,12 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 10px 0;
+}
+
+.grid{
+    text-align: left;
+    padding-top: 25px;
+}
+.grid figure{
+    margin: 0 10px 0 0;
 }

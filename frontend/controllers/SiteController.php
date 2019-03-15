@@ -1,9 +1,11 @@
 <?php
+
 namespace frontend\controllers;
 
 use common\Core;
 use common\models\Code;
 use common\models\Invoice;
+use common\models\Order;
 use common\models\Portfolio;
 use common\models\Rekvizit;
 use common\models\Users;
@@ -29,12 +31,22 @@ class SiteController extends BaseController
         $type = $Portfolio->getType();
         return $this->render('index',
             [
-                'lst' =>$lst,
+                'lst' => $lst,
                 'type' => $type
             ]
         );
     }
 
+    public function actionSave()
+    {
+        $Order = new Order();
+        $Order->attributes = $_POST ?? null;
+        $Order->save();
+        Core::error($Order);
+        $ar = [];
+        if (Core::hasError() === false) $ar['success_txt'] = 'Заявка успешно отправлена';
+        Core::encode_echo($ar);
+    }
 
 
 }

@@ -131,12 +131,12 @@
                 <td class="name">
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange btnOpenOrder" data-t="1" data-product="2"
-                      >Оставить заявку</a>
+                    <div class="btn btn-orange btnOpenOrder" data-t="1" data-product="2"
+                      >Оставить заявку</div>
                 </td>
                 <td class="text-center pb-3">
-                    <a class="btn btn-orange btnOpenOrder" data-product="2"
-                       data-t="2">Оставить заявку</a>
+                    <div class="btn btn-orange btnOpenOrder" data-product="2"
+                       data-t="2">Оставить заявку</div>
                 </td>
             </tr>
             </tbody>

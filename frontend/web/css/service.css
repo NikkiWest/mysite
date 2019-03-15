@@ -173,6 +173,12 @@
     text-align: center;
     margin: 10px 0;
 }
+.developer_web .card-header{
+    background-color: #2f4871;
+}
+.developer_web .card-header .btn-link{
+    color: #fff;
+}
 /* END devepoper-web*/
 
 @media (min-width: 992px) {

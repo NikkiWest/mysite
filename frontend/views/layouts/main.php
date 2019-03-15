@@ -41,7 +41,7 @@ AppAsset::register($this);
                 <div class="d-none d-lg-block" id="menu">
                     <a class="btn-link btnHeader" href="/#service">Услуги</a>
                     <a class="btn-link btnHeader" href="/#portfolio">Портфолио</a>
-                    <a class="btn-link btnHeader" href="/#feedback">Отзывы</a>
+                    <a class="btn-link btnHeader" href="/#klients">Клиенты</a>
                     <a class="btn-link btnHeader" href="/#myself">О нас</a>
                     <a class="btn-link btnHeader" href="/#contacts">Контакты</a>
                 </div>
@@ -165,18 +165,18 @@ if ($this->context->menu_left !== null) {
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Готовое решение</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Сайт-визитка</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Корпоративный сайт</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Интернет-магазин</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Создание CRM</a></div>
+                        <div class="mb-2"><a href="/service/developer/ready-decision" class="btn btn-footer">Готовое решение</a></div>
+                        <div class="mb-2"><a href="/service/developer/business-card" class="btn btn-footer">Сайт-визитка</a></div>
+                        <div class="mb-2"><a href="/service/developer/corp-site" class="btn btn-footer">Корпоративный сайт</a></div>
+                        <div class="mb-2"><a href="/service/developer/shop-site" class="btn btn-footer">Интернет-магазин</a></div>
+                        <div class="mb-2"><a href="/service/developer-web" class="btn btn-footer">Создание CRM</a></div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="mb-2"><a href="/" class="btn btn-footer">О нас</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Портфолио</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Услуги</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Новости</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Наши клиенты</a></div>
+                        <div class="mb-2"><a href="/#myself" class="btn btn-footer">О нас</a></div>
+                        <div class="mb-2"><a href="/#portfolio" class="btn btn-footer">Портфолио</a></div>
+                        <div class="mb-2"><a href="/#service" class="btn btn-footer">Услуги</a></div>
+                        <div class="mb-2"><a href="/#myself" class="btn btn-footer">Новости</a></div>
+                        <div class="mb-2"><a href="/#klients" class="btn btn-footer">Наши клиенты</a></div>
                     </div>
                 </div>
             </div>
@@ -276,15 +276,14 @@ if ($this->context->menu_left !== null) {
 
             <div class="modal-body">
                 <div class="menuDialog">
-                    <div class="item link "><a class="btn-link btnHeader" href="#conference">О Конференции</a>
+                    <div class="item link "><a class="btn-link btnHeader" href="/#service">Услуги</a>
                     </div>
-                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#programs">Программа</a>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="/#portfolio">Портфолио</a>
                     </div>
-                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#speakers">Спикеры</a></div>
-                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#condition">Стоимость</a>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="/#klients">Клиенты</a></div>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="/#myself">О нас</a>
                     </div>
-                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="#contacts">Место
-                            проведения</a>
+                    <div class="item mt-3 link"><a class="btn-link btnHeader" href="/#contacts">Контакты</a>
                     </div>
                 </div>
 

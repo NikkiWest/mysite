@@ -25,6 +25,7 @@ url("../fonts/SOURCESANSPRO-REGULAR.TTF");
 
 .breadcrumb {
     background-color: white;
+    margin-top: 20px;
 }
 
 .breadcrumb a {
@@ -81,6 +82,7 @@ body {
     background-position: bottom;
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16), 0 6px 20px rgba(0, 0, 0, 0.23);
 }
 
 .ui-widget {
@@ -119,6 +121,32 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .f18 {
     font-size: 18px;
     line-height: 24px;
+}
+
+#FormOk{
+    font-size: 18px;
+    color: #fff;
+}
+
+.text-orange{
+    color: #ff5321;
+}
+
+.round-ok{
+    border: 3px solid #ff5321;
+    border-radius: 50%;
+    padding: 20px;
+    transition: 0.3s ease-out 0.5s;
+}
+.round-ok i {
+    color: #ff5321;
+    transition: 0.3s ease-out 0.5s;
+}
+.round-ok:hover{
+    border: 3px solid #fff;
+}
+.round-ok:hover i {
+    color: #fff;
 }
 
 .btn-orange {
@@ -923,9 +951,6 @@ a {
     text-transform: none;
 }
 
-.btn-reg:hover {
-    background: #A1261F;
-}
 
 .helpBanner {
     color: white;
@@ -1101,28 +1126,28 @@ a {
     border-color: #ff5321;
     background-color: #ff5321;
     color: #fff;
-    background-image: url('/img/preim/one_preim_white.svg')
+    background-image: url('/img/preim/proekt-off.png')
 }
 
 .advantages .advantages-table .item-2 .caption.ui-accordion-header-active {
     border-color: #ff5321;
     background-color: #ff5321;
     color: #fff;
-    background-image: url('/img/preim/two_preim_white.svg')
+    background-image: url('/img/preim/tz_white.png')
 }
 
 .advantages .advantages-table .item-3 .caption.ui-accordion-header-active {
     border-color: #ff5321;
     background-color: #ff5321;
     color: #fff;
-    background-image: url('/img/preim/three_preim_white.svg')
+    background-image: url('/img/preim/cross-brower_white.png')
 }
 
 .advantages .advantages-table .item-4 .caption.ui-accordion-header-active {
     border-color: #ff5321;
     background-color: #ff5321;
     color: #fff;
-    background-image: url('/img/preim/four_preim_white.svg')
+    background-image: url('/img/preim/add_func_white.png')
 }
 
 .advantages .advantages-table .item .caption.ui-accordion-header-active:after {
@@ -1185,19 +1210,19 @@ a {
 }
 
 .advantages .advantages-table .item-1 .caption {
-    background-image: url('/img/preim/three_preim.svg')
+    background-image: url('/img/preim/proekt-off_blue.png')
 }
 
 .advantages .advantages-table .item-2 .caption {
-    background-image: url('/img/preim/three_preim.svg')
+    background-image: url('/img/preim/tz_blue.png')
 }
 
 .advantages .advantages-table .item-3 .caption {
-    background-image: url('/img/preim/three_preim.svg')
+    background-image: url('/img/preim/cross-brower_blue.png')
 }
 
 .advantages .advantages-table .item-4 .caption {
-    background-image: url('/img/preim/three_preim.svg')
+    background-image: url('/img/preim/add_func_blue.png')
 }
 
 .border_title:after {

@@ -23,7 +23,7 @@ $user_id = Yii::$app->user->id ?? null;
                 </div>
                 <div class="col-auto col-lg-9 col-md-8 col-sm-8 text-right">
                     <div class="d-block d-sm-none curpointer" data-toggle="modal" data-target="#modalMainMenu">
-                        <i class="fas fa-bars icon_menu" ></i>
+                        <i class="fas fa-bars icon_menu"></i>
                     </div>
                     <div class="d-none d-sm-block" id="menu">
                         <a class="btn-link btnHeader" href="#service">Услуги</a>
@@ -99,9 +99,9 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
                     <div class="block_info">
                         <div class="info_service">Индивидуальная CRM</div>
-                        <div class="info_service">Web версия ПО</div>
-                        <div class="info_service">Интернет - портал</div>
-                        <div class="info_service">SPA - приложение</div>
+                        <div class="info_service">Шаблонная CRM</div>
+                        <div class="info_service">Доработка CRM</div>
+                        <div class="info_service">Проектирование БД</div>
                     </div>
 
                     <div class="button_service">
@@ -352,10 +352,10 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             <?php
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
-                $img = "/img/work/small/". $item['id']. ".jpg";
+                $img = "/img/work/small/" . $item['id'] . ".jpg";
                 ?>
                 <figure class="effect-oscar lstSite" data-t="<?= $item['type_id']; ?>">
-                    <img src="<?=$img;?>" alt="img08"/>
+                    <img src="<?= $img; ?>" alt="img08"/>
                     <figcaption>
                         <h2><?= $item['name']; ?></h2>
                         <p><?= $item['txt']; ?></p>
@@ -428,53 +428,64 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             Отправьте заявку уже сегодня и вам в качестве бонуса
             будет скидка 10% на услуги
         </div>
-        <div class="d-flex justify-content-center">
+        <div id="formOrder-block">
+            <div class="d-flex justify-content-center">
+                <div class="smart_offer position-relative mt-4">
 
-            <div class="smart_offer position-relative mt-4">
-
-                <div class="img_skidka">
-                    <img src="/img/skidka.png" class="w-100" alt=""></div>
-                <form action="" class="formReg" id="formRegistration">
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-name_i" name="name_f"
-                                   placeholder="Фамилие Имя" autocomplete="new-password">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="email" class="form-control" id="formRegistration-modal-email" name="email"
-                                   value=""
-                                   placeholder="E-mail" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-phone" name="phone"
-                                   value=""
-                                   placeholder="Телефон" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                                <textarea type="text" class="form-control" id="formRegistration-modal-code"
-                                          name="comment"
-                                          placeholder="Комментарий(по желанию)" autocomplete="off"></textarea>
-                        </div>
-                    </div>
-                    <div class="row form-group pb-3">
-                        <div class="col-sm-12 text-center">
-                            <div class="btn btn-reg "
-                                 onclick="javascript:$('#formRegistration').submit(); return false;">Хочу скидку!
+                    <div class="img_skidka">
+                        <img src="/img/skidka.png" class="w-100" alt=""></div>
+                    <form action="" class="formReg" id="formOrderMain">
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="text" class="form-control" id="formOrderMain-fio" name="fio"
+                                       placeholder="Как вас зовут?" autocomplete="new-password">
                             </div>
                         </div>
-                        <div class="col-sm-12 mt-4 text-center f10" style="color: #fff">Нажимая кнопку
-                            «Хочу скидку!», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
-                                                                                 target="_blank">персональных
-                                данных</a></div>
-                    </div>
-                </form>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="email" class="form-control" id="formOrderMain-email" name="email"
+                                       placeholder="E-mail" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <input type="text" class="form-control" id="formOrderMain-phone" name="phone"
+                                       placeholder="Телефон" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row form-group ">
+                            <div class="col-sm-12 ">
+                                <textarea type="text" class="form-control" id="formOrderMain-comment"
+                                          name="comment"
+                                          placeholder="Комментарий (по желанию)" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+                        <div class="row form-group pb-3">
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn btn-reg "
+                                        onclick="javascript:$('#formOrderMain').submit(); return false;">Хочу скидку!
+                                </button>
+                            </div>
+                            <div class="col-sm-12 mt-4 text-center f10" style="color: #fff">Нажимая кнопку
+                                «Хочу скидку!», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
+                                                                                     target="_blank">персональных
+                                    данных</a></div>
+                        </div>
+                    </form>
 
+                </div>
+
+
+            </div>
+        </div>
+        <div id="FormOk" style="display: none">
+            <div class="d-flex align-items-center">
+                <div class="round-ok mr-3"><i class="fas fa-thumbs-up  f28"></i></div>
+                <div>
+                    Спасибо за вашу заявку! <br>
+                    В ближайщее время с вами свяжется наш менеджер для уточнения информации
+                    по вашему проекту.
+                </div>
             </div>
 
         </div>
@@ -516,18 +527,22 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             <div class="col-lg-7">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Готовое решение</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Сайт-визитка</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Корпоративный сайт</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Интернет-магазин</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Создание CRM</a></div>
+                        <div class="mb-2"><a href="/service/developer/ready-decision" class="btn btn-footer">Готовое
+                                решение</a></div>
+                        <div class="mb-2"><a href="/service/developer/business-card"
+                                             class="btn btn-footer">Сайт-визитка</a></div>
+                        <div class="mb-2"><a href="/service/developer/corp-site" class="btn btn-footer">Корпоративный
+                                сайт</a></div>
+                        <div class="mb-2"><a href="/service/developer/shop-site"
+                                             class="btn btn-footer">Интернет-магазин</a></div>
+                        <div class="mb-2"><a href="/service/developer-web" class="btn btn-footer">Создание CRM</a></div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="mb-2"><a href="/" class="btn btn-footer">О нас</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Портфолио</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Услуги</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Новости</a></div>
-                        <div class="mb-2"><a href="/" class="btn btn-footer">Наши клиенты</a></div>
+                        <div class="mb-2"><a href="/#myself" class="btn btn-footer">О нас</a></div>
+                        <div class="mb-2"><a href="/#portfolio" class="btn btn-footer">Портфолио</a></div>
+                        <div class="mb-2"><a href="/#service" class="btn btn-footer">Услуги</a></div>
+                        <div class="mb-2"><a href="/#myself" class="btn btn-footer">Новости</a></div>
+                        <div class="mb-2"><a href="/#klients" class="btn btn-footer">Наши клиенты</a></div>
                     </div>
                 </div>
             </div>
@@ -564,89 +579,6 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 
     </div>
 
-</div>
-
-<!-- Modal -->
-<div id="modalRegistration" class="modal fade modalStyle">
-    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
-        <div class="modal-content panel panel-red">
-            <div class="modal-header panel-heading">
-                <h4 class="modal-title text-center" id="title">Регистрация </h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                            aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="" class="formReg" id="formRegistration-modal">
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-name_i"
-                                   name="name_i"
-                                   placeholder="Имя" autocomplete="new-password">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-name_f"
-                                   name="name_f"
-                                   value=""
-                                   placeholder="Фамилия" autocomplete="new-password">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-firm_name"
-                                   name="firm_name" value=""
-                                   placeholder="Компания" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-post_name"
-                                   name="post_name" value=""
-                                   placeholder="Должность" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="email" class="form-control" id="formRegistration-modal-email"
-                                   name="email"
-                                   value=""
-                                   placeholder="E-mail" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-phone"
-                                   name="phone"
-                                   value=""
-                                   placeholder="Телефон" autocomplete="off">
-                        </div>
-                    </div>
-                    <div class="row form-group ">
-                        <div class="col-sm-12 ">
-                            <input type="text" class="form-control" id="formRegistration-modal-code" name="code"
-                                   value=""
-                                   placeholder="Промокод" autocomplete="off">
-                        </div>
-                    </div>
-            </div>
-            <div class="row form-group pb-3">
-                <div class="col-sm-12 text-center">
-                    <div class="btn btn-reg "
-                         onclick="javascript:$('#formRegistration-modal').submit(); return false;">
-                        Зарегистироваться
-                    </div>
-                </div>
-                <div class="col-sm-12 mt-4 text-center f10" style="color: #6f6f6e">Нажимая кнопку
-                    «Зарегистироваться», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
-                                                                              target="_blank">персональных
-                        данных</a></div>
-            </div>
-
-            </form>
-        </div>
-    </div>
 </div>
 
 

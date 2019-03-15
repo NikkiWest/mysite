@@ -22,6 +22,19 @@ class PortfolioController extends BaseController
         parent::init();
     }
 
+    public function actionIndex()
+    {
+        $Portfolio = new Portfolio();
+        $lst = $Portfolio->lst();
+        $type = $Portfolio->getType();
+        return $this->render('index',
+            [
+                'lst' => $lst,
+                'type' => $type
+            ]
+        );
+    }
+
     public function actionView($slug)
     {
         $this->layout = 'main';

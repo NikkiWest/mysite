@@ -1,6 +1,21 @@
 var MainCtrl = {
     actionIndex: function () {
 
+        $(document).on("submit", "#formOrderMain", function (e) {
+            e.preventDefault();
+            var data = $(this).serialize();
+            $.ajax({
+                data: data,
+                url: 'site/save',
+                success: function (data) {
+                    if (response_msg(data) === false) return;
+                    $("#formOrder-block").hide();
+                    $("#FormOk").show();
+                }
+            });
+            return false;
+        });
+
         $(document).on("click", ".selectType", function (e) {
             var t = $(this).data('t');
             if (t == '0') {
@@ -22,11 +37,6 @@ var MainCtrl = {
         $('[data-toggle="popover"]').popover({
             //Установление направления отображения popover
             placement: 'bottom'
-        });
-
-        $(document).on("click", "#regBanner", function (e) {
-            e.preventDefault();
-            $("#modalRegForm").modal("show");
         });
 
 
