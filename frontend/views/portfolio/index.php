@@ -10,9 +10,6 @@ $this->title = "Список выполненных работ";
 $this->params['breadcrumbs'] = ['Портфолио'];
 $this->registerJs("PortfolioCtrl.actionIndex();", \yii\web\View::POS_END, 'actionIndex');
 ?>
-<?php
-
-?>
 <div class="title  mb-5">Портфолио созданных сайтов</div>
 <div class="mt-4 mb-4">
     <div class="d-none d-md-block">
