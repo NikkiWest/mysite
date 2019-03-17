@@ -1,11 +1,27 @@
 .dop_menu ul {
     display: none;
     margin-left: 30px;
-    list-style-type: disc;
+    list-style: none;
 }
 
 .dop_menu ul li a:hover {
     color: #ff5321;
+}
+
+.dop_menu ul li{
+    position: relative;
+}
+
+.dop_menu ul li:before{
+    content: '';
+    position: absolute;
+    border-right: 2px solid #1a4071;
+    border-bottom: 2px solid #1a4071;
+    width: 7px;
+    height: 7px;
+    top: calc(50% - 0px);
+    left: -20px;
+    transform: translateY(-50%) rotate(-45deg);
 }
 
 .dop_menu ul li.active > a {
@@ -38,6 +54,7 @@
     border-width: 0 1px 1px 0;
     border-color: #2f4871;
     padding: 5px 10px;
+    vertical-align: inherit;
 }
 
 .tbl-responsive th {

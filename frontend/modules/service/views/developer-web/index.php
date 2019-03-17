@@ -15,6 +15,8 @@
         вы сможете повысить продажи, улучшить маркетинг и оптимизировать такие бизнес-процессы, как базы
         данных клиентов, истории взаимоотношений и анализ.
     </div>
+
+    <div class="title mb-5 mt-5 ">Узнайте больше о наших продуктах</div>
     <div class="accordion mt-5 mb-5" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -150,7 +152,7 @@
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        <b>Разработка, проектирование и создание базы данных</b>
+                        Разработка, проектирование и создание базы данных
                     </button>
                 </h5>
             </div>

@@ -27,10 +27,10 @@
                     Создание сайта
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -38,10 +38,10 @@
                     Хостинг на 3 месяца
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -49,10 +49,10 @@
                     Покупка домена
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -60,10 +60,10 @@
                     Онлайн чат
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -71,10 +71,10 @@
                     Геолокация (Для компаний с несколькими филиалами)
                 </td>
                 <td class="text-center">
-                    <i class="far fa-minus-square"></i>
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -82,10 +82,10 @@
                     Адаптивный дизайн
                 </td>
                 <td class="text-center">
-                    <i class="far fa-minus-square"></i>
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -93,10 +93,10 @@
                     Панель Администрирования
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -104,10 +104,10 @@
                     Индивидуальный дизайн
                 </td>
                 <td class="text-center">
-                    <i class="far fa-minus-square"></i>
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -115,10 +115,10 @@
                     Размещение товаров (до 200 шт)
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -126,10 +126,10 @@
                     Ежедневное резервное копирование
                 </td>
                 <td class="text-center">
-                    <i class="far fa-minus-square"></i>
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    <i class="far fa-check-square"></i>
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>

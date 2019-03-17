@@ -57,7 +57,7 @@ $user_id = Yii::$app->user->id ?? null;
 </div>
 
 
-<div class="segment-white mb-4   " id="service">
+<div class="segment-white mb-5   " id="service">
     <div class="container pt-5">
         <div class="title_blue">Что мы можем предложить</div>
         <div class="row mt-5 ">
@@ -74,7 +74,7 @@ $user_id = Yii::$app->user->id ?? null;
                     </div>
                     <div class="block_info">
                         <div class="info_service"><a href="/service/developer/business-card">Сайт - визитка</a></div>
-                        <div class="info_service"><a href="/service/developer/ready-decision">Готовое решение</a></div>
+                        <div class="info_service"><a href="/service/developer/ready-decision">Landing Page</a></div>
                         <div class="info_service"><a href="/service/developer/corp-site">Корпоративный сайт</a></div>
                         <div class="info_service"><a href="/service/developer/shop-site">Интернет-магазин</a></div>
                     </div>
@@ -98,10 +98,10 @@ $user_id = Yii::$app->user->id ?? null;
                         от 10000 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service">Индивидуальная CRM</div>
-                        <div class="info_service">Шаблонная CRM</div>
-                        <div class="info_service">Доработка CRM</div>
-                        <div class="info_service">Проектирование БД</div>
+                        <div class="info_service"><a href="/service/developer-web">Индивидуальная CRM</a></div>
+                        <div class="info_service"><a href="/service/developer-web">Шаблонная CRM</a></div>
+                        <div class="info_service"><a href="/service/developer-web">Доработка CRM</a></div>
+                        <div class="info_service"><a href="/service/developer-web">Проектирование БД</a></div>
                     </div>
 
                     <div class="button_service">
@@ -123,10 +123,10 @@ $user_id = Yii::$app->user->id ?? null;
                         от 500 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service">Исправление ошибок</div>
-                        <div class="info_service">Изменения в дизайне</div>
-                        <div class="info_service">Новый функционал</div>
-                        <div class="info_service">Внутрення оптимизация</div>
+                        <div class="info_service"><a href="/service/rework">Исправление ошибок</a></div>
+                        <div class="info_service"><a href="/service/rework">Изменения в дизайне</a></div>
+                        <div class="info_service"><a href="/service/rework">Новый функционал</a></div>
+                        <div class="info_service"><a href="/service/rework">Внутрення оптимизация</a></div>
                     </div>
 
                     <div class="button_service">
@@ -147,9 +147,9 @@ $user_id = Yii::$app->user->id ?? null;
                         от 3000 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service">Контроль работоспособности сайта</div>
-                        <div class="info_service">Оперативное устранение ошибок и сбоев</div>
-                        <div class="info_service">Восстановление при сбоях</div>
+                        <div class="info_service"><a href="/service/maintenance">Контроль работоспособности сайта</a></div>
+                        <div class="info_service"><a href="/service/maintenance">Оперативное устранение ошибок и сбоев</a></div>
+                        <div class="info_service"><a href="/service/maintenance">Восстановление при сбоях</a></div>
                     </div>
 
                     <!--                    <div class="info_service">доступно</div>-->

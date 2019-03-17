@@ -214,7 +214,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     color: #FFF;
     text-align: center;
     display: block;
-    font-size: 18px;
+    font-size: 24px;
     height: 60px;
     letter-spacing: 1px;
     line-height: 60px;
@@ -259,6 +259,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     padding: 10px 0;
     color: #18508b;
     font-size: 14px;
+}
+
+#service .info_service a{
+    color: #18508b;
+    font-size: 14px;
+}
+
+#service .info_service a:hover{
+    color: #ff5321;
 }
 
 #service .button_service {
@@ -1085,7 +1094,8 @@ a {
     width: 100%;
     border: 1px solid #dadada;
     border-left: none;
-    padding: 130px 20px 0;
+    padding: 115px 20px 0;
+    background-size: 75px;
     font-size: 22px;
     font-weight: 100;
     text-align: center;
@@ -1331,7 +1341,7 @@ a {
 
     .fonTop {
         background-position: 35%;
-        height: 800px;
+        height:730px;
     }
 
     .advantages .advantages-table .item {
@@ -1341,7 +1351,7 @@ a {
     .advantages .advantages-table .item .text {
         position: absolute;
         left: 0;
-        top: 300px
+        top: 270px
     }
 
     /* Common style */
@@ -1400,7 +1410,7 @@ a {
     }
 
     .advantages .advantages-table {
-        margin-bottom: 220px;
+        margin-bottom: 180px;
     }
 
     .border_title:after {
@@ -1418,6 +1428,10 @@ a {
         padding: 10px 15px 10px 15px;
         /*margin-left: 100px;*/
         /*margin-right: 100px;*/
+    }
+
+    .advantages .advantages-table .item .caption .caption_text {
+        font-size: 18px;
     }
 
     .border_Conf {

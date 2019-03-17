@@ -31,10 +31,10 @@
                     Создание сайта
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -42,10 +42,10 @@
                     Хостинг на 3 месяца
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -53,10 +53,10 @@
                     Покупка домена
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -64,10 +64,10 @@
                     Онлайн чат
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -75,10 +75,10 @@
                     Адаптивный дизайн
                 </td>
                 <td class="text-center">
-                    —
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>
@@ -86,10 +86,10 @@
                     Индивидуальный дизайн
                 </td>
                 <td class="text-center">
-                    —
+                    <i class="fas fa-minus"></i>
                 </td>
                 <td class="text-center">
-                    ✓
+                    <i class="fas fa-check"></i>
                 </td>
             </tr>
             <tr>

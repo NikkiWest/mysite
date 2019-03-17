@@ -97,7 +97,7 @@ $img = "/img/work/full/{$lst['id']}.jpg";
         </div>
 
         <div class="mt-5 mb-5">
-            <div class="title_blue  mb-5"> Галерея выполненных работ</div>
+            <div class="title_blue  mb-5"> Другие выполненные работы</div>
             <div class="">  <?=\frontend\widgets\PortfolioWidget::widget();?></div>
 
         </div>
