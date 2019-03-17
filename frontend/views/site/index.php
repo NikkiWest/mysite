@@ -44,10 +44,11 @@ $user_id = Yii::$app->user->id ?? null;
                 Эффективные <br> интернет-решения <br>
                 для вашего бизнеса
                 <div class="regBanner">
-                    <div class="waitOffReg">Мы поможем вам воплотить ваши любые идеи. <br>
-                        Различные проекты, от сайта-визитки до собственной CRM. <br>
-                        Достижение поставленных целей -
-                        одно из наших главных качеств,<br> с которыми создаются наши проектами.
+                    <div class="waitOffReg">Мы предлагаем различные решения: от сайта-визитки, до корпоративных
+                        вэб-приложений и CRM-систем, которые сделают ваш бизнес эффективнее уже сегодня!
+                    </div>
+                    <div class="mt-3">
+                        <div class="btn btn-orange">Подобрать эффективное решение</div>
                     </div>
                 </div>
             </div>
@@ -147,8 +148,10 @@ $user_id = Yii::$app->user->id ?? null;
                         от 3000 р
                     </div>
                     <div class="block_info">
-                        <div class="info_service"><a href="/service/maintenance">Контроль работоспособности сайта</a></div>
-                        <div class="info_service"><a href="/service/maintenance">Оперативное устранение ошибок и сбоев</a></div>
+                        <div class="info_service"><a href="/service/maintenance">Контроль работоспособности сайта</a>
+                        </div>
+                        <div class="info_service"><a href="/service/maintenance">Оперативное устранение ошибок и
+                                сбоев</a></div>
                         <div class="info_service"><a href="/service/maintenance">Восстановление при сбоях</a></div>
                     </div>
 
@@ -230,54 +233,53 @@ $user_id = Yii::$app->user->id ?? null;
 ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true"
                      aria-expanded="true" tabindex="0">
                     <div class="caption_text">
-                        Гарантия завершения проекта
+                        Анализ потребностей вашей компании
                     </div>
                 </div>
                 <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-2"
                      aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
-                    Мы не работаем по принципу "Давайте сделаем, а потом подумаем как и зачем". Мы проводим
-                    предварительный анализ, продумываем структуру и создаем прототипы в самом начале работы над
-                    проектом.
+                    Для решения задач вашего бизнеса мы поможем вам проанализировать специфику вашей компании, рынка и
+                    клиентов, и разработаем для вас наиболее подходящий продукт.
                 </div>
             </div>
             <div class="item item-2" data-id="2">
                 <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
                      id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1">
                     <div class="caption_text">
-                        Детальное техническое задание к проекту
+                        Объективные коммерческие предложения
                     </div>
                 </div>
                 <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-4"
                      aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
-                    Сразу обещаем: для этого вам тоже придется потрудиться. Вместе с вами мы определим специфику вашей
-                    компании, ее покупателей, заполним
-                    детальное техническое задание, выясним цели и задачи – это нужно для анализа.
+                    Заказывая решения в нашей компании, вы можете быть уверены в том, что оно будет содержать только то,
+                    что необходимо вашему бизнесу без лишнего функционала и бессмысленных денежных затрат
                 </div>
             </div>
             <div class="item item-3" data-id="3">
                 <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
                      id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1">
                     <div class="caption_text">
-                        Кроссбраузерность вашего сайта
+                        Эффективно работающее решение
                     </div>
                 </div>
                 <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-6"
                      aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true"
                 ">
-                На ваш сайт будет заходить люди с разных устройств. Чтобы они все видели ваш сайт адаптированным под
-                свои устройства.
+                Каждое наше решение отличает высокая эффективность выполнения задач клиента, стабильность работы и
+                качественное исполнение.
             </div>
         </div>
         <div class="item item-4">
             <div class="caption ui-accordion-header ui-state-default ui-accordion-icons ui-corner-all" role="tab"
                  id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1">
                 <div class="caption_text">
-                    Возможность расширения функциональности
+                    Консультации у лучших в своем деле
                 </div>
             </div>
             <div class="text ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom" id="ui-id-8"
                  aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
-                Во всех нащих сайтах вы можете в дальнейшем что-то улучшить или доработать
+                Порой трудно понять какое решение будет эффективно для вашего бизнеса в определенный момент.
+                Наша опытная команда всегда готова проконсультировать вас по всем возникающим вопросам.
             </div>
         </div>
     </div>
@@ -315,7 +317,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 
 <div class="segment-white mb-4  " id="portfolio">
     <div class="container pt-5">
-        <div class="title_blue  mb-5">Портфолио созданных сайтов</div>
+        <div class="title_blue  mb-5">Портфолио наших решений</div>
         <div class="d-none d-md-block">
             <div class="d-flex justify-content-center">
                 <div class="col-auto selectType mr-3" data-t="0">
@@ -497,13 +499,10 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
         <div class="row">
             <div class="col-md-6 col-sm-12 mt-5">
                 <div class="title_blue   mb-5"> О нас</div>
-                <div>SmartWeb - это молодая компания на IT-рынке, но мы стараемся соответствовать всем требованиям
-                    клиента и заниматься
-                    тем, что нам нравится, а именно делать продающие сайты.
+                <div><b>SmartWeb</b> – это компания с атмосферой стартапа, для которой эффективность разрабатываемых решений
+                    важнее всего. Наша международная команда профессионалов уже 3 года создает продукты, которые помогли
+                    десяткам компаний более продуктивнее. Работая с нами, вы получаете лучшее решение!
                 </div>
-                Одно из наших преимуществ это удаленная команда, где мы все работаем.
-                Если вам необходимо создать сайт в кототкие сроки или усовершенствовать прошлый , то мы
-                с радостью вам поможем!
             </div>
             <div class="col-md-6 col-sm-12 mt-5">
                 <div class="title_blue   mb-5"> Новости</div>

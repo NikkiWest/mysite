@@ -8,8 +8,8 @@
 ?>
 <div class="business_card mt-5">
     <div class="title mb-5 ">Корпоративный сайт</div>
-    <div class="desc">Корпоративный сайт - это чудесная идея, если у вас нету сайта. Закажите сайт визитку у нас и станете
-        самыми крутыми во всем Новосибирске!
+    <div class="desc">Корпоративный сайт – полноценный «филиал» вашей компании в интернете. Наиболее эффективное решение
+        для расширения и позиционирования вашего бизнеса на рынке.
     </div>
     <div class="title mt-5 mb-5 ">Что входит в стоимость?</div>
     <div class="table-responsive mb-4">
@@ -182,10 +182,10 @@
                 <td class="name">
                 </td>
                 <td class="text-center pb-3">
-                    <div class="btn btn-orange btnOpenOrder" data-t="1" data-service = "3">Оставить заявку</div>
+                    <div class="btn btn-orange btnOpenOrder" data-t="1" data-service="3">Оставить заявку</div>
                 </td>
                 <td class="text-center pb-3">
-                    <div class="btn btn-orange btnOpenOrder"  data-service = "3"  data-t="2">Оставить заявку</div>
+                    <div class="btn btn-orange btnOpenOrder" data-service="3" data-t="2">Оставить заявку</div>
                 </td>
             </tr>
             </tbody>

@@ -9,14 +9,67 @@
 ?>
 <div class="developer_web mt-5">
     <div class="title mb-5 ">Разработка web-приложений</div>
-    <div class="desc"> Если вы хотите прокачать свой бизнес и начать новый этап в управлении командой, советуем узнать
-        больше о CRM-системах. CRM-система расшифровывается как Customer Relationship Management, то есть в
-        самом названии заложено, что CRM программа призвана улучшить ваши отношения с клиентами. Кроме того,
-        вы сможете повысить продажи, улучшить маркетинг и оптимизировать такие бизнес-процессы, как базы
-        данных клиентов, истории взаимоотношений и анализ.
+    <div class="desc"> CRM-системы – самые популярные вэб-приложения для бизнеса. Они помогают оптимизировать
+        и ускорить внутренние бизнес процессы компании, взаимодействие с клиентами, повысить эффективность маркетинговых
+        мероприятий.
     </div>
 
-    <div class="title mb-5 mt-5 ">Узнайте больше о наших продуктах</div>
+
+    <div class="title mb-5 mt-5">Какие задачи решает CRM?</div>
+    <div class="dev_web mb-3">
+        <div class="d-flex align-items-center mb-3">
+            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
+            <div class="title__dev_web">Ведение контактов</div>
+        </div>
+        <div class="item__dev_web">
+            В систему попадают лиды, действующие клиенты, и, конечно же, хранятся данные о закрытых
+            проектах. Таким образом, все хранится в единой базе. В любой момент вы можете поднять нужную
+            информацию. Вам удобно отслеживать статус контакта, количество встреч, ответственных и
+            другие
+            данные.
+        </div>
+    </div>
+    <div class="dev_web mb-3">
+        <div class="d-flex align-items-center mb-3">
+            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
+            <div class="title__dev_web">Оптимизация</div>
+        </div>
+        <div class="item__dev_web">
+            CRM напомнит вам, когда нужно позвонить клиенту, отправить заказ
+            или отправить рассылку с полезным предложением, если лид давно не проявляет активность.
+        </div>
+    </div>
+    <div class="dev_web mb-3">
+        <div class="d-flex align-items-center mb-3">
+            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
+            <div class="title__dev_web">Аналитика</div>
+        </div>
+        <div class="item__dev_web">
+            С его помощью можно отследить, на каком этапе находится каждая продажа, увидеть наглядно
+            воронку продаж и понять, когда и как закрывается каждая сделка.
+        </div>
+    </div>
+    <div class="dev_web mb-3">
+        <div class="d-flex align-items-center mb-3">
+            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
+            <div class="title__dev_web">Управление продажами компании</div>
+        </div>
+        <div class="item__dev_web">
+            С его помощью можно отследить, на каком этапе находится каждая продажа,
+            увидеть наглядно воронку продаж и понять, когда и как закрывается каждая сделка.
+        </div>
+    </div>
+    <div class="dev_web">
+        <div class="d-flex align-items-center mb-3">
+            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
+            <div class="title__dev_web">Управление задачами</div>
+        </div>
+        <div class="item__dev_web">
+            Возможность поставить задачу каждому сотруднику и отследить ее выполнение.
+        </div>
+    </div>
+
+    <div class="title mb-5 mt-5 ">Узнайте больше о наших решениях</div>
     <div class="accordion mt-5 mb-5" id="accordionExample">
         <div class="card">
             <div class="card-header" id="headingOne">
@@ -30,61 +83,9 @@
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
-                    Готовый продукт будет работать исходя из потребностей вашего бизнеса. Отчетность, добавление
-                    сотрулников и прочее - все при ней.
-                    <div class="title_task__dev_web">Какие задачи решает CRM?</div>
-                    <div class="dev_web">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                            <div class="title__dev_web">Ведение контактов</div>
-                        </div>
-                        <div class="item__dev_web">
-                            В систему попадают лиды, действующие клиенты, и, конечно же, хранятся данные о закрытых
-                            проектах. Таким образом, все хранится в единой базе. В любой момент вы можете поднять нужную
-                            информацию. Вам удобно отслеживать статус контакта, количество встреч, ответственных и
-                            другие
-                            данные.
-                        </div>
-                    </div>
-                    <div class="dev_web">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                            <div class="title__dev_web">Оптимизация</div>
-                        </div>
-                        <div class="item__dev_web">
-                            CRM напомнит вам, когда нужно позвонить клиенту, отправить заказ
-                            или отправить рассылку с полезным предложением, если лид давно не проявляет активность.
-                        </div>
-                    </div>
-                    <div class="dev_web">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                            <div class="title__dev_web">Аналитика</div>
-                        </div>
-                        <div class="item__dev_web">
-                            С его помощью можно отследить, на каком этапе находится каждая продажа, увидеть наглядно
-                            воронку продаж и понять, когда и как закрывается каждая сделка.
-                        </div>
-                    </div>
-                    <div class="dev_web">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                            <div class="title__dev_web">Управление продажами компании</div>
-                        </div>
-                        <div class="item__dev_web">
-                            С его помощью можно отследить, на каком этапе находится каждая продажа,
-                            увидеть наглядно воронку продаж и понять, когда и как закрывается каждая сделка.
-                        </div>
-                    </div>
-                    <div class="dev_web">
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                            <div class="title__dev_web">Управление задачами</div>
-                        </div>
-                        <div class="item__dev_web">
-                            Возможность поставить задачу каждому сотруднику и отследить ее выполнение.
-                        </div>
-                    </div>
+                    Индивидуальная CRM – самый настоящий мастодонт эффективности для любого бизнеса. Индивидуальная CRM
+                    может содержать как самый базовый функционал, необходимый компании, так и множество разных функций:
+                    от хранения базовой информации о клиентах до автоматизированной sms/email-рассылки.
                     <div class="mt-4">
                         <p class="text-center font-weight-bold">Хотите свою CRM? Оставьте заявку!</p>
                         <div class="text-center">
@@ -107,12 +108,12 @@
             </div>
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                    CRM-решение – это уже готовый продукт для автоматизации бизнес-процессов привлечения, развития и
-                    удержания клиентов в различных отраслях бизнеса. Перед разработкой отраслевого решения мы проводим
-                    глубокий анализ отрасли, чтобы предложить клиентам эталонные процессы управления компанией и
-                    взаимодействия с её клиентской базой.
+                    CRM-система на основе готового решения – это CRM-система из коробки с разнообразным функционалом. На
+                    рынке представлено большое количество коробочных решений, однако их настройка может стать довольно
+                    сложной. Именно поэтому наша команда поможет вам внедрить абсолютно любое коробочное решение в
+                    бизнес-процессы вашей компании.
                     <div class="mt-4">
-                        <p class="text-center font-weight-bold">Хотите свою CRM? Оставьте заявку!</p>
+                        <p class="text-center font-weight-bold">Нужна эффективная CRM? Обращайтесь к нам!</p>
                         <div class="text-center">
                             <div class="btn btn-orange mt-3 mb-3 btnOpenOrder" data-t="2" data-service="5">Оставить
                                 заявку
@@ -133,11 +134,11 @@
             </div>
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
-                    Доработка уже имеющейся CRM системы под любые потребности клиента.
-                    Например, выгрузка отчетов для анализа данных, sms-рассылка.
+                    Доработка уже имеющейся CRM системы под любые потребности вашего бизнеса: выгрузка отчетов для
+                    анализа данных, sms-рассылка клиентов, оценка эффективности сотрудников компании и т.д.
 
                     <div class="mt-4">
-                        <p class="text-center font-weight-bold">Есть что доработать? Оставьте заявку!</p>
+                        <p class="text-center font-weight-bold">Необходимо доработать CRM? Оставьте заявку!</p>
                         <div class="text-center">
                             <div class="btn btn-orange mt-3 mb-3 btnOpenOrder" data-t="3" data-service="5">Оставить
                                 заявку
@@ -158,22 +159,26 @@
             </div>
             <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
-                    Чтобы создать полезную базу данных, нужно представлять все бизнес-процессы, которые есть на
-                    предприятии, объем и параметры информации, с которой ежедневно работают сотрудники. Идеальная база
-                    данных не просто систематизирует информацию. Она дает полную картину работы предприятия и
-                    подсказывает направления развития.
+                    База данных – самый необходимый инструмент повышения эффективности вашего бизнеса. База данных не
+                    только позволяет систематизировать всю информацию предприятия, но и получать отчеты разной
+                    конфигурации начиная с отчетов эффективности сотрудников, до количества и качества сделок в
+                    определенный период времени.
                     <div class="title_task__dev_web">Когда необходимо создание собственной БД?</div>
                     <div class="row">
                         <div class="dev_web col-sm-6 mt-3">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                                <div class="title__dev_web">Большое количество Excel и Google-таблиц, с которыми приходится работать каждый день</div>
+                                <div class="title__dev_web">Большое количество Excel и Google-таблиц, с которыми
+                                    приходится работать каждый день
+                                </div>
                             </div>
                         </div>
                         <div class="dev_web col-sm-6 mt-3">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                                <div class="title__dev_web">Отчеты, которые отнимают у персонала много рабочего времени</div>
+                                <div class="title__dev_web">Отчеты, которые отнимают у персонала много рабочего
+                                    времени
+                                </div>
                             </div>
                         </div>
                         <div class="dev_web col-sm-6 mt-3">
@@ -185,22 +190,24 @@
                         <div class="dev_web col-sm-6 mt-3">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="mr-3"><img src="/img/icons/arrow-right.png" width="10" alt=""></div>
-                                <div class="title__dev_web">Части информации о работе компании хранится у разных сотрудников, что может вызывать проблемы
-                                при отсутсвии их на рабочем месте
+                                <div class="title__dev_web">Части информации о работе компании хранится у разных
+                                    сотрудников, что может вызывать проблемы
+                                    при отсутсвии их на рабочем месте
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
                     <div class="mt-4">
-                        <p class="text-center font-weight-bold">Задумались о создании или доработке? Доверьте это нам!</p>
+                        <p class="text-center font-weight-bold">Задумались о создании собственной базы данных? Доверьте
+                            это нам!!</p>
                         <div class="text-center">
                             <div class="btn btn-orange mt-3 mb-3 btnOpenOrder" data-t="1" data-service="5">Оставить
                                 заявку
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
