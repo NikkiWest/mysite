@@ -41,9 +41,10 @@ class Portfolio extends Model
 
     public function lst()
     {
-        $sql = "select portfolio.*,type.name as type_name
+        $sql = "select portfolio.*,type.name as type_name, type_portfolio.id_type as type_id
  from portfolio 
-                join type  on portfolio.type_id = type.id";
+                join type_portfolio on portfolio.id = type_portfolio.id_portfolio 
+                join type  on type_portfolio.id_type = type.id ";
         $all = \yii::$app->db->createCommand($sql)->queryAll();
         $ar = [];
         foreach ($all as $item) {
@@ -83,9 +84,10 @@ class Portfolio extends Model
     }
 
     public function getPortfolioOne($id){
-        $sql = "select portfolio.* , type.name as type_name
+        $sql = "select portfolio.* , type.name as type_name, type_portfolio.id_type as type_id
         from portfolio
-        join type on portfolio.type_id = type.id
+        join type_portfolio on portfolio.id = type_portfolio.id_portfolio
+        join type on type_portfolio.id_type = type.id
         where portfolio.id = :id";
         $one = \yii::$app->db->createCommand($sql, ['id' => $id])->queryOne();
         return $one;

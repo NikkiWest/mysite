@@ -47,9 +47,10 @@ $user_id = Yii::$app->user->id ?? null;
                     <div class="waitOffReg">Мы предлагаем различные решения: от сайта-визитки, до корпоративных
                         вэб-приложений и CRM-систем, которые сделают ваш бизнес эффективнее уже сегодня!
                     </div>
-                    <div class="mt-3">
-                        <div class="btn btn-orange">Подобрать эффективное решение</div>
-                    </div>
+
+                </div>
+                <div class="buttonBanner">
+                    <div class="btn btn-reg">Подобрать эффективное решение</div>
                 </div>
             </div>
         </div>
@@ -350,13 +351,13 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 ?>
             </div>
         </div>
-        <div class="grid">
+        <div class=" grid">
             <?php
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
                 $img = "/img/work/small/" . $item['id'] . ".jpg";
                 ?>
-                <figure class="effect-oscar lstSite" data-t="<?= $item['type_id']; ?>">
+                <figure class="effect-oscar lstSite " data-t="<?= $item['type_id']; ?>">
                     <img src="<?= $img; ?>" alt="img08"/>
                     <figcaption>
                         <h2><?= $item['name']; ?></h2>
