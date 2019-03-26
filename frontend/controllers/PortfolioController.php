@@ -9,6 +9,8 @@
 namespace frontend\controllers;
 
 
+use common\Core;
+use common\models\Order;
 use common\models\Portfolio;
 use yii\web\Controller;
 
@@ -49,5 +51,16 @@ class PortfolioController extends BaseController
             [
                 'lst' => $lst
             ]);
+    }
+
+    public function actionOrder()
+    {
+        $Order = new Order();
+        $Order->attributes = $_POST ?? null;
+        $Order->save();
+        Core::error($Order);
+        $ar = [];
+        if(Core::hasError() === false) $ar['success_txt'] = 'Заявка успешно отправлена!';
+        Core::encode_echo($ar);
     }
 }

@@ -16,10 +16,10 @@ $this->params['breadcrumbs'] = [
 $this->registerJs("PortfolioCtrl.actionView();", \yii\web\View::POS_END, 'actionView');
 $this->params['breadcrumbs'] = null;
 
-$img = "/img/work/full/{$lst['id']}.jpg";
+$img = "/img/work/full/{$lst['id']}.png";
 ?>
     <div class="banner d-flex align-items-center justify-content-center">
-        <div class="title__banner"><?= $lst['name']; ?></div>
+        <h1 class="title__banner"><?= $lst['name']; ?></h1>
     </div>
 
     <div class="container">
@@ -59,13 +59,13 @@ $img = "/img/work/full/{$lst['id']}.jpg";
     </div>
 
     <div class="container">
-        <div class="row mt-3 mb-4">
-            <div class="col-sm-7">
+        <div class="row  mb-4">
+            <div class="col-sm-7 mt-3">
                 <a data-toggle="lightbox" data-gallery="gallery" href="<?= $img; ?>">
-                    <img class="w-100" src="<?= $img; ?>" alt="Награда 4">
+                    <img class="w-100" src="<?= $img; ?>" alt="<?= $lst['name']; ?>">
                 </a>
             </div>
-            <div class="col-sm-5 d-flex flex-column justify-content-between">
+            <div class="col-sm-5 mt-3 d-flex flex-column justify-content-between">
                 <div class="info_block">
                     <div class="row mb-3">
                         <div class="col-sm-6 title_block">адрес сайта</div>
@@ -116,8 +116,9 @@ $img = "/img/work/full/{$lst['id']}.jpg";
 
                 </div>
                 <div class="modal-body">
-                    <p class="text-center  font-weight-bold">Укажите ваше Ф.И.О. и номер телефона и мы вам перезвоним!</p>
-                    <form action="" id="form" class="form-horizontal">
+                    <p class="text-center  font-weight-bold">Заполните контактные данные
+                        и в течение дня мы свяжемся с вами для уточнения вопроса по вашему бизнесу!</p>
+                    <form action="" id="formOrder" class="form-horizontal">
                         <div class="form-group">
                             <div class="col-sm-12">
                                 <input value="" type="text" class="form-control" id="fio" name="fio"
@@ -130,13 +131,18 @@ $img = "/img/work/full/{$lst['id']}.jpg";
                                        placeholder="8(913)999-99-99">
                             </div>
                         </div>
-
-                        <input type="hidden" id="id" name="id"/>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea type="text" class="form-control" id="comment" name="comment"
+                                          placeholder="Комментарий"></textarea>
+                            </div>
+                        </div>
+                        <input type="hidden" name="type" value="8">
                     </form>
                 </div>
-                <div class="text-center mt-3 mb-3">
+                <div class="text-center mb-4">
                     <button type="button" class="btn btn-blue"
-                            onclick="javascript:$('#form').submit(); return false;">Отправить заявку
+                            onclick="javascript:$('#formOrder').submit(); return false;">Отправить заявку
                     </button>
                 </div>
             </div>

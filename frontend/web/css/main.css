@@ -16,6 +16,10 @@ url("../fonts/SOURCESANSPRO-REGULAR.TTF");
     font-style: normal;
     font-weight: normal;
 }
+.title_big_banner{
+    line-height: 51px;
+    font-size: 48px;
+}
 
 .breadcrumb > li + li::before {
     padding: 0 5px;
@@ -433,9 +437,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .grid figure img {
     position: relative;
-    display: block;
+    display: inline-block;
     min-height: 100%;
     opacity: 0.8;
+    width: 75%;
 }
 
 .grid figure figcaption {
@@ -507,7 +512,7 @@ figure.effect-oscar img {
 
 figure.effect-oscar figcaption {
     padding: 3em;
-    background-color: rgba(58, 52, 42, 0.7);
+    background-color: rgba(58, 52, 42, 0.57);
     -webkit-transition: background-color 0.35s;
     transition: background-color 0.35s;
 }
@@ -1253,6 +1258,8 @@ a {
         height: 800px;
     }
 
+
+
     #tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
         font-size: 16px;
     }
@@ -1300,6 +1307,9 @@ a {
     .navbarTop a.btnHeader {
         font-size: 16px;
         margin: 0px 5px;
+    }
+    .grid figure img {
+        width: 100%;
     }
     .icon_menu{
         font-size: 32px;

@@ -4,6 +4,21 @@ var PortfolioCtrl = {
             e.preventDefault();
             $("#modalOrder").modal("show");
         });
+
+        $(document).on("submit", "#formOrder", function (e) {
+            e.preventDefault();
+            var data = $(this).serialize();
+            $.ajax({
+                data: data,
+                url: '/portfolio/order',
+                success: function (data) {
+                    if (response_msg(data) === false) return;
+                    Util.resetForm("#formOrder");
+                    $("#modalOrder").modal("hide");
+                }
+            });
+            return false;
+        });
     },
     actionIndex : function () {
 

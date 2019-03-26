@@ -48,7 +48,7 @@ $this->registerJs("PortfolioCtrl.actionIndex();", \yii\web\View::POS_END, 'actio
         <?php
         foreach ($lst as $item) {
 //                \common\Core::dump($item);
-            $img = "/img/work/small/" . $item['id'] . ".jpg";
+            $img = "/img/work/small/" . $item['id'] . ".png";
             ?>
             <figure class="effect-oscar lstSite" data-t="<?= $item['type_id']; ?>">
                 <img src="<?= $img; ?>" alt="img08"/>

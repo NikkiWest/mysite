@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Главная страница';
+$this->title = 'Интернет-решения для бизнеса | Заказать сайт в Новосибирске';
 $this->registerJs("MainCtrl.actionIndex();", \yii\web\View::POS_END, 'actionIndex');
 
 $user_id = Yii::$app->user->id ?? null;
@@ -41,8 +41,10 @@ $user_id = Yii::$app->user->id ?? null;
     <div class="container">
         <div class="d-flex align-items-center position-relative ">
             <div class="textBigBanner ">
-                Эффективные <br> интернет-решения <br>
-                для вашего бизнеса
+
+                  <h1 class="title_big_banner">Эффективные <br> интернет-решения <br>
+                      для вашего бизнеса</h1>
+
                 <div class="regBanner">
                     <div class="waitOffReg">Мы предлагаем различные решения: от сайта-визитки, до корпоративных
                         вэб-приложений и CRM-систем, которые сделают ваш бизнес эффективнее уже сегодня!
@@ -61,7 +63,7 @@ $user_id = Yii::$app->user->id ?? null;
 
 <div class="segment-white mb-5   " id="service">
     <div class="container pt-5">
-        <div class="title_blue">Что мы можем предложить</div>
+        <h2 class="title_blue">Что мы можем предложить</h2>
         <div class="row mt-5 ">
             <div class="col-lg-3 col-md-6 mt-4">
                 <div class="block_service">
@@ -227,7 +229,7 @@ $user_id = Yii::$app->user->id ?? null;
 
 <div class="block block4 advantages pt-5 pb-5 " id="programs">
     <div class="container ">
-        <div class="title_white border_title mb-5 ">Что вы гарантированно получаете, работая с нами?</div>
+        <h2 class="title_white border_title mb-5 ">Что вы гарантированно получаете, работая с нами?</h2>
         <div class=" advantages-table ui-accordion ui-widget ui-helper-reset" role="tablist" id="accordion">
             <div class="item item-1">
                 <div class="caption ui-accordion-header ui-state-default ui-accordion-icons  ui-corner-top
@@ -318,7 +320,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 
 <div class="segment-white mb-4  " id="portfolio">
     <div class="container pt-5">
-        <div class="title_blue  mb-5">Портфолио наших решений</div>
+        <h2 class="title_blue  mb-5">Портфолио наших решений</h2>
         <div class="d-none d-md-block">
             <div class="d-flex justify-content-center">
                 <div class="col-auto selectType mr-3" data-t="0">
@@ -355,7 +357,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             <?php
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
-                $img = "/img/work/small/" . $item['id'] . ".jpg";
+                $img = "/img/work/small/" . $item['id'] . ".png";
                 ?>
                 <figure class="effect-oscar lstSite " data-t="<?= $item['type_id']; ?>">
                     <img src="<?= $img; ?>" alt="img08"/>
@@ -383,7 +385,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 
 
 <div class="container pt-5 mb-4" id="klients">
-    <div class="title_blue  mb-5"> Наши клиенты</div>
+    <h2 class="title_blue  mb-5"> Наши клиенты</h2>
     <div class="row text-center mb-3">
         <div class="owl-carousel owl-theme  logo_img">
             <a
@@ -435,7 +437,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
 
 <div class="somneniya fon-for-order">
     <div class="container pt-5 pb-5">
-        <div class="title_white mb-5"> Остались сомнения?</div>
+        <h2 class="title_white mb-5"> Остались сомнения?</h2>
         <div class="mt-4 mb-5 text-somneniya">
             Отправьте заявку уже сегодня и вам в качестве бонуса
             будет скидка 10% на услуги
@@ -508,7 +510,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 mt-5">
-                <div class="title_blue   mb-5"> О нас</div>
+                <h2 class="title_blue   mb-5"> О нас</h2>
                 <div><b>SmartWeb</b> – это компания с атмосферой стартапа, для которой эффективность разрабатываемых решений
                     важнее всего. Наша международная команда профессионалов уже 3 года создает продукты, которые помогли
                     десяткам компаний более продуктивнее. Работая с нами, вы получаете лучшее решение!

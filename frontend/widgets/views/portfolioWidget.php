@@ -13,7 +13,7 @@
     <div class="owl-carousel owl-theme portfolio-widget ">
         <?php
         foreach ($lst as $item) {
-            $img = "/img/work/small/" . $item['id'] . ".jpg";
+            $img = "/img/work/small/" . $item['id'] . ".png";
             ?>
             <a class="col-lg-3 col-sm-6 col-md-6 mt-3 " href="/portfolio/view/<?= $item['seo_url']; ?>">
                 <img class="w-100" src="<?= $img; ?>" alt="<?= $item['name']; ?>">
