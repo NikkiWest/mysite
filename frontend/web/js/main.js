@@ -1,20 +1,39 @@
 var MainCtrl = {
     actionIndex: function () {
 
-        $(document).on("submit", "#formOrderMain", function (e) {
+        $(document).on("submit", "#formOrderMain, #formOrder", function (e) {
             e.preventDefault();
             var data = $(this).serialize();
+            var t = $(this).data("t");
             $.ajax({
                 data: data,
                 url: 'site/save',
                 success: function (data) {
                     if (response_msg(data) === false) return;
+                if(t == 'block'){
                     $("#formOrder-block").hide();
                     $("#FormOk").show();
+                }else{
+                    $("#modalOrder").modal("hide");
+                }
+
                 }
             });
             return false;
         });
+
+        $(document).on("click", ".openModalOrder", function (e) {
+            e.preventDefault();
+            $(".txt_color").removeClass("text-white");
+            $(".txt_color").addClass("txt_black");
+            $("#modalOrder").modal("show");
+        });
+
+        $('#modalOrder').on('hidden.bs.modal', function (e) {
+            $(".txt_color").addClass("text-white");
+            $(".txt_color").removeClass("txt_black");
+        })
+
 
         $(document).on("click", ".selectType", function (e) {
             var t = $(this).data('t');

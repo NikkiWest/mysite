@@ -5,8 +5,8 @@ var ServiceCtrl = {
             e.preventDefault();
             var t = $(this).data("t");
             var service = $(this).data("service");
-            $("#formOrderService input[name=t]").val(t);
-            $("#formOrderService input[name=service]").val(service);
+            $("#formOrderService input[name=type]").val(t);
+            $("#formOrderService input[name=service_id]").val(service);
             $("#modalOrderService").modal("show");
         });
         $(document).on("submit", "#formOrderService", function (e) {

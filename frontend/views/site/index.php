@@ -11,6 +11,7 @@ $user_id = Yii::$app->user->id ?? null;
 
 ?>
 
+
 <div class="fonTop">
 
     <div class="container">
@@ -42,8 +43,8 @@ $user_id = Yii::$app->user->id ?? null;
         <div class="d-flex align-items-center position-relative ">
             <div class="textBigBanner ">
 
-                  <h1 class="title_big_banner">Эффективные <br> интернет-решения <br>
-                      для вашего бизнеса</h1>
+                <h1 class="title_big_banner">Эффективные <br> интернет-решения <br>
+                    для вашего бизнеса</h1>
 
                 <div class="regBanner">
                     <div class="waitOffReg">Мы предлагаем различные решения: от сайта-визитки, до корпоративных
@@ -52,7 +53,7 @@ $user_id = Yii::$app->user->id ?? null;
 
                 </div>
                 <div class="buttonBanner">
-                    <div class="btn btn-reg">Подобрать эффективное решение</div>
+                    <div class="btn btn-reg openModalOrder">Подобрать эффективное решение</div>
                 </div>
             </div>
         </div>
@@ -358,25 +359,27 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
                 $img = "/img/work/small/" . $item['id'] . ".png";
-                ?>
-                <figure class="effect-oscar lstSite " data-t="<?= $item['type_id']; ?>">
-                    <img src="<?= $img; ?>" alt="img08"/>
-                    <figcaption>
-                        <h2><?= $item['name']; ?></h2>
-                        <p><?php
-//                            \common\Core::dump(mb_strlen($item['txt']));
-                            $text= $item['txt'];
-                            if(mb_strlen($item['txt']) >= 200){
-                                $string = substr($text, 0, 200);
-                                $string = substr($string, 0, strrpos($string, ' '));
-                                echo $string." […] ";
-                            }
+                foreach ($item['types'] as $type) {
+                    ?>
+                    <figure class="effect-oscar lstSite " data-t="<?= $type['id_type']; ?>">
+                        <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
+                        <figcaption>
+                            <h2><?= $item['name']; ?></h2>
+                            <p><?php
+                                //                            \common\Core::dump(mb_strlen($item['txt']));
+                                $text = $item['txt'];
+                                if (mb_strlen($item['txt']) >= 200) {
+                                    $string = substr($text, 0, 200);
+                                    $string = substr($string, 0, strrpos($string, ' '));
+                                    echo $string . " […] ";
+                                }
 
-                            ?></p>
-                        <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
-                    </figcaption>
-                </figure>
-                <?php
+                                ?></p>
+                            <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
+                        </figcaption>
+                    </figure>
+                    <?php
+                }
             }
             ?>
         </div>
@@ -419,16 +422,16 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             </a>
             <a
                     class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                <img class="w-100" src="/img/pathers/proffesional.png" alt="Партнер 7">
+                <img class="w-100" src="/img/pathers/proffesional.png" alt="Партнер 8">
             </a>
             <a
                     class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                <img class="w-100" src="/img/pathers/conf.png" alt="Партнер 7">
+                <img class="w-100" src="/img/pathers/conf.png" alt="Партнер 9">
             </a>
 
             <a
                     class="col-lg-3 col-sm-6 col-md-6 mt-3">
-                <img class="w-100" src="/img/pathers/Mir-vkusa.png" alt="Партнер 7">
+                <img class="w-100" src="/img/pathers/Mir-vkusa.png" alt="Партнер 10">
             </a>
 
         </div>
@@ -447,8 +450,8 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 <div class="smart_offer position-relative mt-4">
 
                     <div class="img_skidka">
-                        <img src="/img/skidka.png" class="w-100" alt=""></div>
-                    <form action="" class="formReg" id="formOrderMain">
+                        <img src="/img/skidka.png" class="w-100" alt="Скидка за заявку"></div>
+                    <form action="" class="formReg " id="formOrderMain" data-t="block">
                         <div class="row form-group ">
                             <div class="col-sm-12 ">
                                 <input type="text" class="form-control" id="formOrderMain-fio" name="fio"
@@ -480,7 +483,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                                         onclick="javascript:$('#formOrderMain').submit(); return false;">Хочу скидку!
                                 </button>
                             </div>
-                            <div class="col-sm-12 mt-4 text-center f10" style="color: #fff">Нажимая кнопку
+                            <div class="col-sm-12 mt-4 text-center f10 text-white">Нажимая кнопку
                                 «Хочу скидку!», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
                                                                                      target="_blank">персональных
                                     данных</a></div>
@@ -511,7 +514,8 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
         <div class="row">
             <div class="col-md-6 col-sm-12 mt-5">
                 <h2 class="title_blue   mb-5"> О нас</h2>
-                <div><b>SmartWeb</b> – это компания с атмосферой стартапа, для которой эффективность разрабатываемых решений
+                <div><b>SmartWeb</b> – это компания с атмосферой стартапа, для которой эффективность разрабатываемых
+                    решений
                     важнее всего. Наша международная команда профессионалов уже 3 года создает продукты, которые помогли
                     десяткам компаний более продуктивнее. Работая с нами, вы получаете лучшее решение!
                 </div>
@@ -621,3 +625,56 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" data-show="false" id="modalOrder">
+    <div class="modal-dialog" style="width: 95%; max-width: 500px;">
+        <div class="modal-content panel panel-red">
+            <div class="modal-header panel-heading">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Оставьте заявку уже СЕЙЧАС и получите скидку 10% на наши услуги</p>
+                <form action="" class="formReg " id="formOrder" data-t="banner">
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formOrder-fio" name="fio"
+                                   placeholder="Как вас зовут?" autocomplete="new-password">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="email" class="form-control" id="formOrder-email" name="email"
+                                   placeholder="E-mail" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                            <input type="text" class="form-control" id="formOrder-phone" name="phone"
+                                   placeholder="Телефон" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="row form-group ">
+                        <div class="col-sm-12 ">
+                                <textarea type="text" class="form-control" id="formOrder-comment"
+                                          name="comment"
+                                          placeholder="Комментарий (по желанию)" autocomplete="off"></textarea>
+                        </div>
+                    </div>
+                    <div class="row form-group pb-3">
+                        <div class="col-sm-12 text-center">
+                            <button type="submit" class="btn btn-reg "
+                                    onclick="javascript:$('#formOrder').submit(); return false;">Хочу скидку!
+                            </button>
+                        </div>
+                        <div class="col-sm-12 mt-4 text-center f10">Нажимая кнопку
+                            «Хочу скидку!», Вы разрешаете нам обработку Ваших <a href="/img/pdf/privacy.pdf"
+                                                                                 target="_blank">персональных
+                                данных</a></div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

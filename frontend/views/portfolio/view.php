@@ -6,7 +6,13 @@
  * Time: 14:38
  */
 
-$this->title = "Портфолио - сайт " . $lst['name'];
+
+if($lst['type_id'] == 5){
+    $type_site = 'CRM';
+}else{
+    $type_site = 'сайта';
+}
+$this->title = "Создание $type_site - " . $lst['name'];
 $this->params['breadcrumbs'] = [
     [
         'label' => 'портфолио',
@@ -17,6 +23,8 @@ $this->registerJs("PortfolioCtrl.actionView();", \yii\web\View::POS_END, 'action
 $this->params['breadcrumbs'] = null;
 
 $img = "/img/work/full/{$lst['id']}.png";
+
+//\common\Core::dump($lst);
 ?>
     <div class="banner d-flex align-items-center justify-content-center">
         <h1 class="title__banner"><?= $lst['name']; ?></h1>

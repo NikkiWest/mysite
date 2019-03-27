@@ -38,8 +38,8 @@ return '
                         </div>
                     </div>
 
-                    <input type="hidden" id="t" name="t"/>
-                    <input type="hidden" id="service" name="service"/>
+                    <input type="hidden" id="type" name="type"/>
+                    <input type="hidden" id="service_id" name="service_id"/>
                 </form>
             </div>
             <div class="modal-footer panel-footer">

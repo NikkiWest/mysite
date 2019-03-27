@@ -9,6 +9,7 @@
 namespace common\models;
 
 
+use common\Core;
 use phpDocumentor\Reflection\DocBlock\Tags\Reference\Url;
 use yii\base\Model;
 use yii\helpers\ArrayHelper;
@@ -63,6 +64,7 @@ class Order extends Model
         public function save()
         {
 
+//            Core::dump($this->type);die;
                 if($this->validate() === false) return;
                 $fld = [];
                 $fld['service_id'] = $this->service_id;

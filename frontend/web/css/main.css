@@ -16,9 +16,14 @@ url("../fonts/SOURCESANSPRO-REGULAR.TTF");
     font-style: normal;
     font-weight: normal;
 }
-.title_big_banner{
+
+.title_big_banner {
     line-height: 51px;
     font-size: 48px;
+}
+
+.txt_black {
+    color: #212529!important;
 }
 
 .breadcrumb > li + li::before {
@@ -127,28 +132,31 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     line-height: 24px;
 }
 
-#FormOk{
+#FormOk {
     font-size: 18px;
     color: #fff;
 }
 
-.text-orange{
+.text-orange {
     color: #ff5321;
 }
 
-.round-ok{
+.round-ok {
     border: 3px solid #ff5321;
     border-radius: 50%;
     padding: 20px;
     transition: 0.3s ease-out 0.5s;
 }
+
 .round-ok i {
     color: #ff5321;
     transition: 0.3s ease-out 0.5s;
 }
-.round-ok:hover{
+
+.round-ok:hover {
     border: 3px solid #fff;
 }
+
 .round-ok:hover i {
     color: #fff;
 }
@@ -265,12 +273,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     font-size: 14px;
 }
 
-#service .info_service a{
+#service .info_service a {
     color: #18508b;
     font-size: 14px;
 }
 
-#service .info_service a:hover{
+#service .info_service a:hover {
     color: #ff5321;
 }
 
@@ -324,8 +332,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     height: auto;
 }
 
-
-.buttonBanner{
+.buttonBanner {
     position: absolute;
     bottom: -220px;
 
@@ -365,48 +372,49 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background-color: #0c5460;
 }
 
-.leftMenuLg{
+.leftMenuLg {
     list-style: none;
     color: #1a4071;
     font-weight: 600;
     font-size: 18px;
 }
-.leftMenuLg li{
+
+.leftMenuLg li {
     margin: 15px 0;
 }
 
-
-.leftMenuLg li.active >a{
+.leftMenuLg li.active > a {
     color: #ff5321;
     border-left: 3px solid #1a4071;
     margin-left: -10px;
     padding-left: 10px;
 }
 
-.leftMenuLg li a{
+.leftMenuLg li a {
     color: #1a4071;
 }
-.leftMenuLg  a:active{
-    color: #ff5321!important;
+
+.leftMenuLg a:active {
+    color: #ff5321 !important;
 }
 
-.menu_mobile a{
+.menu_mobile a {
     font-size: 18px;
     font-weight: 500;
-    color:#1a4071;
+    color: #1a4071;
 }
 
-.menu_mobile a:hover{
-    color: #ff5321!important;
+.menu_mobile a:hover {
+    color: #ff5321 !important;
 }
 
-.menu_mobile.active a{
+.menu_mobile.active a {
     font-weight: bold;
-    color: #ff5321!important;
+    color: #ff5321 !important;
 }
 
-.icon_menu{
- font-size: 22px;
+.icon_menu {
+    font-size: 22px;
     color: white
 }
 
@@ -508,7 +516,6 @@ figure.effect-oscar img {
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;
 }
-
 
 figure.effect-oscar figcaption {
     padding: 3em;
@@ -972,7 +979,6 @@ a {
     text-transform: none;
 }
 
-
 .helpBanner {
     color: white;
     font-weight: 500;
@@ -1258,8 +1264,6 @@ a {
         height: 800px;
     }
 
-
-
     #tabs .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
         font-size: 16px;
     }
@@ -1308,15 +1312,19 @@ a {
         font-size: 16px;
         margin: 0px 5px;
     }
+
     .grid figure img {
         width: 100%;
     }
-    .icon_menu{
+
+    .icon_menu {
         font-size: 32px;
     }
+
     .btn-reg {
         font-size: 18px;
     }
+
     #tabs .tabContentTitle {
         color: #63737A;
         text-align: center;
@@ -1325,9 +1333,10 @@ a {
 
     }
 
-    .grid figure h2{
+    .grid figure h2 {
         font-size: 26px;
     }
+
     .marginLeftToReg {
         margin-left: -130px;
     }
@@ -1363,7 +1372,7 @@ a {
 
     .fonTop {
         background-position: 35%;
-        height:730px;
+        height: 730px;
     }
 
     .advantages .advantages-table .item {
@@ -1378,8 +1387,6 @@ a {
     }
 
     /* Common style */
-
-
     .advantages .advantages-table {
         margin-bottom: 200px;
     }
@@ -1388,6 +1395,7 @@ a {
         font-size: 14px;
         padding: 10px 30px;
     }
+
     .grid figure {
         width: 48%;
     }
@@ -1398,19 +1406,21 @@ a {
     .grid figure {
         width: 31.333%;
     }
+
     .border_Conf {
         padding: 20px 0px;
         margin-left: 0px;
         margin-right: 20px;
     }
+
     .btn-orange {
         font-size: 16px;
         padding: 15px 40px;
     }
-    .icon_menu{
+
+    .icon_menu {
         font-size: 40px;
     }
-
 
     .advantages .advantages-table .item .caption {
         height: 220px;
