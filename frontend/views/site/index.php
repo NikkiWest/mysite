@@ -2,9 +2,9 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'Интернет-решения для бизнеса | Заказать сайт в Новосибирске';
+$this->title = 'Интернет-решения для бизнеса | Заказать сайт в Новосибирске | Веб-студия Smartweb';
 $this->registerJs("MainCtrl.actionIndex();", \yii\web\View::POS_END, 'actionIndex');
-
+$this->registerMetaTag(['name' => 'decsription', 'content' => 'Создание сайтов, разработка веб-приложений и CRM под ключ. Веб-студия в Новосибирске. Доступные цены от профессионалов своего дела.']);
 $user_id = Yii::$app->user->id ?? null;
 
 //\common\Core::dump($Users);

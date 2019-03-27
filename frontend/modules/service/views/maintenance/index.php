@@ -5,7 +5,10 @@
  * Date: 06.03.2019
  * Time: 14:11
  */
-
+$this->title = 'Обслуживание сайтов в Новосибирске | Веб-студия Smartweb';
+$this->registerMetaTag(['name' => 'decsription',
+    'content' => '«SmartWeb» предоставляет профессиональную техническую поддержку сайтов на всех распространенных
+        CMS.'])
 ?>
 <div class="developer_web mt-5">
     <div class="title mb-5 ">Обслуживание сайтов</div>

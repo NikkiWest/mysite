@@ -5,6 +5,10 @@
  * Date: 06.03.2019
  * Time: 14:12
  */
+$this->title = 'Доработка сайтов в Новосибирске | Веб-студия Smartweb';
+$this->registerMetaTag(['name' => 'decsription',
+    'content' => '««SmartWeb» предлагает профессиональную доработку сайтов на всех распространенных CMS и
+        фреймворках.'])
 ?>
 
 <div class="rework mt-5">

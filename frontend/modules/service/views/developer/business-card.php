@@ -5,6 +5,10 @@
  * Date: 06.03.2019
  * Time: 14:02
  */
+$this->title = 'Создание сайта-визитки на заказ под ключ в Новосибирске | Веб-студия Smartweb';
+$this->registerMetaTag(['name' => 'decsription',
+    'content' => 'Разработка сайта визитки на заказ под ключ. Доступные цены от профессионалов своего дела.
+     Веб-студия Smartweb в Новосибирске.'])
 ?>
 <div class="business_card mt-5">
     <div class="title mb-5 ">Сайт-визитка</div>

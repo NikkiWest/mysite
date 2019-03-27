@@ -7,7 +7,12 @@
     position: relative;
     backdrop-filter: blur(10);
 }
-
+.block_information{
+    background: #e2f2fb;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border-left: 5px solid #00a0e3;
+}
 /*.banner:after {*/
     /*background-color: #1a4071;*/
     /*opacity: 0.5;*/

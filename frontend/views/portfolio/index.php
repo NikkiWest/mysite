@@ -6,21 +6,24 @@
  * Time: 17:54
  */
 
-$this->title = "Список выполненных работ";
+$this->title = "Список выполненных работ | Веб-студия Smartweb";
 $this->params['breadcrumbs'] = ['Портфолио'];
 $this->registerJs("PortfolioCtrl.actionIndex();", \yii\web\View::POS_END, 'actionIndex');
-$this->registerMetaTag(['name' => '', 'content' => '']);
+$this->registerMetaTag(['name' => 'decsription', 'content' => 'Портфолио созданных сайтов Новосибирской веб-студии Smartweb: от одностраничного сайта и landing page до корпоративных сайтов и CRM.']);
 ?>
 <div class="title  mb-3">Портфолио реализованных решений</div>
-<div class="text-center">
-    <div class="block_site_good  mb-5">
-        <div> Наши решения - это наша гордость. <br> К разработке сайта под заказ или к созданию CRM мы подходим со всей
-            ответственностью,<br>
-            соблюдаем назнаенные сроки и радуем вас выгодными предложениями!
+
+    <div class="block_information  ">
+        <div class="row">
+            <div class="col-lg-1  col-sm-2 d-none d-sm-block"><img src="/img/portfolio/lamp.png" class="w-100" alt="SmartWeb"></div>
+            <div class="col-lg-11  col-sm-10 col-12"> Наши решения - это наша гордость. <br> К разработке сайта под заказ или к созданию CRM мы подходим со всей
+                ответственностью,<br>
+                соблюдаем назначенные сроки и радуем вас выгодными предложениями!
+            </div>
         </div>
 
+
     </div>
-</div>
 
 <div class="mt-4 mb-4">
     <div class="d-none d-md-block">
@@ -66,7 +69,16 @@ $this->registerMetaTag(['name' => '', 'content' => '']);
                     <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
                     <figcaption>
                         <h2><?= $item['name']; ?></h2>
-                        <p><?= $item['txt']; ?></p>
+                        <p><?php
+                            //                            \common\Core::dump(mb_strlen($item['txt']));
+                            $text = $item['txt'];
+                            if (mb_strlen($item['txt']) >= 200) {
+                                $string = substr($text, 0, 200);
+                                $string = substr($string, 0, strrpos($string, ' '));
+                                echo $string . " […] ";
+                            }
+
+                            ?></p>
                         <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
                     </figcaption>
                 </figure>

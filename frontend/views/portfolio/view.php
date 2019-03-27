@@ -9,10 +9,12 @@
 
 if($lst['type_id'] == 5){
     $type_site = 'CRM';
+    $type_site_rod = "CRM разработанная";
 }else{
     $type_site = 'сайта';
+    $type_site_rod = 'Сайт разработанный';
 }
-$this->title = "Создание $type_site - " . $lst['name'];
+$this->title = "Создание $type_site - " . $lst['name']. " | Веб-студия Smartweb";
 $this->params['breadcrumbs'] = [
     [
         'label' => 'портфолио',
@@ -23,7 +25,8 @@ $this->registerJs("PortfolioCtrl.actionView();", \yii\web\View::POS_END, 'action
 $this->params['breadcrumbs'] = null;
 
 $img = "/img/work/full/{$lst['id']}.png";
-
+$this->registerMetaTag(['name' => 'decsription',
+    'content' => $type_site_rod.'  Новосибирской веб-студией Smartweb для '.$lst['name']])
 //\common\Core::dump($lst);
 ?>
     <div class="banner d-flex align-items-center justify-content-center">

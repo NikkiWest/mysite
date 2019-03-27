@@ -43,14 +43,17 @@ class Portfolio extends Model
 
     public function lst()
     {
-        $sql = "select portfolio.*,type.name as type_name, type_portfolio.id_type as type_id
+        $sql = "select  distinct portfolio.id,portfolio.name, portfolio.dt_begin, portfolio.txt, portfolio.task,
+ portfolio.url, portfolio.seo_url, type.name as type_name, type_portfolio.id_type as type_id
  from portfolio 
                 join type_portfolio on portfolio.id = type_portfolio.id_portfolio 
-                join type  on type_portfolio.id_type = type.id ";
+                join type  on type_portfolio.id_type = type.id 
+                group by portfolio.id
+                ";
         $all = \yii::$app->db->createCommand($sql)->queryAll();
 
         $id = ArrayHelper::map($all, 'id', 'id');
-//        Core::dump($id);die;
+//        Core::dump($all);die;
         $id_str = implode(',', $id );
 //        Core::dump($id_str);die;
         $ar = [];
@@ -68,6 +71,7 @@ where id_portfolio in ($id_str)";
             $ar[$item['id']] = $item;
 
         }
+//        Core::dump($ar);die;
         return $ar;
     }
 
