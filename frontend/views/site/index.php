@@ -359,7 +359,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 $img = "/img/work/small/" . $item['id'] . ".png";
 
                     ?>
-                    <div class="effect-oscar lstSite " data-t="<?= $type['id']; ?>">
+                    <figure class="effect-oscar lstSite " data-t="<?= $type['id']; ?>">
                         <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
                         <figcaption>
                             <h2><?= $item['name']; ?></h2>
@@ -375,7 +375,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                                 ?></p>
                             <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
                         </figcaption>
-                    </div>
+                    </figure>
                     <?php
 
             }
