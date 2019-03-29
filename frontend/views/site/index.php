@@ -352,14 +352,14 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 ?>
             </div>
         </div>
-        <div class=" grid">
+        <div class="grid">
             <?php
             foreach ($lst as $item) {
+                foreach ($item['types'] as $type) {
 //                \common\Core::dump($item);
-                $img = "/img/work/small/" . $item['id'] . ".png";
-
+                    $img = "/img/work/small/" . $item['id'] . ".png";
                     ?>
-                    <figure class="effect-oscar lstSite " data-t="<?= $type['id']; ?>">
+                    <figure class="effect-oscar lstSite" data-t="<?= $type['id_type'];; ?>">
                         <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
                         <figcaption>
                             <h2><?= $item['name']; ?></h2>
@@ -377,7 +377,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                         </figcaption>
                     </figure>
                     <?php
-
+                }
             }
             ?>
         </div>
