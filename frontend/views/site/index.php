@@ -357,11 +357,11 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
                 $img = "/img/work/small/" . $item['id'] . ".png";
-                foreach ($item['types'] as $type) {
+
                     ?>
                    fghgfhfghfghfhfghgfhfhfgh
                     <?php
-                }
+
             }
             ?>
         </div>
