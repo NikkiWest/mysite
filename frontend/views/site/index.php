@@ -352,14 +352,30 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 ?>
             </div>
         </div>
-        <div class="grid">
+        <div class=" grid">
             <?php
             foreach ($lst as $item) {
 //                \common\Core::dump($item);
                 $img = "/img/work/small/" . $item['id'] . ".png";
 
                     ?>
-                   fghgfhfghfghfhfghgfhfhfgh
+                    <div class="effect-oscar lstSite " data-t="<?= $type['id']; ?>">
+                        <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
+                        <figcaption>
+                            <h2><?= $item['name']; ?></h2>
+                            <p><?php
+                                //                            \common\Core::dump(mb_strlen($item['txt']));
+                                $text = $item['txt'];
+                                if (mb_strlen($item['txt']) >= 200) {
+                                    $string = substr($text, 0, 200);
+                                    $string = substr($string, 0, strrpos($string, ' '));
+                                    echo $string . " […] ";
+                                }
+
+                                ?></p>
+                            <a href="/portfolio/view/<?= $item['seo_url']; ?>">Подробнее</a>
+                        </figcaption>
+                    </div>
                     <?php
 
             }
