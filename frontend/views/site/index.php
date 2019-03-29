@@ -355,7 +355,7 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
         <div class=" grid">
             <?php
             foreach ($lst as $item) {
-                \common\Core::dump($item);
+
                 $img = "/img/work/small/" . $item['id'] . ".png";
                 foreach ($item['types'] as $type) {
                     ?>
