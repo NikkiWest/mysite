@@ -352,14 +352,13 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
                 ?>
             </div>
         </div>
-        <div class=" grid">
+        <div class=" grid-ewr">
             <?php
             foreach ($lst as $item) {
 
                 $img = "/img/work/small/" . $item['id'] . ".png";
                 foreach ($item['types'] as $type) {
                     ?>
-                    dfgd
                     <figure class="effect-oscar lstSite " data-t="<?= $type['id_type']; ?>">
                         <img src="<?= $img; ?>" alt="<?= $item['name']; ?>"/>
                         <figcaption>
