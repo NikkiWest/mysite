@@ -5,6 +5,7 @@ return [
     'showScriptName'=>false,
     'rules'=>[
         '/portfolio/view/<slug>' => 'portfolio/view',
-        '/service' => 'service/default/index'
+        '/service' => 'service/default/index',
+        '/news/view/<slug>' => 'news/view'
     ]
 ];

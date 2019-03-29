@@ -139,6 +139,28 @@ $.ajaxSetup({
 });
 
 
+if ($('.txtTinyMCE').length) {
+    tinymce.init({
+        selector:'textarea.txtTinyMCE',
+        plugins: [
+            "advlist autolink autosave link image lists charmap print preview hr anchor pagebreak spellchecker",
+            "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
+            "table contextmenu directionality emoticons template textcolor paste textcolor colorpicker textpattern",
+            "filemanager"
+        ],
+        external_plugins: { "filemanager" : "/lib/tinymce/plugins/filemanager/filemanager/plugin.min.js"},
+        external_filemanager_path:"/lib/tinymce/plugins/filemanager/filemanager/",
+//  external_filemanager_path:"/admin/storage/web/other/",
+        filemanager_title:"Файловый менеджер" ,
+        image_advtab: true,
+        relative_urls: false,
+
+        toolbar1: "newdocument | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | styleselect formatselect fontselect fontsizeselect",
+        toolbar2: "undo redo hr removeformat code | searchreplace | table | subscript superscript | bullist numlist | outdent indent blockquote | link unlink anchor image | forecolor backcolor",
+        themes: "modern"
+    });
+}
+
 /**
  * Работа с AJAX формой, запросами
  */

@@ -520,14 +520,21 @@ ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-control
             </div>
             <div class="col-md-6 col-sm-12 mt-5">
                 <div class="title_blue   mb-5"> Новости</div>
-                <div class="row news">
-                    <div class="col-sm-4">
-                        <img src="" alt="">
-                    </div>
-                    <div class="col-sm-8">
-                        <div class="name__news">dsdad</div>
-                    </div>
-                </div>
+                        <?php
+                        foreach ($news as $new) {
+//                            \common\Core::dump($new['dt']);
+                            ?>
+                            <div class="row align-items-center mb-4">
+                                <div class="col-md-2">
+                                    <div class="date_news">
+                                        <?= date("d.m", strtotime($new['dt'])); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-10"><a class="link_news" href="/news/view/<?=$new['seo_url'];?>"><?=$new['name'];?></a></div>
+                            </div>
+                            <?php
+                        }
+                        ?>
             </div>
         </div>
     </div>

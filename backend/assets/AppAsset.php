@@ -16,13 +16,15 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/uni.js',
+        '/lib/tinymce/tinymce.min.js',
+        '/lib/tinymce/langs/ru.js',
+        '/lib/tinymce/themes/modern/theme.min.js',
         '/lib/jquery.form.min.js',
         '/lib/jquery-ui/jquery-ui.js',
         '/lib/jquery-ui/jquery.ui.datepicker-ru.js',
         '/lib/jquery.form.min.js',
         '/lib/jquery.tmpl.min.js',
-        'js/code-edit.js',
+        'js/uni.js',
     ];
     public $depends = [
         //'yii\web\YiiAsset',

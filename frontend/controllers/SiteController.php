@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\Core;
 use common\models\Code;
 use common\models\Invoice;
+use common\models\News;
 use common\models\Order;
 use common\models\Portfolio;
 use common\models\Rekvizit;
@@ -29,10 +30,12 @@ class SiteController extends BaseController
         $Portfolio = new Portfolio();
         $lst = $Portfolio->lst();
         $type = $Portfolio->getType();
+        $news = News::find()->limit(3)->all();
         return $this->render('index',
             [
                 'lst' => $lst,
-                'type' => $type
+                'type' => $type,
+                'news' => $news
             ]
         );
     }
