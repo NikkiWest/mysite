@@ -62,7 +62,6 @@ $this->registerMetaTag(['name' => 'decsription', 'content' => 'Портфоли�
         <?php
         foreach ($lst as $item) {
             foreach ($item['types'] as $type) {
-//                \common\Core::dump($item);
                 $img = "/img/work/small/" . $item['id'] . ".png";
                 ?>
                 <figure class="effect-oscar lstSite" data-t="<?= $type['id_type'];; ?>">
