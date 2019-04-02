@@ -10,7 +10,6 @@ $user_id = Yii::$app->user->id ?? null;
 //\common\Core::dump($Users);
 
 ?>
-dfwr
 <div class="fonTop">
 
     <div class="container">
