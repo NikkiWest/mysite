@@ -10,8 +10,7 @@ $user_id = Yii::$app->user->id ?? null;
 //\common\Core::dump($Users);
 
 ?>
-
-3wer
+sdfsf
 <div class="fonTop">
 
     <div class="container">
